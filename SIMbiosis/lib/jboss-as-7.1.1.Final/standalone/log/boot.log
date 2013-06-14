@@ -1,0 +1,148 @@
+09:49:34,704 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
+09:49:35,667 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA
+09:49:35,783 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final "Brontes" starting
+09:49:35,784 DEBUG [org.jboss.as.config] Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/jboss-modules.jar
+	java.class.version = 51.0
+	java.endorsed.dirs = /usr/lib/jvm/jdk1.7.0/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/jdk1.7.0/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/jdk1.7.0/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.7.0_17-b02
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.7
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.7.0_17
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.7
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 23.7-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final
+	jboss.host.name = nb2
+	jboss.modules.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = nb2
+	jboss.qualified.host.name = nb2
+	jboss.server.base.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone
+	jboss.server.config.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/configuration
+	jboss.server.data.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/data
+	jboss.server.deploy.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/data/content
+	jboss.server.log.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/log
+	jboss.server.name = nb2
+	jboss.server.temp.dir = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/configuration/logging.properties
+	module.path = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules
+	org.jboss.boot.log.file = /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/log/boot.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.2.0-39-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/jdk1.7.0/jre/lib/resources.jar:/usr/lib/jvm/jdk1.7.0/jre/lib/rt.jar:/usr/lib/jvm/jdk1.7.0/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.7.0/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.7.0/jre/lib/jce.jar:/usr/lib/jvm/jdk1.7.0/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.7.0/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.7.0/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/jdk1.7.0/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/bin
+	user.home = /home/iwanaf
+	user.language = en
+	user.name = iwanaf
+	user.timezone = Asia/Jakarta
+09:49:35,791 DEBUG [org.jboss.as.config] VM Arguments: -Xms64m -Xmx512m -XX:MaxPermSize=256m -XX:CompileCommand=exclude,net/sf/jasperreports/engine/export/JRGridLayout,horizontallyMergeEmptyCells -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final -Dfile.encoding=UTF-8 
+09:49:40,272 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
+09:49:40,345 INFO  [org.xnio] XNIO Version 3.0.3.GA
+09:49:40,354 INFO  [org.jboss.as.logging] JBAS011502: Removing bootstrap log handlers
+12:00:05,542 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
+12:00:05,546 INFO  [org.jboss.as.messaging] JBAS011605: Unbound messaging object to jndi name java:/ConnectionFactory
+12:00:05,588 INFO  [org.jboss.as.jpa] JBAS011403: Stopping Persistence Unit Service 'MicrobankEar.ear/MicrobankEjb.jar#MicrobankEjb'
+12:00:05,593 INFO  [org.jboss.as.jpa] JBAS011403: Stopping Persistence Unit Service 'SystemEar.ear/SystemEjb.jar#SystemEjb'
+12:00:05,606 INFO  [org.jboss.as.jpa] JBAS011403: Stopping Persistence Unit Service 'GlEar.ear/GlEjb.jar#GlEjb'
+12:00:05,608 INFO  [org.jboss.as.jpa] JBAS011403: Stopping Persistence Unit Service 'MicrobankReportEar.ear/MicrobankReportEjb.jar#MicrobankReportEjb'
+12:00:05,609 INFO  [jacorb.poa] POA Naming destroyed
+12:00:05,610 INFO  [jacorb.poa] POA IRPOA destroyed
+12:00:05,610 INFO  [jacorb.poa] POA RootPOA destroyed
+12:00:05,619 INFO  [jacorb.orb] prepare ORB for shutdown...
+12:00:05,628 INFO  [jacorb.orb] ORB going down...
+12:00:05,633 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsHost.war in 148ms
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment UserManagement.war in 181ms
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlBpEjb.jar in 149ms
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankApiCore.war in 148ms
+12:00:05,633 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsTeller.war in 147ms
+12:00:05,635 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment jaybird-full-2.2.1.jar in 154ms
+12:00:05,636 INFO  [jacorb.orb.iiop] Listener exited
+12:00:05,637 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment SystemEjb.jar in 151ms
+12:00:05,633 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsCs.war in 171ms
+12:00:05,639 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankEjb.jar in 155ms
+12:00:05,637 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlInput.war in 152ms
+12:00:05,637 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlAdmin.war in 150ms
+12:00:05,635 INFO  [jacorb.orb] ORB shutdown complete
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankApiReport.war in 148ms
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment SystemBpEjb.jar in 149ms
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankReportEjb.jar in 149ms
+12:00:05,634 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsReportingViewer.war in 147ms
+12:00:05,641 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsReportingService.war in 156ms
+12:00:05,643 INFO  [org.hornetq.ra.HornetQResourceAdapter] HornetQ resource adapter stopped
+12:00:05,644 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlEjb.jar in 160ms
+12:00:05,647 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsBpEjb.jar in 149ms
+12:00:05,651 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsHostEar.ear in 169ms
+12:00:05,656 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment SystemEar.ear in 179ms
+12:00:05,657 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsAdmin.war in 192ms
+12:00:05,663 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsLoan.war in 198ms
+12:00:05,671 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsFrontOffice.ear in 189ms
+12:00:05,683 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlBpEar.ear in 201ms
+12:00:05,688 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment UserManagementEar.ear in 237ms
+12:00:05,700 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsBackOffice.ear in 248ms
+12:00:05,715 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsBpEar.ear in 239ms
+12:00:05,716 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlEar.ear in 235ms
+12:00:05,723 INFO  [com.arjuna.ats.jbossatx] ARJUNA032018: Destroying TransactionManagerService
+12:00:05,747 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment BprsReportingEar.ear in 266ms
+12:00:05,753 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankReportEar.ear in 272ms
+12:00:05,763 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment SystemBpEar.ear in 303ms
+12:00:05,775 INFO  [jacorb.orb] ORB run, exit
+12:00:05,778 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankApiEar.ear in 283ms
+12:00:05,790 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment GlUiEar.ear in 309ms
+12:00:05,791 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment MicrobankEar.ear in 310ms
+12:00:05,817 INFO  [com.arjuna.ats.jbossatx] ARJUNA032014: Stopping transaction recovery manager
+12:00:05,824 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] HornetQ Server version 2.2.13.Final (HQ_2_2_13_FINAL_AS7, 122) [29e52306-5eff-11e2-a451-ccaf783e69a6] stopped
+12:00:05,888 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final "Brontes" stopped in 376ms

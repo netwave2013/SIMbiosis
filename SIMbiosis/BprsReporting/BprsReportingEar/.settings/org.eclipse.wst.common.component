@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BprsReportingEar">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="BprsReportingViewer.war" deploy-path="/" handle="module:/resource/BprsReportingViewer/BprsReportingViewer">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BprsBpIntf.jar" deploy-path="/lib" handle="module:/resource/BprsBpIntf/BprsBpIntf">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="KembangModule.jar" deploy-path="/lib" handle="module:/resource/KembangModule/KembangModule">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SystemDto.jar" deploy-path="/lib" handle="module:/resource/SystemDto/SystemDto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GlIntf.jar" deploy-path="/lib" handle="module:/resource/GlIntf/GlIntf">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GlDto.jar" deploy-path="/lib" handle="module:/resource/GlDto/GlDto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MicrobankDto.jar" deploy-path="/lib" handle="module:/resource/MicrobankDto/MicrobankDto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BprsReportingService.war" deploy-path="/" handle="module:/resource/BprsReportingService/BprsReportingService">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MicrobankReportDto.jar" deploy-path="/lib" handle="module:/resource/MicrobankReportDto/MicrobankReportDto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MicrobankReportIntf.jar" deploy-path="/lib" handle="module:/resource/MicrobankReportIntf/MicrobankReportIntf">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Utils.jar" deploy-path="/lib" handle="module:/resource/Utils/Utils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GlBpIntf.jar" deploy-path="/lib" handle="module:/resource/GlBpIntf/GlBpIntf">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SystemBpIntf.jar" deploy-path="/lib" handle="module:/resource/SystemBpIntf/SystemBpIntf">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

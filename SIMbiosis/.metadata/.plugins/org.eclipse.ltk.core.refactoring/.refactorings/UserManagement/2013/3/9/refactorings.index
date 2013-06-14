@@ -1,0 +1,15 @@
+1362137764764	Delete element
+1362146549296	Rename type 'IUserEditor'
+1362146564288	Rename type 'UserEditor'
+1362146575158	Rename resource 'UserEditor.ui.xml'
+1362146584803	Rename type 'UserEditorActivity'
+1362146593149	Rename type 'UserEditorPlace'
+1362146616397	Copy elements
+1362187748843	Rename method 'showSelected'
+1362188795197	Delete element
+1362198062011	Rename local variable 'dv'
+1362198069541	Rename local variable 'user'
+1362199499083	Copy compilation unit
+1362217669726	Copy compilation unit
+1362217695504	Delete element
+1362217706300	Rename type 'UserListPlace'

@@ -1,0 +1,4 @@
+# Module usermanagement
+# RPC service class, partial path of RPC policy file
+org.kembang.module.client.rpc.SystemService, B518A819D29B95DBD288EFF3ACBD4A70.gwt.rpc
+org.simbiosis.ui.system.user.client.rpc.Service, 65BB72B1AB71EAD47BBA30A4325E2229.gwt.rpc

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GLNote" language="groovy" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7a3c57a8-5086-4504-a6f3-5843b9fcd014">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="GlTrans.validCode" class="java.lang.String"/>
+	<parameter name="GlTrans.debet" class="java.lang.String"/>
+	<parameter name="GlTrans.credit" class="java.lang.String"/>
+	<parameter name="GlTrans.refCode" class="java.lang.String"/>
+	<parameter name="GlTrans.description" class="java.lang.String"/>
+	<parameter name="GlTrans.value" class="java.lang.String"/>
+	<parameter name="GlTrans.operator" class="java.lang.String"/>
+	<parameter name="GlTrans.strValue" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="284" splitType="Stretch">
+			<textField>
+				<reportElement uuid="c3989db2-2e22-4d58-9b72-5962065ca135" x="64" y="84" width="277" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.debet}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="008b4fa5-edbf-42cc-9da9-5b25e91ae62b" x="445" y="84" width="216" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.credit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="274582a7-39d5-4a6a-b11a-8c522238c983" x="66" y="169" width="595" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6e7f4708-bfb8-413b-afe6-633c9855c910" x="452" y="135" width="209" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5c0838e9-a7bc-47ab-8660-1f76f7f02523" x="64" y="213" width="597" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.strValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d19e2d1b-7753-4558-b758-162364144dcb" x="271" y="260" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.operator}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f066cd94-e62d-4584-8a6b-dfe3e9a50ec3" x="478" y="11" width="171" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.refCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2001bf44-8d3b-4183-bc8d-ea7d8c9280e2" x="13" y="11" width="258" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.validCode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<td class="formLabel">Nama user</td>
+				<td>
+					<g:Label ui:field="name" styleName="formTextLabel" />
+				</td>
+			</tr>
+			<tr>
+				<td class="formLabel">Nama lengkap</td>
+				<td>
+					<g:Label ui:field="realName" styleName="formTextLabel" />
+				</td>
+			</tr>
+			<tr>
+				<td class="formLabel">Email</td>
+				<td>
+					<g:Label ui:field="email" styleName="formTextLabel" />
+				</td>
+			</tr>
+			<tr>
+				<td class="formLabel">Hak akses</td>
+				<td>
+					<g:Label ui:field="roleName" styleName="formTextLabel" />
+				</td>
+			</tr>
+			<tr>
+				<td class="formLabel">Cabang</td>
+				<td>
+					<g:Label ui:field="branchName" styleName="formTextLabel" />
+				</td>
+			</tr>
+			<tr>
+				<td class="formLabel">Status</td>
+				<td>
+					<g:Label ui:field="strActive" styleName="formTextLabel" />
+				</td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

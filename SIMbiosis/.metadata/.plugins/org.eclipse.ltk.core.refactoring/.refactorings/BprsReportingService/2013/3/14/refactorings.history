@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TellerTransPdf.java&apos; to &apos;BprsReportingService/src/org.simbiosis.microbanking.reporting&apos;&#x0A;- Original project: &apos;BprsReportingService&apos;&#x0A;- Destination element: &apos;BprsReportingService/src/org.simbiosis.microbanking.reporting&apos;&#x0A;- Original element: &apos;org.simbiosis.microbanking.reporting.TellerTransPdf.java&apos;" description="Copy compilation unit" destination="/src&lt;org.simbiosis.microbanking.reporting" element1="/src&lt;org.simbiosis.microbanking.reporting{TellerTransPdf.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1364735992372" units="1" version="1.0"/>
+</session>

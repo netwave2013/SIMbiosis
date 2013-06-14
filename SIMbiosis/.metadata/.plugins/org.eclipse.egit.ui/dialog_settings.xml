@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="CommitDialog.authorValues">
+		<item value="iwanaf &lt;iwanfatahi@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="iwanaf &lt;iwanfatahi@gmail.com&gt;"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="/home/jsn/repositories/microbankapi.git"/>
+		<item value="ssh://jsn@110.5.109.173:2002/home/jsn/repositories/bprsbp.git"/>
+		<item value="ssh://jsn@110.5.109.173:2002/home/jsn/repositories/microbankreport.git"/>
+		<item value="ssh://jsn@110.5.109.173:2002/home/jsn/repositories/microbanking.git"/>
+		<item value="ssh://jsn@110.5.109.173:2002/home/jsn/repositories/gl.git"/>
+		<item value="ssh://jsn@110.5.109.173:2002/home/jsn/repositories/system.git"/>
+	</list>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="650" key="DIALOG_WIDTH"/>
+		<item value="87" key="DIALOG_Y_ORIGIN"/>
+		<item value="445" key="DIALOG_HEIGHT"/>
+		<item value="358" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

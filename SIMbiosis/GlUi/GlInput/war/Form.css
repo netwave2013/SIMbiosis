@@ -1,0 +1,116 @@
+.gwt-PopupPanel {
+	margin: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.gwt-PopupPanel .popupContent {
+	margin: 0px;
+	border: 0px;
+	border-width:0px;
+	padding: 0px;
+}
+
+.formDialogBox {
+	background-color: #efefef;
+	padding: 20px;
+}
+
+.formDialogBoxCaption {
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 11pt !important;
+	color: #555555;
+}
+
+.formLabel {
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #555555;
+}
+
+.formButton {
+	cursor: pointer;
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 9pt !important;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-style: solid;
+	border-color: #C83B28;
+	border-width: 1px;
+	border-radius: 3px;
+	background: linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -o-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -moz-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -ms-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+}
+
+.formButton:hover {
+	background-color: #3b7df7;
+}
+
+.formButton::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+.formCombobox {
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 8pt !important;
+	border-style: solid;
+	border-color: #E3E3E3;
+	border-width: 1px;
+	padding: 1px 3px 1px 3px;
+}
+
+.formText {
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 8pt !important;
+	border-style: solid;
+	border-color: #E3E3E3;
+	border-width: 1px;
+	padding: 2px 3px 2px 3px;
+}
+
+.formDatebox {
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 8pt !important;
+	border-style: solid;
+	border-color: #E3E3E3;
+	border-width: 1px;
+	padding: 2px 3px 2px 3px;
+}
+
+.formBox {
+	background-color: #F9F9F9;
+	padding: 5px;
+	border-style: solid;
+	border-color: #E3E3E3;
+	border-width: 1px;
+	margin-bottom: 4px;
+}
+
+.formTableLayout {
+	border-spacing: 2px;
+	height: 100%;
+}
+
+.formTableLayout td {
+	padding: 0px;
+}
+
+.formTextlabel {
+	font-family: tahoma, verdana, sans, helvetica;
+	font-size: 8pt;
+}

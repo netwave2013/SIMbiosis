@@ -1,0 +1,2 @@
+serviceClass: org.simbiosis.ui.system.user.client.rpc.Service
+path: 65BB72B1AB71EAD47BBA30A4325E2229.gwt.rpc

@@ -1,0 +1,20 @@
+1361671380842	Delete elements
+1361671461697	Rename type 'GlAdminEntryPoint'
+1361671627846	Delete element
+1361672798050	Rename type 'InfoListPlace'
+1361680902430	Rename type 'GlAdminHistoryMapper'
+1361681113055	Rename type 'GlAdminFactory'
+1361681125137	Rename type 'GlAdminFactoryImpl'
+1361681408930	Rename type 'UserManagement'
+1361681420014	Rename resource 'UserManagement.ui.xml'
+1361681431177	Rename type 'IUserManagement'
+1361681439323	Rename type 'UserManagementActivity'
+1361681446759	Rename type 'UserManagementPlace'
+1361681493265	Rename type 'GlAdminActivityMapper'
+1361681718469	Rename package 'org.simbiosis.ui.system.user.client.rps'
+1361681749330	Rename type 'MicBankService'
+1361682041196	Rename type 'MicBankServiceImpl'
+1362026040037	Delete element
+1362027868576	Delete element
+1362028170816	Rename method 'getUserManagement'
+1362034734962	Delete element

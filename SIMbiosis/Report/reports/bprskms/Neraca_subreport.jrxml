@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="master_subreport" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="edc6c904-32af-4871-bb4f-61888221b274">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="children" class="java.util.List">
+		<fieldDescription><![CDATA[children]]></fieldDescription>
+	</field>
+	<field name="tipeNeraca" class="java.lang.String">
+		<fieldDescription><![CDATA[tipeNeraca]]></fieldDescription>
+	</field>
+	<field name="ledger" class="java.lang.String">
+		<fieldDescription><![CDATA[ledger]]></fieldDescription>
+	</field>
+	<field name="ledgerWoCode" class="java.lang.String">
+		<fieldDescription><![CDATA[ledgerWoCode]]></fieldDescription>
+	</field>
+	<field name="subLedger" class="java.lang.String">
+		<fieldDescription><![CDATA[subLedger]]></fieldDescription>
+	</field>
+	<field name="subLedgerWoCode" class="java.lang.String">
+		<fieldDescription><![CDATA[subLedgerWoCode]]></fieldDescription>
+	</field>
+	<field name="subSubLedger" class="java.lang.String">
+		<fieldDescription><![CDATA[subSubLedger]]></fieldDescription>
+	</field>
+	<field name="subSubLedgerWoCode" class="java.lang.String">
+		<fieldDescription><![CDATA[subSubLedgerWoCode]]></fieldDescription>
+	</field>
+	<field name="valueBefore" class="java.lang.Double">
+		<fieldDescription><![CDATA[valueBefore]]></fieldDescription>
+	</field>
+	<field name="valueNow" class="java.lang.Double">
+		<fieldDescription><![CDATA[valueNow]]></fieldDescription>
+	</field>
+	<sortField name="ledger"/>
+	<sortField name="subLedger"/>
+	<variable name="VALUEBEFORE_SUM" class="java.lang.Double" resetType="Group" resetGroup="subLedger" calculation="Sum">
+		<variableExpression><![CDATA[$F{valueBefore}]]></variableExpression>
+	</variable>
+	<variable name="VALUENOW_SUM" class="java.lang.Double" resetType="Group" resetGroup="subLedger" calculation="Sum">
+		<variableExpression><![CDATA[$F{valueNow}]]></variableExpression>
+	</variable>
+	<variable name="SLVB_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{valueBefore}]]></variableExpression>
+	</variable>
+	<variable name="SLVN_SUM" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{valueNow}]]></variableExpression>
+	</variable>
+	<group name="subLedger">
+		<groupExpression><![CDATA[$F{subLedger}]]></groupExpression>
+		<groupHeader>
+			<band height="16">
+				<textField>
+					<reportElement uuid="d9abbdab-8605-4db0-be88-985bdf084485" x="19" y="1" width="237" height="13"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{subLedger}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="17">
+				<textField pattern="#,##0.00">
+					<reportElement uuid="7482fbaf-6339-421d-8769-c08834710d92" x="423" y="1" width="124" height="15"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{VALUENOW_SUM}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="d8ba97ca-9b70-4ef4-911a-155006432c1d" x="19" y="1" width="276" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" TOTAL " +$F{subLedgerWoCode}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement uuid="1d219dbb-0faf-4e73-9769-4763ad63e821" x="32" y="1" width="263" height="13"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{subSubLedger}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="84695bc7-9ec5-48a1-b9be-acff7e59bb12" x="423" y="1" width="124" height="13"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valueNow}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19">
+			<textField>
+				<reportElement uuid="941e236d-41c6-46d6-b4b8-73b9f2300952" x="5" y="2" width="276" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["TOTAL " + $F{ledgerWoCode}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="498e4fc1-260d-4a18-aa4f-199a5560da64" x="423" y="2" width="124" height="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SLVN_SUM}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

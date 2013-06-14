@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SavingBookMaster" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8548c4f0-d73c-492e-891a-198e97842b88">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Saving.code" class="java.lang.String"/>
+	<parameter name="Saving.name" class="java.lang.String"/>
+	<parameter name="Saving.address" class="java.lang.String"/>
+	<parameter name="Saving.city" class="java.lang.String"/>
+	<parameter name="Saving.product" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="211" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f56af49f-4b78-4638-a99b-4444f838b600" x="43" y="32" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Saving.code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c0df8782-82dd-4cf8-82f6-7e8aacac5936" x="43" y="52" width="278" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Saving.product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a62a2e3b-4741-453e-929d-b27c42d09b3f" x="43" y="99" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Saving.name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f9486a2e-a33a-469e-b693-e2f7d4fd2c76" x="43" y="119" width="340" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Saving.address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d95aaeb-6c69-4094-9f10-51e0f2486360" x="43" y="139" width="340" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Saving.city}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

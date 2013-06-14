@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='bprsreportingviewer'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+
+	<!-- Inherit the default GWT style sheet. You can change -->
+	<!-- the theme of your GWT application by uncommenting -->
+	<!-- any one of the following lines. -->
+	<inherits name='com.google.gwt.user.theme.clean.Clean' />
+	<!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
+
+	<!-- Other module inherits -->
+	<inherits name="com.google.gwt.place.Place" />
+	<inherits name="com.google.gwt.activity.Activity" />
+	<inherits name='org.kembang.module.KembangModule' />
+
+	<!-- Specify the app entry point class. -->
+	<entry-point class='org.simbiosis.ui.bprs.reporting.client.BprsReportingViewer' />
+	<replace-with class="org.simbiosis.ui.bprs.reporting.client.BprsReportingViewerFactoryImpl">
+		<when-type-is class="org.simbiosis.ui.bprs.reporting.client.BprsReportingViewerFactory" />
+	</replace-with>
+
+	<!-- Specify the paths for translatable code -->
+	<source path='client' />
+	<source path='shared' />
+
+</module>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='glinput'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+  <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+	<inherits name="com.google.gwt.place.Place" />
+	<inherits name="com.google.gwt.activity.Activity" />
+	<inherits name='org.kembang.module.KembangModule' />
+	<inherits name='org.kembang.grid.KembangGrid' />
+	<inherits name='org.kembang.editor.KembangEditor' />
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='org.simbiosis.ui.gl.input.client.GlInput'/>
+	<replace-with class="org.simbiosis.ui.gl.input.client.GlInputFactoryImpl">
+		<when-type-is class="org.simbiosis.ui.gl.input.client.GlInputFactory" />
+	</replace-with>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>

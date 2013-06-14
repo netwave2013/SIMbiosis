@@ -1,0 +1,812 @@
+00:27:58,385 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment BprsHost.war in 13ms
+00:27:58,387 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-11) JBAS015877: Stopped deployment BprsHostEar.ear in 15ms
+00:27:58,389 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:27:58,403 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "BprsHost.war"
+00:27:58,425 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-10) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:27:58,427 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-10) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:27:58,427 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:27:58,428 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-10) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:27:58,428 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:27:58,466 INFO  [org.jboss.web] (MSC service thread 1-13) JBAS018210: Registering web context: 
+00:27:58,595 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+00:33:23,760 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment BprsHost.war in 18ms
+00:33:23,763 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment BprsHostEar.ear in 21ms
+00:33:23,765 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-13) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:33:23,774 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "BprsHost.war"
+00:33:23,804 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:33:23,804 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:33:23,805 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:33:23,805 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:33:23,805 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:33:23,825 INFO  [org.jboss.web] (MSC service thread 1-7) JBAS018210: Registering web context: 
+00:33:23,943 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+00:46:14,363 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment BprsHost.war in 19ms
+00:46:14,367 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment BprsHostEar.ear in 23ms
+00:46:14,368 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:46:14,378 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "BprsHost.war"
+00:46:14,406 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:46:14,408 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:46:14,409 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:46:14,412 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:46:14,413 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:46:14,428 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: 
+00:46:14,540 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+00:48:29,639 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-11) JBAS015877: Stopped deployment BprsHost.war in 17ms
+00:48:29,643 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015877: Stopped deployment BprsHostEar.ear in 21ms
+00:48:29,645 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:48:29,654 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "BprsHost.war"
+00:48:29,686 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:48:29,687 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:48:29,688 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:48:29,688 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:48:29,688 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:48:29,734 INFO  [org.jboss.web] (MSC service thread 1-13) JBAS018210: Registering web context: 
+00:48:29,860 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+00:49:34,930 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment BprsHost.war in 19ms
+00:49:34,934 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment BprsHostEar.ear in 24ms
+00:49:34,937 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:49:34,946 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "BprsHost.war"
+00:49:34,955 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:49:34,955 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:49:34,956 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:49:34,957 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:49:34,958 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:49:34,973 INFO  [org.jboss.web] (MSC service thread 1-7) JBAS018210: Registering web context: 
+00:49:35,090 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+00:52:50,202 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment BprsHost.war in 21ms
+00:52:50,207 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment BprsHostEar.ear in 26ms
+00:52:50,208 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:52:50,216 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "BprsHost.war"
+00:52:50,228 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:52:50,229 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:52:50,229 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:52:50,231 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:52:50,231 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:52:50,255 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: 
+00:52:50,371 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+00:54:50,459 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment BprsHost.war in 19ms
+00:54:50,464 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment BprsHostEar.ear in 23ms
+00:54:50,466 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "BprsHostEar.ear"
+00:54:50,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015876: Starting deployment of "BprsHost.war"
+00:54:50,504 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-12) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:54:50,505 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-12) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:54:50,505 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-14) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:54:50,505 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-12) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:54:50,506 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-14) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+00:54:50,548 INFO  [org.jboss.web] (MSC service thread 1-12) JBAS018210: Registering web context: 
+00:54:50,726 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "BprsHostEar.ear" with deployment "BprsHostEar.ear"
+01:01:50,982 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011942: Stopping OSGi Framework
+17:48:38,747 INFO  [org.xnio.nio] (MSC service thread 1-14) XNIO NIO Implementation Version 3.0.3.GA
+17:48:38,786 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 39) JBAS010280: Activating Infinispan subsystem.
+17:48:38,779 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) JBAS015537: Activating WebServices Extension
+17:48:38,773 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) JBAS011800: Activating Naming Subsystem
+17:48:38,773 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) JBAS013101: Activating Security Subsystem
+17:48:38,763 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 40) JBAS016300: Activating JacORB Subsystem
+17:48:38,762 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) JBAS010260: Activating JGroups subsystem.
+17:48:38,748 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 34) JBAS016200: Activating ConfigAdmin Subsystem
+17:48:38,804 INFO  [org.jboss.as.security] (MSC service thread 1-12) JBAS013100: Current PicketBox version=4.0.7.Final
+17:48:38,808 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 3.2.3.GA
+17:48:38,879 INFO  [org.jboss.as.naming] (MSC service thread 1-4) JBAS011802: Starting Naming Service
+17:48:38,943 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:48:38,982 INFO  [org.jboss.jaxr] (MSC service thread 1-13) JBAS014000: Started JAXR subsystem, binding JAXR connection factory into JNDI as: java:jboss/jaxr/ConnectionFactory
+17:48:39,022 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 53) JBAS011940: Activating OSGi Subsystem
+17:48:39,128 INFO  [org.jboss.as.connector] (MSC service thread 1-15) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.9.Final)
+17:48:39,587 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 35) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:48:40,528 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-13) Starting Coyote HTTP/1.1 on http-localhost-127.0.0.1-8080
+17:48:40,528 INFO  [org.apache.coyote.ajp.AjpProtocol] (MSC service thread 1-12) Starting Coyote AJP/1.3 on ajp-localhost-127.0.0.1-8009
+17:48:40,842 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-10) live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/data/messagingjournal,bindingsDirectory=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/data/messagingbindings,largeMessagesDirectory=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/data/messaginglargemessages,pagingDirectory=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/data/messagingpaging)
+17:48:40,843 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-10) Waiting to obtain live lock
+17:48:41,047 INFO  [org.hornetq.core.persistence.impl.journal.JournalStorageManager] (MSC service thread 1-10) Using AIO Journal
+17:48:41,333 INFO  [org.hornetq.core.server.impl.AIOFileLockNodeManager] (MSC service thread 1-10) Waiting to obtain live lock
+17:48:41,334 INFO  [org.hornetq.core.server.impl.AIOFileLockNodeManager] (MSC service thread 1-10) Live Server Obtained live lock
+17:48:41,339 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 39) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be pasivated.
+17:48:41,342 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 39) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be pasivated.
+17:48:41,621 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-2) JBoss Web Services - Stack CXF Server 4.0.2.GA
+17:48:41,634 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-14) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:48:41,775 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016330: CORBA ORB Service started
+17:48:41,878 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016328: CORBA Naming Service started
+17:48:42,577 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-9) JBAS015012: Started FileSystemDeploymentService for directory /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/deployments
+17:48:42,590 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "jaybird-full-2.2.1.jar"
+17:48:42,603 INFO  [org.jboss.as.remoting] (MSC service thread 1-12) JBAS017100: Listening on localhost/127.0.0.1:4447
+17:48:42,628 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found GlBpEar.ear in deployment directory. To trigger deployment create a file called GlBpEar.ear.dodeploy
+17:48:42,629 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found BprsHostEar.ear in deployment directory. To trigger deployment create a file called BprsHostEar.ear.dodeploy
+17:48:42,630 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found SystemEar.ear in deployment directory. To trigger deployment create a file called SystemEar.ear.dodeploy
+17:48:42,631 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found MicrobankEar.ear in deployment directory. To trigger deployment create a file called MicrobankEar.ear.dodeploy
+17:48:42,631 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found BprsReportingEar.ear in deployment directory. To trigger deployment create a file called BprsReportingEar.ear.dodeploy
+17:48:42,632 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found BprsBpEar.ear in deployment directory. To trigger deployment create a file called BprsBpEar.ear.dodeploy
+17:48:42,633 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found BprsFrontOffice.ear in deployment directory. To trigger deployment create a file called BprsFrontOffice.ear.dodeploy
+17:48:42,633 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found GlEar.ear in deployment directory. To trigger deployment create a file called GlEar.ear.dodeploy
+17:48:42,634 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found MicrobankReportEar.ear in deployment directory. To trigger deployment create a file called MicrobankReportEar.ear.dodeploy
+17:48:42,635 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found BprsBackOffice.ear in deployment directory. To trigger deployment create a file called BprsBackOffice.ear.dodeploy
+17:48:42,635 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found MicrobankApiEar.ear in deployment directory. To trigger deployment create a file called MicrobankApiEar.ear.dodeploy
+17:48:42,636 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found SystemBpEar.ear in deployment directory. To trigger deployment create a file called SystemBpEar.ear.dodeploy
+17:48:42,637 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found GlUiEar.ear in deployment directory. To trigger deployment create a file called GlUiEar.ear.dodeploy
+17:48:42,687 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) JBAS017100: Listening on /127.0.0.1:9999
+17:48:42,694 INFO  [org.hornetq.core.remoting.impl.netty.NettyAcceptor] (MSC service thread 1-10) Started Netty Acceptor version 3.2.5.Final-a96d88c localhost:5455 for CORE protocol
+17:48:42,695 INFO  [org.hornetq.core.remoting.impl.netty.NettyAcceptor] (MSC service thread 1-10) Started Netty Acceptor version 3.2.5.Final-a96d88c localhost:5445 for CORE protocol
+17:48:42,696 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-10) Server is now live
+17:48:42,697 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-10) HornetQ Server version 2.2.13.Final (HQ_2_2_13_FINAL_AS7, 122) [29e52306-5eff-11e2-a451-ccaf783e69a6]) started
+17:48:42,700 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-7) trying to deploy queue jms.queue.transGlIn
+17:48:42,764 INFO  [org.jboss.as.messaging] (MSC service thread 1-7) JBAS011601: Bound messaging object to jndi name java:jboss/queue/transGlIn
+17:48:42,801 INFO  [org.jboss.as.messaging] (MSC service thread 1-1) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+17:48:42,802 INFO  [org.jboss.as.messaging] (MSC service thread 1-15) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+17:48:42,802 INFO  [org.jboss.as.messaging] (MSC service thread 1-15) JBAS011601: Bound messaging object to jndi name java:/RemoteConnectionFactory
+17:48:42,803 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-11) trying to deploy queue jms.topic.testTopic
+17:48:42,824 INFO  [org.jboss.as.deployment.connector] (MSC service thread 1-10) JBAS010406: Registered connection factory java:/JmsXA
+17:48:42,832 INFO  [org.hornetq.ra.HornetQResourceAdapter] (MSC service thread 1-10) HornetQ resource adaptor started
+17:48:42,832 INFO  [org.jboss.as.connector.services.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-10) IJ020002: Deployed: file://RaActivatorhornetq-ra
+17:48:42,834 INFO  [org.jboss.as.deployment.connector] (MSC service thread 1-5) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+17:48:42,857 INFO  [org.jboss.as.messaging] (MSC service thread 1-11) JBAS011601: Bound messaging object to jndi name java:/topic/test
+17:48:42,858 INFO  [org.jboss.as.messaging] (MSC service thread 1-11) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/topic/test
+17:48:42,858 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-4) trying to deploy queue jms.queue.testQueue
+17:48:42,860 INFO  [org.jboss.as.messaging] (MSC service thread 1-4) JBAS011601: Bound messaging object to jndi name java:/queue/test
+17:48:42,861 INFO  [org.jboss.as.messaging] (MSC service thread 1-4) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/queue/test
+17:48:42,862 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-12) trying to deploy queue jms.queue.transSavingIn
+17:48:42,865 INFO  [org.jboss.as.messaging] (MSC service thread 1-12) JBAS011601: Bound messaging object to jndi name java:jboss/queue/transSavingIn
+17:48:42,865 INFO  [org.hornetq.core.server.impl.HornetQServerImpl] (MSC service thread 1-13) trying to deploy queue jms.queue.transTellerIn
+17:48:42,867 INFO  [org.jboss.as.messaging] (MSC service thread 1-13) JBAS011601: Bound messaging object to jndi name java:jboss/queue/transTellerIn
+17:48:43,015 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010403: Deploying JDBC-compliant driver class org.firebirdsql.jdbc.FBDriver (version 2.0)
+17:48:43,033 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/SimbiosisDs]
+17:48:43,033 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-14) JBAS010400: Bound data source [java:jboss/datasources/SimbiosisReportDs]
+17:48:55,328 INFO  [org.jboss.modcluster.ModClusterService] (MSC service thread 1-6) Initializing mod_cluster 1.2.0.Final
+17:48:55,335 INFO  [org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl] (MSC service thread 1-6) Listening to proxy advertisements on 224.0.1.105:23364
+17:48:55,371 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "jaybird-full-2.2.1.jar"
+17:48:55,388 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "MicrobankApiEar.ear"
+17:48:55,388 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "BprsBackOffice.ear"
+17:48:55,388 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "BprsFrontOffice.ear"
+17:48:55,388 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015876: Starting deployment of "MicrobankReportEar.ear"
+17:48:55,388 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015876: Starting deployment of "SystemEar.ear"
+17:48:55,389 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "GlEar.ear"
+17:48:55,391 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "BprsHostEar.ear"
+17:48:55,393 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "BprsReportingEar.ear"
+17:48:55,393 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "SystemBpEar.ear"
+17:48:55,396 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "MicrobankEar.ear"
+17:48:55,397 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "GlBpEar.ear"
+17:48:55,398 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015876: Starting deployment of "GlUiEar.ear"
+17:48:55,397 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "BprsBpEar.ear"
+17:48:55,422 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "SystemBpEjb.jar"
+17:48:55,487 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "SystemEjb.jar"
+17:48:55,488 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "GlInput.war"
+17:48:55,488 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "GlAdmin.war"
+17:48:55,488 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "GlEjb.jar"
+17:48:55,489 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015876: Starting deployment of "GlBpEjb.jar"
+17:48:55,490 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "BprsHost.war"
+17:48:55,490 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015876: Starting deployment of "MicrobankApiCore.war"
+17:48:55,490 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "MicrobankApiReport.war"
+17:48:55,492 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015876: Starting deployment of "MicrobankReportEjb.jar"
+17:48:55,536 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named SystemBp in deployment unit subdeployment "SystemBpEjb.jar" of deployment "SystemBpEar.ear" are as follows:
+
+	java:global/SystemBpEar/SystemBpEjb/SystemBp!org.simbiosis.bp.system.ISystemBp
+	java:app/SystemBpEjb/SystemBp!org.simbiosis.bp.system.ISystemBp
+	java:module/SystemBp!org.simbiosis.bp.system.ISystemBp
+	java:jboss/exported/SystemBpEar/SystemBpEjb/SystemBp!org.simbiosis.bp.system.ISystemBp
+	java:global/SystemBpEar/SystemBpEjb/SystemBp
+	java:app/SystemBpEjb/SystemBp
+	java:module/SystemBp
+
+17:48:55,494 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "BprsBpEjb.jar"
+17:48:55,818 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015876: Starting deployment of "BprsReportingService.war"
+17:48:55,818 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "BprsReportingViewer.war"
+17:48:55,829 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) JBAS015876: Starting deployment of "BprsLoan.war"
+17:48:55,830 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "BprsAdmin.war"
+17:48:55,833 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015876: Starting deployment of "BprsCs.war"
+17:48:55,834 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "BprsTeller.war"
+17:48:55,837 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) JBAS015876: Starting deployment of "MicrobankEjb.jar"
+17:48:56,050 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) JBAS011401: Read persistence.xml for GlEjb
+17:48:56,050 INFO  [org.jboss.as.jpa] (MSC service thread 1-9) JBAS011401: Read persistence.xml for MicrobankEjb
+17:48:56,051 INFO  [org.jboss.as.jpa] (MSC service thread 1-11) JBAS011401: Read persistence.xml for SystemEjb
+17:48:56,050 INFO  [org.jboss.as.jpa] (MSC service thread 1-10) JBAS011401: Read persistence.xml for MicrobankReportEjb
+17:48:56,161 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named SystemImpl in deployment unit subdeployment "SystemEjb.jar" of deployment "SystemEar.ear" are as follows:
+
+	java:global/SystemEar/SystemEjb/SystemImpl!org.simbiosis.system.ISystem
+	java:app/SystemEjb/SystemImpl!org.simbiosis.system.ISystem
+	java:module/SystemImpl!org.simbiosis.system.ISystem
+	java:jboss/exported/SystemEar/SystemEjb/SystemImpl!org.simbiosis.system.ISystem
+	java:global/SystemEar/SystemEjb/SystemImpl
+	java:app/SystemEjb/SystemImpl
+	java:module/SystemImpl
+
+17:48:56,162 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-12) JNDI bindings for session bean named CoreBankingReport in deployment unit subdeployment "MicrobankReportEjb.jar" of deployment "MicrobankReportEar.ear" are as follows:
+
+	java:global/MicrobankReportEar/MicrobankReportEjb/CoreBankingReport!org.simbiosis.microbanking.reporting.ICoreBankingReport
+	java:app/MicrobankReportEjb/CoreBankingReport!org.simbiosis.microbanking.reporting.ICoreBankingReport
+	java:module/CoreBankingReport!org.simbiosis.microbanking.reporting.ICoreBankingReport
+	java:jboss/exported/MicrobankReportEar/MicrobankReportEjb/CoreBankingReport!org.simbiosis.microbanking.reporting.ICoreBankingReport
+	java:global/MicrobankReportEar/MicrobankReportEjb/CoreBankingReport
+	java:app/MicrobankReportEjb/CoreBankingReport
+	java:module/CoreBankingReport
+
+17:48:56,173 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named LedgerImpl in deployment unit subdeployment "GlEjb.jar" of deployment "GlEar.ear" are as follows:
+
+	java:global/GlEar/GlEjb/LedgerImpl!org.simbiosis.gl.ILedger
+	java:app/GlEjb/LedgerImpl!org.simbiosis.gl.ILedger
+	java:module/LedgerImpl!org.simbiosis.gl.ILedger
+	java:jboss/exported/GlEar/GlEjb/LedgerImpl!org.simbiosis.gl.ILedger
+	java:global/GlEar/GlEjb/LedgerImpl
+	java:app/GlEjb/LedgerImpl
+	java:module/LedgerImpl
+
+17:48:56,169 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-10) JNDI bindings for session bean named GlBp in deployment unit subdeployment "GlBpEjb.jar" of deployment "GlBpEar.ear" are as follows:
+
+	java:global/GlBpEar/GlBpEjb/GlBp!org.simbiosis.bp.gl.IGlBp
+	java:app/GlBpEjb/GlBp!org.simbiosis.bp.gl.IGlBp
+	java:module/GlBp!org.simbiosis.bp.gl.IGlBp
+	java:jboss/exported/GlBpEar/GlBpEjb/GlBp!org.simbiosis.bp.gl.IGlBp
+	java:global/GlBpEar/GlBpEjb/GlBp
+	java:app/GlBpEjb/GlBp
+	java:module/GlBp
+
+17:48:56,174 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named CashBankImpl in deployment unit subdeployment "GlEjb.jar" of deployment "GlEar.ear" are as follows:
+
+	java:global/GlEar/GlEjb/CashBankImpl!org.simbiosis.gl.ICashBank
+	java:app/GlEjb/CashBankImpl!org.simbiosis.gl.ICashBank
+	java:module/CashBankImpl!org.simbiosis.gl.ICashBank
+	java:jboss/exported/GlEar/GlEjb/CashBankImpl!org.simbiosis.gl.ICashBank
+	java:global/GlEar/GlEjb/CashBankImpl
+	java:app/GlEjb/CashBankImpl
+	java:module/CashBankImpl
+
+17:48:56,173 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-12) JNDI bindings for session bean named SavingReport in deployment unit subdeployment "MicrobankReportEjb.jar" of deployment "MicrobankReportEar.ear" are as follows:
+
+	java:global/MicrobankReportEar/MicrobankReportEjb/SavingReport!org.simbiosis.microbanking.reporting.ISavingReport
+	java:app/MicrobankReportEjb/SavingReport!org.simbiosis.microbanking.reporting.ISavingReport
+	java:module/SavingReport!org.simbiosis.microbanking.reporting.ISavingReport
+	java:jboss/exported/MicrobankReportEar/MicrobankReportEjb/SavingReport!org.simbiosis.microbanking.reporting.ISavingReport
+	java:global/MicrobankReportEar/MicrobankReportEjb/SavingReport
+	java:app/MicrobankReportEjb/SavingReport
+	java:module/SavingReport
+
+17:48:56,184 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-12) JNDI bindings for session bean named LoanReport in deployment unit subdeployment "MicrobankReportEjb.jar" of deployment "MicrobankReportEar.ear" are as follows:
+
+	java:global/MicrobankReportEar/MicrobankReportEjb/LoanReport!org.simbiosis.microbanking.reporting.ILoanReport
+	java:app/MicrobankReportEjb/LoanReport!org.simbiosis.microbanking.reporting.ILoanReport
+	java:module/LoanReport!org.simbiosis.microbanking.reporting.ILoanReport
+	java:jboss/exported/MicrobankReportEar/MicrobankReportEjb/LoanReport!org.simbiosis.microbanking.reporting.ILoanReport
+	java:global/MicrobankReportEar/MicrobankReportEjb/LoanReport
+	java:app/MicrobankReportEjb/LoanReport
+	java:module/LoanReport
+
+17:48:56,182 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named FinReportImpl in deployment unit subdeployment "GlEjb.jar" of deployment "GlEar.ear" are as follows:
+
+	java:global/GlEar/GlEjb/FinReportImpl!org.simbiosis.gl.IFinReport
+	java:app/GlEjb/FinReportImpl!org.simbiosis.gl.IFinReport
+	java:module/FinReportImpl!org.simbiosis.gl.IFinReport
+	java:jboss/exported/GlEar/GlEjb/FinReportImpl!org.simbiosis.gl.IFinReport
+	java:global/GlEar/GlEjb/FinReportImpl
+	java:app/GlEjb/FinReportImpl
+	java:module/FinReportImpl
+
+17:48:56,175 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-10) JNDI bindings for session bean named CashBankBp in deployment unit subdeployment "GlBpEjb.jar" of deployment "GlBpEar.ear" are as follows:
+
+	java:global/GlBpEar/GlBpEjb/CashBankBp!org.simbiosis.bp.gl.ICashBankBp
+	java:app/GlBpEjb/CashBankBp!org.simbiosis.bp.gl.ICashBankBp
+	java:module/CashBankBp!org.simbiosis.bp.gl.ICashBankBp
+	java:jboss/exported/GlBpEar/GlBpEjb/CashBankBp!org.simbiosis.bp.gl.ICashBankBp
+	java:global/GlBpEar/GlBpEjb/CashBankBp
+	java:app/GlBpEjb/CashBankBp
+	java:module/CashBankBp
+
+17:48:56,189 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-10) JNDI bindings for session bean named GlTransMessaging in deployment unit subdeployment "GlBpEjb.jar" of deployment "GlBpEar.ear" are as follows:
+
+	java:global/GlBpEar/GlBpEjb/GlTransMessaging!org.simbiosis.bp.gl.IGlTransMessaging
+	java:app/GlBpEjb/GlTransMessaging!org.simbiosis.bp.gl.IGlTransMessaging
+	java:module/GlTransMessaging!org.simbiosis.bp.gl.IGlTransMessaging
+	java:jboss/exported/GlBpEar/GlBpEjb/GlTransMessaging!org.simbiosis.bp.gl.IGlTransMessaging
+	java:global/GlBpEar/GlBpEjb/GlTransMessaging
+	java:app/GlBpEjb/GlTransMessaging
+	java:module/GlTransMessaging
+
+17:48:56,204 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsFrontOffice.ear.BprsTeller.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,205 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsFrontOffice.ear.BprsTeller.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,204 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-14) JBAS018567: Deployment "deployment.GlUiEar.ear.GlAdmin.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,204 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsFrontOffice.ear.BprsCs.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,214 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-14) JBAS018567: Deployment "deployment.GlUiEar.ear.GlAdmin.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,214 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsFrontOffice.ear.BprsTeller.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,213 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named SavingTrans in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/SavingTrans!org.simbiosis.bp.micbank.SavingTrans
+	java:app/BprsBpEjb/SavingTrans!org.simbiosis.bp.micbank.SavingTrans
+	java:module/SavingTrans!org.simbiosis.bp.micbank.SavingTrans
+	java:global/BprsBpEar/BprsBpEjb/SavingTrans
+	java:app/BprsBpEjb/SavingTrans
+	java:module/SavingTrans
+
+17:48:56,211 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-4) JBAS018567: Deployment "deployment.GlUiEar.ear.GlInput.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,209 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-11) JBAS018567: Deployment "deployment.BprsFrontOffice.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,209 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-12) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,205 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-13) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,234 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-13) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,235 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-13) JBAS018567: Deployment "deployment.BprsHostEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,236 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-12) JBAS018567: Deployment "deployment.BprsHostEar.ear.BprsHost.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,205 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.GlUiEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,233 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsBackOffice.ear.BprsLoan.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,230 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-14) JBAS018567: Deployment "deployment.BprsBackOffice.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,226 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-11) JBAS018567: Deployment "deployment.BprsFrontOffice.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,223 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named TellerBp in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/TellerBp!org.simbiosis.bp.micbank.ITellerBp
+	java:app/BprsBpEjb/TellerBp!org.simbiosis.bp.micbank.ITellerBp
+	java:module/TellerBp!org.simbiosis.bp.micbank.ITellerBp
+	java:jboss/exported/BprsBpEar/BprsBpEjb/TellerBp!org.simbiosis.bp.micbank.ITellerBp
+	java:global/BprsBpEar/BprsBpEjb/TellerBp
+	java:app/BprsBpEjb/TellerBp
+	java:module/TellerBp
+
+17:48:56,215 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsFrontOffice.ear.BprsCs.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,268 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named SavingTransMessaging in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/SavingTransMessaging!org.simbiosis.bp.savingMsg.SavingTransMessaging
+	java:app/BprsBpEjb/SavingTransMessaging!org.simbiosis.bp.savingMsg.SavingTransMessaging
+	java:module/SavingTransMessaging!org.simbiosis.bp.savingMsg.SavingTransMessaging
+	java:global/BprsBpEar/BprsBpEjb/SavingTransMessaging
+	java:app/BprsBpEjb/SavingTransMessaging
+	java:module/SavingTransMessaging
+
+17:48:56,270 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named LoanAngsur in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/LoanAngsur!org.simbiosis.bp.micbank.LoanAngsur
+	java:app/BprsBpEjb/LoanAngsur!org.simbiosis.bp.micbank.LoanAngsur
+	java:module/LoanAngsur!org.simbiosis.bp.micbank.LoanAngsur
+	java:global/BprsBpEar/BprsBpEjb/LoanAngsur
+	java:app/BprsBpEjb/LoanAngsur
+	java:module/LoanAngsur
+
+17:48:56,271 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named RevenueBp in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/RevenueBp!org.simbiosis.bp.micbank.IRevenueBp
+	java:app/BprsBpEjb/RevenueBp!org.simbiosis.bp.micbank.IRevenueBp
+	java:module/RevenueBp!org.simbiosis.bp.micbank.IRevenueBp
+	java:jboss/exported/BprsBpEar/BprsBpEjb/RevenueBp!org.simbiosis.bp.micbank.IRevenueBp
+	java:global/BprsBpEar/BprsBpEjb/RevenueBp
+	java:app/BprsBpEjb/RevenueBp
+	java:module/RevenueBp
+
+17:48:56,263 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-11) JBAS018567: Deployment "deployment.BprsFrontOffice.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,263 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) JBAS018567: Deployment "deployment.BprsBackOffice.ear.BprsLoan.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,246 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.GlUiEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,273 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-11) JBAS018567: Deployment "deployment.BprsFrontOffice.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,273 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named LoanDropping in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/LoanDropping!org.simbiosis.bp.micbank.LoanDropping
+	java:app/BprsBpEjb/LoanDropping!org.simbiosis.bp.micbank.LoanDropping
+	java:module/LoanDropping!org.simbiosis.bp.micbank.LoanDropping
+	java:global/BprsBpEar/BprsBpEjb/LoanDropping
+	java:app/BprsBpEjb/LoanDropping
+	java:module/LoanDropping
+
+17:48:56,268 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) JBAS018567: Deployment "deployment.BprsFrontOffice.ear.BprsCs.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,274 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-15) JBAS018567: Deployment "deployment.GlUiEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,280 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-13) JBAS018567: Deployment "deployment.BprsBackOffice.ear.BprsAdmin.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:56,282 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named CustomerBp in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/CustomerBp!org.simbiosis.bp.micbank.ICustomerBp
+	java:app/BprsBpEjb/CustomerBp!org.simbiosis.bp.micbank.ICustomerBp
+	java:module/CustomerBp!org.simbiosis.bp.micbank.ICustomerBp
+	java:jboss/exported/BprsBpEar/BprsBpEjb/CustomerBp!org.simbiosis.bp.micbank.ICustomerBp
+	java:global/BprsBpEar/BprsBpEjb/CustomerBp
+	java:app/BprsBpEjb/CustomerBp
+	java:module/CustomerBp
+
+17:48:56,283 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named DepositBp in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/DepositBp!org.simbiosis.bp.micbank.IDepositBp
+	java:app/BprsBpEjb/DepositBp!org.simbiosis.bp.micbank.IDepositBp
+	java:module/DepositBp!org.simbiosis.bp.micbank.IDepositBp
+	java:jboss/exported/BprsBpEar/BprsBpEjb/DepositBp!org.simbiosis.bp.micbank.IDepositBp
+	java:global/BprsBpEar/BprsBpEjb/DepositBp
+	java:app/BprsBpEjb/DepositBp
+	java:module/DepositBp
+
+17:48:56,284 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named SavingBp in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/SavingBp!org.simbiosis.bp.micbank.ISavingBp
+	java:app/BprsBpEjb/SavingBp!org.simbiosis.bp.micbank.ISavingBp
+	java:module/SavingBp!org.simbiosis.bp.micbank.ISavingBp
+	java:jboss/exported/BprsBpEar/BprsBpEjb/SavingBp!org.simbiosis.bp.micbank.ISavingBp
+	java:global/BprsBpEar/BprsBpEjb/SavingBp
+	java:app/BprsBpEjb/SavingBp
+	java:module/SavingBp
+
+17:48:56,285 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-9) JNDI bindings for session bean named LoanBp in deployment unit subdeployment "BprsBpEjb.jar" of deployment "BprsBpEar.ear" are as follows:
+
+	java:global/BprsBpEar/BprsBpEjb/LoanBp!org.simbiosis.bp.micbank.ILoanBp
+	java:app/BprsBpEjb/LoanBp!org.simbiosis.bp.micbank.ILoanBp
+	java:module/LoanBp!org.simbiosis.bp.micbank.ILoanBp
+	java:jboss/exported/BprsBpEar/BprsBpEjb/LoanBp!org.simbiosis.bp.micbank.ILoanBp
+	java:global/BprsBpEar/BprsBpEjb/LoanBp
+	java:app/BprsBpEjb/LoanBp
+	java:module/LoanBp
+
+17:48:56,303 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named CustomerImpl in deployment unit subdeployment "MicrobankEjb.jar" of deployment "MicrobankEar.ear" are as follows:
+
+	java:global/MicrobankEar/MicrobankEjb/CustomerImpl!org.simbiosis.microbank.ICustomer
+	java:app/MicrobankEjb/CustomerImpl!org.simbiosis.microbank.ICustomer
+	java:module/CustomerImpl!org.simbiosis.microbank.ICustomer
+	java:jboss/exported/MicrobankEar/MicrobankEjb/CustomerImpl!org.simbiosis.microbank.ICustomer
+	java:global/MicrobankEar/MicrobankEjb/CustomerImpl
+	java:app/MicrobankEjb/CustomerImpl
+	java:module/CustomerImpl
+
+17:48:56,305 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named RevenueImpl in deployment unit subdeployment "MicrobankEjb.jar" of deployment "MicrobankEar.ear" are as follows:
+
+	java:global/MicrobankEar/MicrobankEjb/RevenueImpl!org.simbiosis.microbank.IRevenue
+	java:app/MicrobankEjb/RevenueImpl!org.simbiosis.microbank.IRevenue
+	java:module/RevenueImpl!org.simbiosis.microbank.IRevenue
+	java:jboss/exported/MicrobankEar/MicrobankEjb/RevenueImpl!org.simbiosis.microbank.IRevenue
+	java:global/MicrobankEar/MicrobankEjb/RevenueImpl
+	java:app/MicrobankEjb/RevenueImpl
+	java:module/RevenueImpl
+
+17:48:56,306 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named DepositImpl in deployment unit subdeployment "MicrobankEjb.jar" of deployment "MicrobankEar.ear" are as follows:
+
+	java:global/MicrobankEar/MicrobankEjb/DepositImpl!org.simbiosis.microbank.IDeposit
+	java:app/MicrobankEjb/DepositImpl!org.simbiosis.microbank.IDeposit
+	java:module/DepositImpl!org.simbiosis.microbank.IDeposit
+	java:jboss/exported/MicrobankEar/MicrobankEjb/DepositImpl!org.simbiosis.microbank.IDeposit
+	java:global/MicrobankEar/MicrobankEjb/DepositImpl
+	java:app/MicrobankEjb/DepositImpl
+	java:module/DepositImpl
+
+17:48:56,308 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named LoanImpl in deployment unit subdeployment "MicrobankEjb.jar" of deployment "MicrobankEar.ear" are as follows:
+
+	java:global/MicrobankEar/MicrobankEjb/LoanImpl!org.simbiosis.microbank.ILoan
+	java:app/MicrobankEjb/LoanImpl!org.simbiosis.microbank.ILoan
+	java:module/LoanImpl!org.simbiosis.microbank.ILoan
+	java:jboss/exported/MicrobankEar/MicrobankEjb/LoanImpl!org.simbiosis.microbank.ILoan
+	java:global/MicrobankEar/MicrobankEjb/LoanImpl
+	java:app/MicrobankEjb/LoanImpl
+	java:module/LoanImpl
+
+17:48:56,309 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named SavingImpl in deployment unit subdeployment "MicrobankEjb.jar" of deployment "MicrobankEar.ear" are as follows:
+
+	java:global/MicrobankEar/MicrobankEjb/SavingImpl!org.simbiosis.microbank.ISaving
+	java:app/MicrobankEjb/SavingImpl!org.simbiosis.microbank.ISaving
+	java:module/SavingImpl!org.simbiosis.microbank.ISaving
+	java:jboss/exported/MicrobankEar/MicrobankEjb/SavingImpl!org.simbiosis.microbank.ISaving
+	java:global/MicrobankEar/MicrobankEjb/SavingImpl
+	java:app/MicrobankEjb/SavingImpl
+	java:module/SavingImpl
+
+17:48:56,313 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named TellerImpl in deployment unit subdeployment "MicrobankEjb.jar" of deployment "MicrobankEar.ear" are as follows:
+
+	java:global/MicrobankEar/MicrobankEjb/TellerImpl!org.simbiosis.microbank.ITeller
+	java:app/MicrobankEjb/TellerImpl!org.simbiosis.microbank.ITeller
+	java:module/TellerImpl!org.simbiosis.microbank.ITeller
+	java:jboss/exported/MicrobankEar/MicrobankEjb/TellerImpl!org.simbiosis.microbank.ITeller
+	java:global/MicrobankEar/MicrobankEjb/TellerImpl
+	java:app/MicrobankEjb/TellerImpl
+	java:module/TellerImpl
+
+17:48:56,365 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiReport.war" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,365 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-16) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiCore.war" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,365 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,366 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-16) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiCore.war" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,367 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,368 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,369 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,369 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,367 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-16) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiCore.war" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,373 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-16) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiCore.war" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,380 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-16) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiCore.war" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,381 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-16) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiCore.war" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,372 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,387 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,388 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) JBAS018567: Deployment "deployment.MicrobankApiEar.ear" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,399 INFO  [org.jboss.as.jpa] (MSC service thread 1-16) JBAS011402: Starting Persistence Unit Service 'SystemEar.ear/SystemEjb.jar#SystemEjb'
+17:48:56,415 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiReport.war" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,416 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiReport.war" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,417 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiReport.war" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,418 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiReport.war" is using a private module ("org.codehaus.jackson.jackson-core-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,419 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) JBAS018567: Deployment "deployment.MicrobankApiEar.ear.MicrobankApiReport.war" is using a private module ("org.codehaus.jackson.jackson-mapper-asl:main") which may be changed or removed in future versions without notice.
+17:48:56,507 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) JBAS011402: Starting Persistence Unit Service 'MicrobankReportEar.ear/MicrobankReportEjb.jar#MicrobankReportEjb'
+17:48:56,512 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) JBAS011402: Starting Persistence Unit Service 'GlEar.ear/GlEjb.jar#GlEjb'
+17:48:56,590 INFO  [org.jboss.as.ejb3] (MSC service thread 1-12) JBAS014142: Started message driven bean 'GlTransMdb' with 'hornetq-ra' resource adapter
+17:48:56,755 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011402: Starting Persistence Unit Service 'MicrobankEar.ear/MicrobankEjb.jar#MicrobankEjb'
+17:48:56,758 INFO  [org.jboss.as.ejb3] (MSC service thread 1-14) JBAS014142: Started message driven bean 'SavingTransMdb' with 'hornetq-ra' resource adapter
+17:48:56,758 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) JBAS014142: Started message driven bean 'TransTellerMdb' with 'hornetq-ra' resource adapter
+17:48:57,180 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsReportingEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:57,181 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsReportingEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:57,182 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) JBAS018567: Deployment "deployment.BprsReportingEar.ear" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:57,182 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-11) JBAS018567: Deployment "deployment.BprsReportingEar.ear.BprsReportingViewer.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:57,183 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-11) JBAS018567: Deployment "deployment.BprsReportingEar.ear.BprsReportingViewer.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:57,199 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-9) JBAS018567: Deployment "deployment.BprsReportingEar.ear.BprsReportingService.war" is using a private module ("com.google.gwt:main") which may be changed or removed in future versions without notice.
+17:48:57,203 INFO  [org.hibernate.annotations.common.Version] (MSC service thread 1-16) HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+17:48:57,221 INFO  [org.hibernate.Version] (MSC service thread 1-16) HHH000412: Hibernate Core {4.0.1.Final}
+17:48:57,235 INFO  [org.hibernate.cfg.Environment] (MSC service thread 1-16) HHH000206: hibernate.properties not found
+17:48:57,238 INFO  [org.hibernate.cfg.Environment] (MSC service thread 1-16) HHH000021: Bytecode provider name : javassist
+17:48:57,310 INFO  [org.hibernate.ejb.Ejb3Configuration] (MSC service thread 1-7) HHH000204: Processing PersistenceUnitInfo [
+	name: MicrobankEjb
+	...]
+17:48:57,310 INFO  [org.hibernate.ejb.Ejb3Configuration] (MSC service thread 1-8) HHH000204: Processing PersistenceUnitInfo [
+	name: GlEjb
+	...]
+17:48:57,310 INFO  [org.hibernate.ejb.Ejb3Configuration] (MSC service thread 1-6) HHH000204: Processing PersistenceUnitInfo [
+	name: MicrobankReportEjb
+	...]
+17:48:57,310 INFO  [org.hibernate.ejb.Ejb3Configuration] (MSC service thread 1-16) HHH000204: Processing PersistenceUnitInfo [
+	name: SystemEjb
+	...]
+17:48:57,616 INFO  [org.jboss.web] (MSC service thread 1-4) JBAS018210: Registering web context: /GlAdmin
+17:48:57,617 INFO  [org.jboss.web] (MSC service thread 1-9) JBAS018210: Registering web context: /BprsReportingService
+17:48:57,617 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: 
+17:48:57,616 INFO  [org.jboss.web] (MSC service thread 1-13) JBAS018210: Registering web context: /MicrobankApiReport
+17:48:57,616 INFO  [org.jboss.web] (MSC service thread 1-14) JBAS018210: Registering web context: /BprsTeller
+17:48:57,617 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /BprsAdmin
+17:48:57,616 INFO  [org.jboss.web] (MSC service thread 1-5) JBAS018210: Registering web context: /GlInput
+17:48:57,616 INFO  [org.jboss.web] (MSC service thread 1-11) JBAS018210: Registering web context: /BprsReportingViewer
+17:48:57,617 INFO  [org.jboss.web] (MSC service thread 1-12) JBAS018210: Registering web context: /MicrobankApiCore
+17:48:57,617 INFO  [org.jboss.web] (MSC service thread 1-15) JBAS018210: Registering web context: /BprsCs
+17:48:57,617 INFO  [org.jboss.web] (MSC service thread 1-10) JBAS018210: Registering web context: /BprsLoan
+17:48:57,653 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (MSC service thread 1-6) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+17:48:57,712 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (MSC service thread 1-8) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+17:48:57,712 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (MSC service thread 1-16) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+17:48:57,728 INFO  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] (MSC service thread 1-7) HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+17:48:57,959 INFO  [org.hibernate.dialect.Dialect] (MSC service thread 1-6) HHH000400: Using dialect: org.hibernate.dialect.FirebirdDialect
+17:48:57,970 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (MSC service thread 1-6) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+17:48:58,013 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (MSC service thread 1-6) HHH000397: Using ASTQueryTranslatorFactory
+17:48:58,141 INFO  [org.hibernate.dialect.Dialect] (MSC service thread 1-8) HHH000400: Using dialect: org.hibernate.dialect.FirebirdDialect
+17:48:58,145 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (MSC service thread 1-8) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+17:48:58,146 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (MSC service thread 1-8) HHH000397: Using ASTQueryTranslatorFactory
+17:48:58,153 INFO  [org.hibernate.dialect.Dialect] (MSC service thread 1-16) HHH000400: Using dialect: org.hibernate.dialect.FirebirdDialect
+17:48:58,153 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (MSC service thread 1-16) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+17:48:58,154 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (MSC service thread 1-16) HHH000397: Using ASTQueryTranslatorFactory
+17:48:58,164 INFO  [org.hibernate.dialect.Dialect] (MSC service thread 1-7) HHH000400: Using dialect: org.hibernate.dialect.FirebirdDialect
+17:48:58,168 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] (MSC service thread 1-7) HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+17:48:58,171 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (MSC service thread 1-7) HHH000397: Using ASTQueryTranslatorFactory
+17:48:58,258 INFO  [org.hibernate.validator.util.Version] (MSC service thread 1-6) Hibernate Validator 4.2.0.Final
+17:48:58,687 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-6) HHH000228: Running hbm2ddl schema update
+17:48:58,688 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-6) HHH000102: Fetching database metadata
+17:48:58,706 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-16) HHH000228: Running hbm2ddl schema update
+17:48:58,711 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-16) HHH000102: Fetching database metadata
+17:48:58,728 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-8) HHH000228: Running hbm2ddl schema update
+17:48:58,728 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-8) HHH000102: Fetching database metadata
+17:48:58,793 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-7) HHH000228: Running hbm2ddl schema update
+17:48:58,794 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-7) HHH000102: Fetching database metadata
+17:48:58,960 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-6) HHH000396: Updating schema
+17:48:58,970 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-8) HHH000396: Updating schema
+17:48:59,004 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-7) HHH000396: Updating schema
+17:48:59,026 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-16) HHH000396: Updating schema
+17:48:59,192 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000261: Table found: RPT_CIF
+17:48:59,194 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000037: Columns: [cif_idtype, cif_idcode, cif_txnr, cif_stridtype, cif_id, dep_bicity, cif_name, cif_code, cif_refid]
+17:48:59,195 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000108: Foreign keys: []
+17:48:59,196 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000126: Indexes: [rdb$primary11]
+17:48:59,216 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_BRANCH
+17:48:59,216 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_BANKTRANS
+17:48:59,217 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [brn_address, brn_id, brn_code, com_id, brn_name]
+17:48:59,218 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [trb_id, trb_type, coa_id, trb_currencyid, trb_company, trb_receiver, trb_date, trb_rate, trb_releasedby, trb_branch, trb_code, trb_mode, trb_gltransid, trb_released, trb_description, trb_releasedate]
+17:48:59,218 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fk844de7741e45903e]
+17:48:59,219 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fk6e97336e78de89f8]
+17:48:59,219 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary36, fk844de7741e45903e]
+17:48:59,220 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [fk6e97336e78de89f8, rdb$primary54]
+17:48:59,228 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_CUSTOMER
+17:48:59,228 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [cst_refcode, cst_descendant, cst_handphone, cst_refid, cst_idtype, cst_city, cst_province, cst_name, cst_postcode, cst_alias, cst_id, cst_company, cst_title, cst_income, cst_occupation, cst_dob, cst_taxnr, cst_idcode, cst_pob, cst_address, cst_branch, cst_type, cst_sex, cst_otherstatus, cst_phone, cst_district, cst_othercode, cst_mothername, cst_area1, cst_area2, cst_registration, cst_village, cst_bankrel, cst_code, cst_descaddress]
+17:48:59,229 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:48:59,229 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary27]
+17:48:59,248 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000261: Table found: RPT_DEPOSIT
+17:48:59,248 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000037: Columns: [dep_pos, dep_length, dep_productname, dep_id, dep_year, dep_rate, dep_month, dep_begin, dep_type, dep_value, dep_branch, dep_registration, dep_company, dep_productcode, dep_end, dep_refid, dep_branchname, dep_branchcode, dep_name, dep_code, dep_bicity, dep_irate, dep_product]
+17:48:59,249 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000108: Foreign keys: []
+17:48:59,249 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000126: Indexes: [rdb$primary12]
+17:48:59,316 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_COMPANY
+17:48:59,318 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [com_address, com_id, com_name, com_code]
+17:48:59,319 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: []
+17:48:59,319 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary38]
+17:48:59,350 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000261: Table found: RPT_LOAN
+17:48:59,351 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000037: Columns: [loa_osmargin, loa_contractdate, loa_customer, loa_productname, loa_product, loa_type, loa_osprincipal, loa_guarantee, loa_contract, loa_id, loa_ostotal, loa_margin, loa_year, loa_bicity, loa_productcode, loa_pos, loa_schema, loa_lastpaid, loa_tenor, loa_bipurpose, loa_total, loa_month, loa_rate, loa_name, loa_outstanding, loa_branchcode, loa_paydmargin, loa_paydtotal, loa_payddiscount, loa_begin, loa_irate, loa_refid, loa_branch, loa_end, loa_quality, loa_paydprincipal, loa_company, loa_dueos, loa_ppap, loa_code, loa_branchname, loa_principal]
+17:48:59,352 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_BANKTRANSITEM
+17:48:59,354 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000108: Foreign keys: []
+17:48:59,354 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [tbi_id, trb_id, coa_id, tbi_description, tbi_value]
+17:48:59,355 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000126: Indexes: [rdb$primary13]
+17:48:59,356 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fk1ff63f81e0ab6940, fk1ff63f8178de89f8]
+17:48:59,357 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [fk1ff63f81e0ab6940, rdb$primary55, fk1ff63f8178de89f8]
+17:48:59,387 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_CUSTOMERREP
+17:48:59,388 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [csr_company, cst_id, csr_branch, csr_id]
+17:48:59,390 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkdea5d746b3c46f93]
+17:48:59,391 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fkdea5d746b3c46f93, rdb$primary51]
+17:48:59,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000261: Table found: RPT_SAVING
+17:48:59,423 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_CONFIG
+17:48:59,423 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000037: Columns: [sav_productcode, sav_schema, sav_refid, sav_rate, sav_month, sav_valprev, sav_transcredit, sav_branchname, sav_bicity, sav_pos, sav_begin, sav_company, sav_id, sav_branchcode, sav_productname, sav_valafter, sav_type, sav_product, sav_year, sav_branch, sav_irate, sav_code, sav_transdebet, sav_name]
+17:48:59,425 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [cfg_intvalue, com_id, cfg_strvalue, cfg_key, cfg_id, cfg_longvalue, cfg_doublevalue]
+17:48:59,426 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000108: Foreign keys: []
+17:48:59,427 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fk85de45141e45903e]
+17:48:59,428 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000126: Indexes: [rdb$primary14]
+17:48:59,429 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary58, fk85de45141e45903e]
+17:48:59,511 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000261: Table found: HIBERNATE_SEQUENCES
+17:48:59,513 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000037: Columns: [sequence_name, next_val]
+17:48:59,514 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000108: Foreign keys: []
+17:48:59,515 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-6) HHH000126: Indexes: [rdb$primary10]
+17:48:59,517 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_CASHTRANS
+17:48:59,518 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [trc_id, trc_direction, trc_currencyid, trc_branch, trc_releasedate, trc_company, trc_receiver, trc_code, trc_released, trc_maker, coa_id, trc_gltransid, trc_description, trc_releasedby, trc_date, trc_hasrab, trc_rate]
+17:48:59,520 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fk63c40d778de89f8]
+17:48:59,521 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_CURRENCY
+17:48:59,522 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary56, fk63c40d778de89f8]
+17:48:59,523 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [cur_name, cur_code, cur_id]
+17:48:59,525 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: []
+17:48:59,525 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-6) HHH000232: Schema update complete
+17:48:59,526 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary2]
+17:48:59,525 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_DEPOSIT
+17:48:59,528 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [dep_bilyet, bil_id, dep_id, dep_begin, sav_id, dep_value, dep_closing, dep_branch, dep_company, dep_registration, dep_zakat, dep_end, dep_refcode, dep_refid, cst_id, dep_specialrate, dep_code, dpr_id, dep_aro, dep_active]
+17:48:59,530 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkbf61ed652fedbe44, fkbf61ed651d0a7377, fkbf61ed65fbb6c20b, fkbf61ed65b3c46f93]
+17:48:59,531 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fkbf61ed652fedbe44, fkbf61ed651d0a7377, fkbf61ed65fbb6c20b, fkbf61ed65b3c46f93, rdb$primary3]
+17:48:59,600 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_CASHTRANSITEM
+17:48:59,600 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [trc_id, tci_id, coa_id, tci_description, tci_value]
+17:48:59,600 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fk1a14706a7850eb08, fk1a14706a78de89f8]
+17:48:59,601 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary57, fk1a14706a7850eb08, fk1a14706a78de89f8]
+17:48:59,655 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_FASTMENU
+17:48:59,656 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [usr_id, fsm_id, men_id]
+17:48:59,656 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fke3bcf10da210f149, fke3bcf10d939f3b5b]
+17:48:59,656 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [fke3bcf10da210f149, fke3bcf10d939f3b5b, rdb$primary4]
+17:48:59,702 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_DEPOSITBILYET
+17:48:59,702 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [bil_id, bil_available, bil_branch, bil_company, bil_code]
+17:48:59,703 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:48:59,703 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary7]
+17:48:59,733 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_COA
+17:48:59,734 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [coa_level, coa_description, coa_id, coa_refid, coa_prefix, coa_code, coa_active, coa_branch, coa_company, parent_id]
+17:48:59,735 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fke4a61877450bbaa3]
+17:48:59,735 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary19, fke4a61877450bbaa3]
+17:48:59,785 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_MENU
+17:48:59,786 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [men_title, men_level, men_module, men_place, parent_id, men_id]
+17:48:59,787 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fka50d27b14f42f807]
+17:48:59,788 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary6, fka50d27b14f42f807]
+17:48:59,820 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_DEPOSITCODE
+17:48:59,821 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [dcd_company, dcd_branch, dcd_available, dcd_id, dcd_code]
+17:48:59,822 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:48:59,823 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary9]
+17:48:59,863 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_COAGROUP
+17:48:59,864 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [cgr_code, cgr_group, cgr_company, cgr_id, cgr_factor]
+17:48:59,865 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: []
+17:48:59,865 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary67]
+17:48:59,903 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_ROLE
+17:48:59,904 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [rol_id, rol_name, com_id, rol_descriptiom]
+17:48:59,905 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fka50f92c81e45903e]
+17:48:59,906 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [fka50f92c81e45903e, rdb$primary16]
+17:48:59,954 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_DEPOSITPRODUCT
+17:48:59,955 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [dpr_coa2, dpr_coa3, dpr_coa1, dpr_id, dpr_name, dpr_sharing, dpr_refid, dpr_code, dpr_company]
+17:48:59,956 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:48:59,957 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary5]
+17:48:59,969 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_FINREPORT
+17:48:59,969 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [frp_endvalue, frp_currentvalue, frp_year, coa_id, frp_factor, frp_branch, frp_date, frp_company, frp_id, frp_month, frp_group, frp_startvalue, frp_type]
+17:48:59,971 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fk9d02e8178de89f8]
+17:48:59,972 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [fk9d02e8178de89f8, rdb$primary70]
+17:48:59,996 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_ROLEMENU
+17:48:59,997 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [rol_id, rlm_id, men_id]
+17:48:59,998 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fk9a1cfc279cb5e3d9, fk9a1cfc27939f3b5b]
+17:48:59,999 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [fk9a1cfc279cb5e3d9, fk9a1cfc27939f3b5b, rdb$primary18]
+17:49:00,019 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_DEPOSITREVSHARING
+17:49:00,020 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [drs_zakat, drs_tax, drs_company, drs_status, dep_id, drs_date, drs_id, drs_customersharing]
+17:49:00,020 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkf2b1e9fea8ef9b8a]
+17:49:00,020 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary64, fkf2b1e9fea8ef9b8a]
+17:49:00,064 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_GLTRANS
+17:49:00,065 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [trn_date, trn_currencyid, trn_postdate, trn_type, trn_rate, trn_postedby, trn_released, trn_releasedby, trn_refid, trn_posted, trn_name, trn_description, trn_branch, trn_releasedate, trn_code, trn_company, trn_id]
+17:49:00,067 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: []
+17:49:00,068 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary23]
+17:49:00,105 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_SESSION
+17:49:00,106 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [ses_end, usr_id, ses_begin, ses_name, ses_id, ses_valid]
+17:49:00,107 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fk7389fae4a210f149]
+17:49:00,108 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary8, fk7389fae4a210f149]
+17:49:00,128 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_DEPOSITTRANS
+17:49:00,129 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [dtr_refcode, dtr_description, dtr_refid, dtr_branch, dep_id, dtr_code, dtr_id, dtr_company, dtr_value, dtr_direction, dtr_date]
+17:49:00,129 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkd2e9a443a8ef9b8a]
+17:49:00,129 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fkd2e9a443a8ef9b8a, rdb$primary42]
+17:49:00,145 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_GLTRANSITEM
+17:49:00,146 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [tri_reportid, tri_direction, tri_description, coa_id, tri_value, trn_id, tri_id]
+17:49:00,146 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fkeb0be37878de89f8, fkeb0be3785d5f644b]
+17:49:00,147 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary25, fkeb0be37878de89f8, fkeb0be3785d5f644b]
+17:49:00,168 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_SUBBRANCH
+17:49:00,169 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [brn_id, sbr_name, sbr_address, sbr_id, sbr_code]
+17:49:00,171 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fk9735ccb0e9881856]
+17:49:00,172 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary40, fk9735ccb0e9881856]
+17:49:00,194 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_FINANCING
+17:49:00,194 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [fin_guarantee, fin_refcode, fpr_id, fin_rate, fin_id, fin_margin, fin_closing, fin_tenor, sav_id, fin_company, fin_dropped, fin_active, fin_principal, fin_contractdate, fin_registration, fin_refid, fin_code, cst_id, fin_branch, fin_contract]
+17:49:00,195 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkb4b01b1ef0f72a29, fkb4b01b1eb3c46f93, fkb4b01b1efbb6c20b]
+17:49:00,195 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fkb4b01b1ef0f72a29, fkb4b01b1eb3c46f93, fkb4b01b1efbb6c20b, rdb$primary32]
+17:49:00,227 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: ACC_GLTRANSSTART
+17:49:00,227 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [tst_company, tst_id, tst_value, tst_year, coa_id, tst_month, tst_branch, tst_group]
+17:49:00,228 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: [fk76fd687d78de89f8]
+17:49:00,228 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary65, fk76fd687d78de89f8]
+17:49:00,270 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: SYS_USER
+17:49:00,270 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [usr_level, usr_email, com_id, sbr_id, usr_hir3, usr_hir2, usr_hir5, usr_hir4, usr_hir1, usr_realname, brn_id, rol_id, usr_id, usr_password, usr_name]
+17:49:00,271 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: [fka510fe1de9881856, fka510fe1d9cb5e3d9, fka510fe1db1b9e801, fka510fe1d1e45903e]
+17:49:00,271 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [fka510fe1de9881856, rdb$primary10, fka510fe1d9cb5e3d9, fka510fe1db1b9e801, fka510fe1d1e45903e]
+17:49:00,492 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_FINANCINGPRODUCT
+17:49:00,493 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [fpr_id, fpr_company, fpr_refid, fpr_code, fpr_schema, fpr_coa1, fpr_name, fpr_coa2, fpr_coa3, fpr_coa4, fpr_coa5]
+17:49:00,494 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:00,495 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary33]
+17:49:00,654 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000261: Table found: HIBERNATE_SEQUENCES
+17:49:00,655 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000037: Columns: [sequence_name, next_val]
+17:49:00,656 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000108: Foreign keys: []
+17:49:00,657 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-8) HHH000126: Indexes: [rdb$primary13]
+17:49:00,703 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000261: Table found: HIBERNATE_SEQUENCES
+17:49:00,703 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-8) HHH000232: Schema update complete
+17:49:00,704 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000037: Columns: [sequence_name, next_val]
+17:49:00,707 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000108: Foreign keys: []
+17:49:00,708 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-16) HHH000126: Indexes: [rdb$primary13]
+17:49:00,723 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_FINANCINGSCHEDULE
+17:49:00,723 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [fin_id, fsc_id, lsc_paid, fsc_principal, fsc_total, fsc_date, fsc_margin]
+17:49:00,723 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fka1769fb5ee3ea547]
+17:49:00,724 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fka1769fb5ee3ea547, rdb$primary34]
+17:49:00,726 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-16) HHH000232: Schema update complete
+17:49:00,753 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_FINANCINGTRANS
+17:49:00,754 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [ftr_id, ftr_company, fin_id, ftr_description, ftr_code, ftr_direction, fsc_discount, fsc_margin, ftr_refcode, ftr_date, fsc_principal, ftr_type, ftr_branch, ftr_refid]
+17:49:00,754 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fk420222a90a5b0be]
+17:49:00,755 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fk420222a90a5b0be, rdb$primary44]
+17:49:00,787 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_GUARANTEE
+17:49:00,787 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [gua_refcode, gua_description, gua_owner, gua_company, gua_branch, gua_apprtype, gua_bonddate, gua_refid, gua_bondtype, gua_number, gua_apprintvalue, gua_apprname, gua_bondnotarial, gua_active, gua_bondnotarialname, gua_apprmarkvalue, cst_id, gua_apprdate, gua_registration, gua_type, gua_id, gua_code]
+17:49:00,788 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fk9421fb8fb3c46f93]
+17:49:00,788 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fk9421fb8fb3c46f93, rdb$primary20]
+17:49:00,820 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_LOANCODE
+17:49:00,821 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [lcd_available, lcd_id, lcd_code, lcd_company, lcd_branch]
+17:49:00,821 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:00,821 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary11]
+17:49:00,859 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_LOANGUARANTEE
+17:49:00,860 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [lgu_id, loa_id, gua_id]
+17:49:00,860 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fk9792e11fd0088f90, fk9792e11f9b3168ab]
+17:49:00,861 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary71, fk9792e11fd0088f90, fk9792e11f9b3168ab]
+17:49:00,900 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_REVENUE
+17:49:00,901 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [rev_company, rev_value, rev_branch, rev_month, rev_type, rev_product, rev_year, rev_id]
+17:49:00,902 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:00,903 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary62]
+17:49:00,948 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_REVSHARING
+17:49:00,949 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [rvs_id, rvs_branch, rvs_zakat, rvs_tax, rvs_totalsharing, rvs_endvalue, rvs_sharing, rvs_type, rvs_year, rvs_customersharing, rvs_account, rvs_month, rvs_startvalue, rvs_saving, rvs_averagevalue, rvs_company]
+17:49:00,950 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:00,951 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary63]
+17:49:00,989 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_SAVING
+17:49:00,990 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [sav_zakat, sav_refid, sav_specialrate, sav_company, sav_active, sav_id, sav_refcode, sav_closingreason, spr_id, sav_registration, sav_closing, sav_branch, sav_conficential, cst_id, sav_code]
+17:49:00,992 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkbc76a3335bd295b, fkbc76a333b3c46f93]
+17:49:00,993 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [fkbc76a3335bd295b, rdb$primary29, fkbc76a333b3c46f93]
+17:49:01,074 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_SAVINGBLOCKIR
+17:49:01,076 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [sbl_value, sbl_type, sbl_id, sav_id]
+17:49:01,077 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkadbc5bc3fbb6c20b]
+17:49:01,078 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary66, fkadbc5bc3fbb6c20b]
+17:49:01,122 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_SAVINGCODE
+17:49:01,123 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [scd_branch, scd_id, scd_code, scd_company, scd_available]
+17:49:01,124 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:01,125 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary14]
+17:49:01,168 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_SAVINGPRODUCT
+17:49:01,169 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [spr_coa2, spr_coa1, spr_refid, spr_company, spr_hasshare, spr_id, spr_minvalue, spr_schema, spr_sharing, spr_name, spr_code, spr_coa3]
+17:49:01,170 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:01,171 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary31]
+17:49:01,210 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_SAVINGTRANS
+17:49:01,212 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [str_type, str_timestamp, str_id, str_code, sav_id, str_description, str_branch, str_date, str_nuc, str_direction, str_refid, str_value, str_refcode, str_company]
+17:49:01,213 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fk1f045f35fbb6c20b]
+17:49:01,214 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary46, fk1f045f35fbb6c20b]
+17:49:01,256 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_TELLER
+17:49:01,257 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [tel_code, tel_user, tel_branch, tel_id, tel_subbranch, tel_company, tel_coa]
+17:49:01,258 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:01,259 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary50]
+17:49:01,303 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_TELLERTRANS
+17:49:01,304 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [ttr_date, ttr_subbranch, ttr_id, ttr_value, ttr_company, ttr_accountid, ttr_direction, ttr_refcode, ttr_refid, ttr_description, ttr_branch, ttr_type, ttr_transid, tel_id, ttr_code, ttr_timestamp]
+17:49:01,305 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fk28b34091ff88221c]
+17:49:01,305 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary48, fk28b34091ff88221c]
+17:49:01,343 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_VAULT
+17:49:01,344 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [vau_subbranch, vau_value, vau_company, vau_branch, vau_id, vau_type, vau_amount]
+17:49:01,344 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:01,344 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary59]
+17:49:01,378 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_VAULTTRANS
+17:49:01,378 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [vat_branch, vat_subbranch, vat_direction, vat_id, tel_id, vat_code, vat_refcode, vat_date, vat_status, vat_company, vat_value]
+17:49:01,379 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkac04336fff88221c]
+17:49:01,379 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary60, fkac04336fff88221c]
+17:49:01,408 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: MIB_VAULTTRANSITEM
+17:49:01,409 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [vai_id, vai_value, vat_id, vai_type, vai_amount]
+17:49:01,409 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: [fkdef157023b4342bc]
+17:49:01,409 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary61, fkdef157023b4342bc]
+17:49:01,442 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000261: Table found: HIBERNATE_SEQUENCES
+17:49:01,443 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000037: Columns: [sequence_name, next_val]
+17:49:01,443 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000108: Foreign keys: []
+17:49:01,443 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (MSC service thread 1-7) HHH000126: Indexes: [rdb$primary13]
+17:49:01,459 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (MSC service thread 1-7) HHH000232: Schema update complete
+17:49:01,674 INFO  [org.jboss.as] (MSC service thread 1-14) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:49:01,675 INFO  [org.jboss.as] (MSC service thread 1-14) JBAS015874: JBoss AS 7.1.1.Final "Brontes" started in 29138ms - Started 2015 of 2210 services (192 services are passive or on-demand)
+17:49:01,852 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "GlUiEar.ear"
+17:49:01,853 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "BprsBpEar.ear"
+17:49:01,854 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "GlBpEar.ear"
+17:49:01,854 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "MicrobankEar.ear"
+17:49:01,855 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "SystemBpEar.ear"
+17:49:01,856 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "BprsReportingEar.ear"
+17:49:01,857 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "BprsHostEar.ear"
+17:49:01,858 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "GlEar.ear"
+17:49:01,859 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "BprsFrontOffice.ear"
+17:49:01,859 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "MicrobankReportEar.ear"
+17:49:01,860 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "BprsBackOffice.ear"
+17:49:01,860 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "SystemEar.ear"
+17:49:01,861 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "MicrobankApiEar.ear"
+18:09:33,590 INFO  [org.jboss.ejb.client] (http-localhost-127.0.0.1-8080-1) JBoss EJB Client version 1.0.5.Final

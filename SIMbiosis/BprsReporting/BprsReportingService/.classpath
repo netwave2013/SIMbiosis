@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/JBoss 7.1 Runtime">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SystemDto"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MicrobankReportDto"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MicrobankReportIntf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GlDto"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GlIntf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BprsBpIntf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MicrobankDto"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GlBpIntf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SystemBpIntf"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

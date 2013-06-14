@@ -1,0 +1,296 @@
+/** Add css rules here for your application. */
+
+#appLoading {
+	padding: 5px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    text-align: left;
+    margin-left: -100px;
+    background-color: #EFEFEF;
+    border-style: solid;
+	border-color: #DDDDDD;
+	border-width: 1px;
+	z-index:99;
+}
+
+#dataLoading {
+	padding: 5px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    text-align: left;
+    margin-left: -100px;
+    background-color: #EFEFEF;
+    border-style: solid;
+	border-color: #DDDDDD;
+	border-width: 1px;
+	z-index:99;
+}
+
+.kembang-menuMainBar {
+	vertical-align: bottom;
+	padding-left: 4px;
+	padding-top: 4px;
+	background: linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -moz-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -o-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+}
+
+.kembang-menuMainBarSelected {
+	padding: 0px;
+	background-color: #C83B28;
+}
+
+.kembang-menuMainItem {
+	cursor: pointer;
+	font-family: tahoma, helvetica;
+	font-size: 11pt !important;
+	font-weight: bold;
+	margin: 0px 0px 0px 3px;
+	color: #FFFFFF;
+	padding: 5px 25px 5px 25px;
+	border-left-style: solid;
+	border-left-color: #343434;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #343434;
+	border-top-width: 1px;
+	border-right-style: solid;
+	border-right-color: #343434;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background: linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -o-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -moz-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -ms-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+}
+
+.kembang-menuMainItem::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+.kembang-menuMainItemSelected {
+	cursor: pointer;
+	vertical-align: bottom;
+	font-family: tahoma, helvetica;
+	font-size: 11pt !important;
+	font-weight: bold;
+	margin: 0px 0px 0px 3px;
+	color: #FFFFFF;
+	padding: 5px 25px 5px 25px;
+	border-left-style: solid;
+	border-left-color: #343434;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #343434;
+	border-top-width: 1px;
+	border-right-style: solid;
+	border-right-color: #343434;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background: linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -o-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -moz-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+	background: -ms-linear-gradient(bottom, #C83B28 2%, #E85B48 51%, #D84B38 76%)
+		!important;
+}
+
+.kembang-menuMainItemSelected::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+.kembang-menuMainBarLogin {
+	padding-right: 10px;
+	background: linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -moz-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -o-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+}
+
+.kembang-menuMainBarUser {
+	padding-right : 2px;
+	text-align: right;
+	color: #FFFFFF;
+	font-family: tahoma, helvetica;
+	font-size: 12px !important;
+}
+
+.kembang-menuUserConfig {
+	padding: 5px;
+	border-color: #343434;
+	border-width: 1px;
+}
+
+.kembang-menuUserConfig:hover {
+	padding: 4px;
+	border-style: solid;
+	border-color: #343434;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -moz-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+	background: -o-linear-gradient(bottom, #284477 16%, #48639A 50%, #5D7BB2 79%)
+		!important;
+}
+
+.kembang-sidebar {
+	background-color: #e2e9f1;
+	border-right-style: solid;
+	border-right-color: #bbbbbb;
+	border-right-width: 1px;
+}
+
+.kembang-sidebarHeader {
+	width: 100%;
+	height: 30px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #bbbbbb;
+	border-bottom-width: 1px;
+	background: linear-gradient(bottom, #7891bd 16%, #90a5c9 50%, #a7b8d4 79%)
+		!important;
+	background: -o-linear-gradient(bottom, #7891bd 16%, #90a5c9 50%, #a7b8d4 79%)
+		!important;
+	background: -moz-linear-gradient(bottom, #7891bd 16%, #90a5c9 50%, #a7b8d4 79%)
+		!important;
+	background: -webkit-linear-gradient(bottom, #7891bd 16%, #90a5c9 50%, #a7b8d4 79%)
+		!important;
+	background: -ms-linear-gradient(bottom, #7891bd 16%, #90a5c9 50%, #a7b8d4 79%)
+		!important;
+}
+
+.kembang-sidebarHeaderText {
+	padding-left: 5px;
+	font-family: tahoma, helvetica;
+	font-size: 11pt !important;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.kembang-sidebarItem {
+	width: 100%;
+	cursor: pointer;
+	margin: 0px;
+	text-align: left;
+	font-family: tahoma, helvetica;
+	font-size: 9pt !important;
+	color: #333333;
+	background-color: #e2e9f1;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #bbbbbb;
+	border-bottom-width: 1px;
+	border-right-width: 0px;
+}
+
+.kembang-sidebarItemText {
+	padding-left: 5px;
+	text-align: left;
+	font-family: tahoma, helvetica;
+	font-size: 9pt !important;
+	color: #333333;
+}
+
+.kembang-toolbar {
+	vertical-align: middle;
+	background: linear-gradient(bottom, #EBEBEB 6%, #F1F1F1 50%, #F5F5F5 76% ) !important;
+	background: -moz-linear-gradient(bottom, #EBEBEB 6%, #F1F1F1 50%, #F5F5F5 76% ) !important;
+	background: -webkit-linear-gradient(bottom, #EBEBEB 6%, #F1F1F1 50%, #F5F5F5 76% ) !important;
+	background: -o-linear-gradient(bottom, #EBEBEB 6%, #F1F1F1 50%, #F5F5F5 76% ) !important;
+	border-bottom-style: solid;
+	border-bottom-color: #D5D5D5;
+	border-bottom-width: 1px;
+}
+
+.kembang-toolbarItem {
+	cursor: pointer;
+	vertical-align: middle;
+	height: 22px;
+	padding: 4px 5px 0px 5px;
+	font-family: tahoma, helvetica;
+	font-size: 9pt !important;
+	color: #888888;
+	border-style: solid;
+	border-color: #AAAAAA;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: linear-gradient(bottom, #D3D3D3 6%, #DBDBDB 50%, #E5E5E5 76% ) !important;
+	background: -moz-linear-gradient(bottom, #D3D3D3 6%, #DBDBDB 50%, #E5E5E5 76% ) !important;
+	background: -webkit-linear-gradient(bottom, #D3D3D3 6%, #DBDBDB 50%, #E5E5E5 76% ) !important;
+	background: -o-linear-gradient(bottom, #D3D3D3 6%, #DBDBDB 50%, #E5E5E5 76% ) !important;
+}
+
+.kembang-toolbarItem:hover{
+	border-style: solid;
+	border-color: #AAAAAA;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: linear-gradient(bottom, #E3E3E3 6%, #EBEBEB 50%, #F5F5F5 76% ) !important;
+	background: -moz-linear-gradient(bottom, #E3E3E3 6%, #EBEBEB 50%, #F5F5F5 76% ) !important;
+	background: -webkit-linear-gradient(bottom, #E3E3E3 6%, #EBEBEB 50%, #F5F5F5 76% ) !important;
+	background: -o-linear-gradient(bottom, #E3E3E3 6%, #EBEBEB 50%, #F5F5F5 76% ) !important;
+}
+
+.kembang-appTitle {
+	padding-left: 5px;
+	font-family: tahoma, helvetica;
+	font-size: 10pt !important;
+	font-weight: bold;
+	color: #888888;
+}
+
+.kembang-appPanel {
+	padding : 5px;
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TellerTrans" language="groovy" pageWidth="595" pageHeight="842" columnWidth="557" leftMargin="19" rightMargin="19" topMargin="28" bottomMargin="28" uuid="97180309-4638-4763-84f1-4aaaba5cbc01">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="517"/>
+	<property name="ireport.y" value="107"/>
+	<parameter name="GlTrans.company" class="java.lang.String"/>
+	<parameter name="GlTrans.branch" class="java.lang.String"/>
+	<parameter name="GlTrans.date" class="java.lang.String"/>
+	<parameter name="GlTrans.realName" class="java.lang.String"/>
+	<parameter name="GlTrans.coa" class="java.lang.String"/>
+	<field name="nr" class="java.lang.Integer"/>
+	<field name="code" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="debit" class="java.lang.Double"/>
+	<field name="credit" class="java.lang.Double"/>
+	<field name="subTotal" class="java.lang.Double"/>
+	<field name="date" class="java.util.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="21a16b88-7089-46b1-96a8-b6333660fa64" x="288" y="0" width="267" height="30"/>
+				<textElement textAlignment="Right">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buku besar]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="17f8d1c9-9d74-4b3e-a587-bd371a35d54f" x="288" y="65" width="266" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{GlTrans.branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a9bc0367-1cf6-4732-b334-d9be3e8cbf80" x="289" y="32" width="267" height="30"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{GlTrans.company}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement uuid="157400a1-c911-4c6e-9d32-7dc8384953c9" x="3" y="43" width="187" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA["Tanggal "+$P{GlTrans.date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="04b22e7f-f66a-4132-809e-ce3049123e04" x="4" y="66" width="284" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{GlTrans.coa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="17ddb476-2919-462f-bc7f-10b533864557" x="1" y="6" width="25" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2b8e3cd8-ed59-468a-b9a0-db670d0dde50" x="26" y="6" width="52" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d78f948-6523-43cc-9812-d04690924bc5" x="143" y="6" width="231" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Deskripsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b94bbb79-db74-4ebd-8993-b74795b6a985" x="494" y="6" width="60" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="32e5e3b9-3b53-4b0b-a093-3279c0001c86" x="1" y="23" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="2c93d604-bff8-48a7-b44b-c82c985cd9ce" x="1" y="3" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="eabacf51-ce49-4040-9dcc-bf6c86c59745" x="434" y="6" width="60" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kredit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2197c87d-53a7-476e-80c2-2c2513dd2bf5" x="374" y="6" width="60" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Debit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0c4dd343-8bfa-419a-aa50-adb614c53476" x="78" y="6" width="65" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="89687e03-d000-44ad-8086-44764a9d843b" x="434" y="1" width="60" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{credit}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="387ef9e9-9d48-405c-96b2-9cc7b2e94838" x="494" y="1" width="60" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{subTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9f20c654-d61e-41ae-b2c6-7db1189630bf" x="1" y="1" width="25" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="da20476d-0d41-4efc-b52a-e4e9ee17adf2" x="143" y="1" width="231" height="12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MM-yyyy" isBlankWhenNull="true">
+				<reportElement uuid="1d900466-5a21-411e-946c-c356d100437a" x="26" y="1" width="52" height="12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="799580bd-b00a-4495-8dee-5cffec29e90b" x="374" y="1" width="60" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{debit}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c9f29c79-c8f7-4afe-8b97-1ea5265fa528" x="78" y="1" width="65" height="12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{code}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement uuid="e6dd1353-70b7-4d0f-9d8d-539e83f236c5" x="217" y="5" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="9c9a22dc-54a4-49c1-baf4-4165c856834c" x="297" y="5" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

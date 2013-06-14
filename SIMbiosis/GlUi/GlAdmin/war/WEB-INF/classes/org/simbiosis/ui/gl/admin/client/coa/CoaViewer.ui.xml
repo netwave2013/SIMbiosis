@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent"> -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<td>
+					<b>Kode COA</b>
+				</td>
+				<td>
+					<g:Label ui:field="code" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Prefix</b>
+				</td>
+				<td>
+					<g:Label ui:field="prefix" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Deskripsi</b>
+				</td>
+				<td>
+					<g:Label ui:field="description" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Induk</b>
+				</td>
+				<td>
+					<g:Label ui:field="parentCodeDescription" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Cabang</b>
+				</td>
+				<td>
+					<g:Label ui:field="strBranch" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Kecuali cabang</b>
+				</td>
+				<td>
+					<g:Label ui:field="strExcBranch" />
+				</td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

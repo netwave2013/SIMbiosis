@@ -1,0 +1,16 @@
+1359001215838	Rename type 'BprsReporting'
+1359001271329	Rename type 'ReportEntryPoint'
+1359001338710	Rename type 'ReportFactory'
+1359001408626	Rename type 'ReportFactoryImpl'
+1359001439722	Rename type 'ReportActivityMapper'
+1359001452969	Rename type 'ReportHistoryMapper'
+1359001483613	Rename package 'org.simbiosis.ui.bprs.reporting.client.depositNominatif'
+1359001757381	Rename package 'org.simbiosis.ui.bprs.reporting.client.savingNominatif'
+1359001805785	Delete element
+1359001861934	Rename package 'org.simbiosis.ui.bprs.reporting.client.neracaHarian'
+1359001979598	Rename package 'org.simbiosis.ui.bprs.reporting.client.loanNominatif'
+1359002042596	Rename package 'org.simbiosis.ui.bprs.reporting.client.labaRugiHarian'
+1359002088325	Rename package 'org.simbiosis.ui.bprs.reporting.client.labaRugi'
+1359002297499	Delete elements
+1359002304411	Rename resource 'BprsReporting.html'
+1359004418041	Delete element

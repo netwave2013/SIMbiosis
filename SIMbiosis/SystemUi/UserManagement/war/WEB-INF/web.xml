@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  	<servlet>
+		<servlet-name>systemServlet</servlet-name>
+		<servlet-class>org.kembang.module.server.SystemServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>systemServlet</servlet-name>
+		<url-pattern>/usermanagement/system</url-pattern>
+	</servlet-mapping>
+
+ 	<servlet>
+		<servlet-name>service</servlet-name>
+		<servlet-class>org.simbiosis.ui.system.user.server.ServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>service</servlet-name>
+		<url-pattern>/usermanagement/service</url-pattern>
+	</servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>UserManagement.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

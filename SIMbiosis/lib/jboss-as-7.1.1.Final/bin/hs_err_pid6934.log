@@ -1,0 +1,1536 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f9bdbd74b01, pid=6934, tid=140307321628416
+#
+# JRE version: 7.0_03-b04
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (22.1-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# V  [libjvm.so+0x6d7b01]  Node::rematerialize() const+0x1
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f9bd40ee800):  JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=6955, stack(0x00007f9bd800a000,0x00007f9bd810b000)]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x000000000000002c
+
+Registers:
+RAX=0x00007f9b88c79750, RBX=0x0000000000000008, RCX=0x00007f9b88c78eb0, RDX=0x00000000000001a1
+RSP=0x00007f9bd81066d0, RBP=0x00007f9bd8106b70, RSI=0x00007f9bd81082e0, RDI=0x0000000000000000
+R8 =0x0000000000000001, R9 =0x0000000000000003, R10=0x0000000000000001, R11=0x0000000000000002
+R12=0x00007f9b885d6f68, R13=0x00007f9b88c794c2, R14=0x0000000000000005, R15=0x0000000000000000
+RIP=0x00007f9bdbd74b01, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f9bd81066d0)
+0x00007f9bd81066d0:   00007f9bd8106b70 00007f9bdbe0f41b
+0x00007f9bd81066e0:   00007f9b00000001 00007f9b00000001
+0x00007f9bd81066f0:   00007f9bd81069c0 0000000000000001
+0x00007f9bd8106700:   0000000000000000 0000000000000000
+0x00007f9bd8106710:   0101010101010101 0101010101010101
+0x00007f9bd8106720:   0000000000000000 0000000000000000
+0x00007f9bd8106730:   00007f9bd81069e0 00007f9bd81069a0
+0x00007f9bd8106740:   00007f9bd81069c0 00007f9bd8106aa0
+0x00007f9bd8106750:   00007f9bd8106a20 00007f9bd8106ae0
+0x00007f9bd8106760:   00007f9bd810693c 00007f9bd8106ac0
+0x00007f9bd8106770:   00007f9bd8106a80 00007f9bd8106a60
+0x00007f9bd8106780:   00007f9bd8106a40 00007f9bd8106940
+0x00007f9bd8106790:   00007f9bd810693c 00007f9bd8106960
+0x00007f9bd81067a0:   0000000000000019 0000000000001ad0
+0x00007f9bd81067b0:   00007f9bd81082e0 00007f9b88c79410
+0x00007f9bd81067c0:   00007f9b88c79420 0000000000000001
+0x00007f9bd81067d0:   0000000000000008 00007f9b88c79918
+0x00007f9bd81067e0:   00007f9b88c79921 00007f9b88dced08
+0x00007f9bd81067f0:   00007f9bd81083a8 0000000000000008
+0x00007f9bd8106800:   0000000000000001 00000002d8106940
+0x00007f9bd8106810:   00007f9b88c794b0 00007f9b88c78e30
+0x00007f9bd8106820:   00007f9b88c78e70 00007f9b88c794c0
+0x00007f9bd8106830:   01007f9b7c371c58 00007f9b885d5bf8
+0x00007f9bd8106840:   00007f9b88c789f0 00007f9b88c78eb0
+0x00007f9bd8106850:   00007f9b88c79160 0000004e00000115
+0x00007f9bd8106860:   00007f9bd8106d00 0000000000000000
+0x00007f9bd8106870:   0000000000000035 00000000d8106d90
+0x00007f9bd8106880:   0000000000000005 00007f9bdc3234c0
+0x00007f9bd8106890:   0000000400000005 00007f9b88846740
+0x00007f9bd81068a0:   0100000000000001 00007f9b7c6a8180
+0x00007f9bd81068b0:   00007f9b885d6cb8 00000001dbb6f770
+0x00007f9bd81068c0:   0000000100000000 0000000000000004 
+
+Instructions: (pc=0x00007f9bdbd74b01)
+0x00007f9bdbd74ae1:   c0 c9 c3 0f 1f 40 00 48 8b 47 08 48 8b 78 08 48
+0x00007f9bdbd74af1:   8b 07 ff 50 28 c9 48 89 c7 e9 61 b0 14 00 90 55
+0x00007f9bdbd74b01:   0f b7 47 2c 48 89 e5 83 e0 03 83 f8 02 74 10 0f
+0x00007f9bdbd74b11:   b7 47 2e c9 d1 e8 83 e0 01 c3 0f 1f 44 00 00 c9 
+
+Register to memory mapping:
+
+RAX=0x00007f9b88c79750 is an unknown value
+RBX=0x0000000000000008 is an unknown value
+RCX=0x00007f9b88c78eb0 is an unknown value
+RDX=0x00000000000001a1 is an unknown value
+RSP=0x00007f9bd81066d0 is pointing into the stack for thread: 0x00007f9bd40ee800
+RBP=0x00007f9bd8106b70 is pointing into the stack for thread: 0x00007f9bd40ee800
+RSI=0x00007f9bd81082e0 is pointing into the stack for thread: 0x00007f9bd40ee800
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000000000001 is an unknown value
+R9 =0x0000000000000003 is an unknown value
+R10=0x0000000000000001 is an unknown value
+R11=0x0000000000000002 is an unknown value
+R12=0x00007f9b885d6f68 is an unknown value
+R13=0x00007f9b88c794c2 is an unknown value
+R14=0x0000000000000005 is an unknown value
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x00007f9bd800a000,0x00007f9bd810b000],  sp=0x00007f9bd81066d0,  free space=1009k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x6d7b01]  Node::rematerialize() const+0x1
+V  [libjvm.so+0x32ab9e]  PhaseChaitin::Register_Allocate()+0x48e
+V  [libjvm.so+0x39b72d]  Compile::Code_Gen()+0x3ad
+V  [libjvm.so+0x39e205]  Compile::Compile(ciEnv*, C2Compiler*, ciMethod*, int, bool, bool)+0xe05
+V  [libjvm.so+0x311f22]  C2Compiler::compile_method(ciEnv*, ciMethod*, int)+0x142
+V  [libjvm.so+0x3a34cd]  CompileBroker::invoke_compiler_on_method(CompileTask*)+0x2ed
+V  [libjvm.so+0x3a3dfd]  CompileBroker::compiler_thread_loop()+0x43d
+V  [libjvm.so+0x8185fa]  JavaThread::run()+0x17a
+V  [libjvm.so+0x7020a0]  java_start(Thread*)+0x100
+
+
+Current CompileTask:
+C2:  40822   27 %           net.sf.jasperreports.engine.export.JRGridLayout::horizontallyMergeEmptyCells @ 18 (175 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f9b2c4c9800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=7176, stack(0x00007f9bcaee1000,0x00007f9bcafe2000)]
+  0x00007f9b6401f800 JavaThread "http-localhost-127.0.0.1-8080-1" daemon [_thread_in_Java, id=7175, stack(0x00007f9ba3cfd000,0x00007f9ba3dfe000)]
+  0x00007f9bb401e800 JavaThread "management-handler-thread - 3" [_thread_blocked, id=7167, stack(0x00007f9b1874a000,0x00007f9b1884b000)]
+  0x00007f9b94025800 JavaThread "management-handler-thread - 2" [_thread_blocked, id=7156, stack(0x00007f9b1884b000,0x00007f9b1894c000)]
+  0x00007f9bb4018800 JavaThread "management-handler-thread - 1" [_thread_blocked, id=7145, stack(0x00007f9b1894c000,0x00007f9b18a4d000)]
+  0x00007f9ba400f000 JavaThread "Remoting "nb2:MANAGEMENT" task-4" [_thread_blocked, id=7144, stack(0x00007f9b18a4d000,0x00007f9b18b4e000)]
+  0x00007f9acc095000 JavaThread "Remoting "nb2:MANAGEMENT" task-3" [_thread_blocked, id=7143, stack(0x00007f9b18b4e000,0x00007f9b18c4f000)]
+  0x00007f9acc092800 JavaThread "Remoting "nb2:MANAGEMENT" task-2" [_thread_blocked, id=7140, stack(0x00007f9b18c4f000,0x00007f9b18d50000)]
+  0x00007f9acc091000 JavaThread "Remoting "nb2:MANAGEMENT" task-1" [_thread_blocked, id=7138, stack(0x00007f9b18d50000,0x00007f9b18e51000)]
+  0x00007f9b90008800 JavaThread "Thread-4 (HornetQ-remoting-threads-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-716665769-1913287207)" [_thread_blocked, id=7128, stack(0x00007f9b19098000,0x00007f9b19199000)]
+  0x00007f9bb806b000 JavaThread "Thread-1 (HornetQ-client-global-threads-1320797290)" daemon [_thread_blocked, id=7127, stack(0x00007f9b19199000,0x00007f9b1929a000)]
+  0x00007f9b50032000 JavaThread "default-short-running-threads-threads - 3" [_thread_blocked, id=7126, stack(0x00007f9b1929a000,0x00007f9b1939b000)]
+  0x00007f9b480bf000 JavaThread "default-short-running-threads-threads - 2" [_thread_blocked, id=7125, stack(0x00007f9b1939b000,0x00007f9b1949c000)]
+  0x00007f9bb8068800 JavaThread "Thread-29 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7124, stack(0x00007f9b1949c000,0x00007f9b1959d000)]
+  0x00007f9b1c04c000 JavaThread "Thread-28 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7123, stack(0x00007f9b1959d000,0x00007f9b1969e000)]
+  0x00007f9b1c04a000 JavaThread "Thread-27 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7122, stack(0x00007f9b1969e000,0x00007f9b1979f000)]
+  0x00007f9b1c048000 JavaThread "Thread-26 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7121, stack(0x00007f9b1979f000,0x00007f9b198a0000)]
+  0x00007f9b1c046000 JavaThread "Thread-25 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7120, stack(0x00007f9b198a0000,0x00007f9b199a1000)]
+  0x00007f9b1c044000 JavaThread "Thread-24 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7119, stack(0x00007f9b199a1000,0x00007f9b19aa2000)]
+  0x00007f9b1c042000 JavaThread "Thread-23 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7118, stack(0x00007f9b19aa2000,0x00007f9b19ba3000)]
+  0x00007f9b1c040800 JavaThread "Thread-22 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7117, stack(0x00007f9b19ba3000,0x00007f9b19ca4000)]
+  0x00007f9bb8066800 JavaThread "Thread-21 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7116, stack(0x00007f9b19ca4000,0x00007f9b19da5000)]
+  0x00007f9bb8065000 JavaThread "Thread-20 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7115, stack(0x00007f9b19da5000,0x00007f9b19ea6000)]
+  0x00007f9bb8063000 JavaThread "Thread-19 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7114, stack(0x00007f9b19ea6000,0x00007f9b19fa7000)]
+  0x00007f9bb8061000 JavaThread "Thread-18 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7113, stack(0x00007f9b19fa7000,0x00007f9b1a0a8000)]
+  0x00007f9bb805f000 JavaThread "Thread-17 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7112, stack(0x00007f9b1a0a8000,0x00007f9b1a1a9000)]
+  0x00007f9bb805d000 JavaThread "Thread-16 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7111, stack(0x00007f9b1a1a9000,0x00007f9b1a2aa000)]
+  0x00007f9bb805b000 JavaThread "Thread-15 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7110, stack(0x00007f9b1a2aa000,0x00007f9b1a3ab000)]
+  0x00007f9bb8059000 JavaThread "Thread-14 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7109, stack(0x00007f9b1a3ab000,0x00007f9b1a4ac000)]
+  0x00007f9bb8057000 JavaThread "Thread-13 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7108, stack(0x00007f9b1a4ac000,0x00007f9b1a5ad000)]
+  0x00007f9b1c03e800 JavaThread "Thread-12 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7107, stack(0x00007f9b1a5ad000,0x00007f9b1a6ae000)]
+  0x00007f9b1c03c000 JavaThread "Thread-11 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7106, stack(0x00007f9b1a6ae000,0x00007f9b1a7af000)]
+  0x00007f9b1c03a000 JavaThread "Thread-10 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7105, stack(0x00007f9b1a7af000,0x00007f9b1a8b0000)]
+  0x00007f9b1c038000 JavaThread "Thread-9 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7104, stack(0x00007f9b1a8b0000,0x00007f9b1a9b1000)]
+  0x00007f9b1c036000 JavaThread "Thread-8 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7103, stack(0x00007f9b1a9b1000,0x00007f9b1aab2000)]
+  0x00007f9b1c034000 JavaThread "Thread-7 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7102, stack(0x00007f9b1aab2000,0x00007f9b1abb3000)]
+  0x00007f9b1c033000 JavaThread "Thread-6 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7101, stack(0x00007f9b1abb3000,0x00007f9b1acb4000)]
+  0x00007f9b2c270000 JavaThread "Thread-4 (HornetQ-client-global-scheduled-threads-101593991)" daemon [_thread_blocked, id=7100, stack(0x00007f9b1acb4000,0x00007f9b1adb5000)]
+  0x00007f9aec039800 JavaThread "Thread-3 (HornetQ-remoting-threads-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-716665769-1913287207)" [_thread_blocked, id=7099, stack(0x00007f9b1adb5000,0x00007f9b1aeb6000)]
+  0x00007f9bb8055000 JavaThread "Thread-5 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7098, stack(0x00007f9b1aeb6000,0x00007f9b1afb7000)]
+  0x00007f9bb8053000 JavaThread "Thread-4 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7097, stack(0x00007f9b1afb7000,0x00007f9b1b0b8000)]
+  0x00007f9ae4029000 JavaThread "Thread-3 (HornetQ-client-global-scheduled-threads-101593991)" daemon [_thread_blocked, id=7096, stack(0x00007f9b1b0b8000,0x00007f9b1b1b9000)]
+  0x00007f9b2c26f000 JavaThread "Thread-2 (HornetQ-client-global-scheduled-threads-101593991)" daemon [_thread_blocked, id=7095, stack(0x00007f9b1b1b9000,0x00007f9b1b2ba000)]
+  0x00007f9bb8051000 JavaThread "Thread-3 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7094, stack(0x00007f9b1b2ba000,0x00007f9b1b3bb000)]
+  0x00007f9bb804f000 JavaThread "Thread-2 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7093, stack(0x00007f9b1b3bb000,0x00007f9b1b4bc000)]
+  0x00007f9bb804d000 JavaThread "Thread-1 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7092, stack(0x00007f9b1b4bc000,0x00007f9b1b5bd000)]
+  0x00007f9bb803c000 JavaThread "Thread-0 (HornetQ-client-global-threads-1320797290)" daemon [_thread_blocked, id=7091, stack(0x00007f9b1b5bd000,0x00007f9b1b6be000)]
+  0x00007f9ae4027800 JavaThread "Thread-1 (HornetQ-client-global-scheduled-threads-101593991)" daemon [_thread_blocked, id=7090, stack(0x00007f9b1b6be000,0x00007f9b1b7bf000)]
+  0x00007f9b2c265800 JavaThread "Thread-2 (HornetQ-remoting-threads-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-716665769-1913287207)" [_thread_blocked, id=7089, stack(0x00007f9b1b7bf000,0x00007f9b1b8c0000)]
+  0x00007f9b2c25f800 JavaThread "Thread-0 (HornetQ-client-global-scheduled-threads-101593991)" daemon [_thread_blocked, id=7088, stack(0x00007f9b1b8c0000,0x00007f9b1b9c1000)]
+  0x00007f9b5008b000 JavaThread "default-short-running-threads-threads - 1" [_thread_blocked, id=7087, stack(0x00007f9bcb2e5000,0x00007f9bcb4e6000)]
+  0x00007f9b4c1fe000 JavaThread "hornetq-failure-check-thread" [_thread_blocked, id=7086, stack(0x00007f9b1bae0000,0x00007f9b1bbe1000)]
+  0x00007f9b4c1f1800 JavaThread "Old I/O server boss ([id: 0x33098d83, localhost/127.0.0.1:5445])" [_thread_in_native, id=7085, stack(0x00007f9b1bbe1000,0x00007f9b1bce2000)]
+  0x00007f9b4c1f0800 JavaThread "Old I/O server boss ([id: 0x473397bc, localhost/127.0.0.1:5455])" [_thread_in_native, id=7084, stack(0x00007f9b1bce2000,0x00007f9b1bde3000)]
+  0x00007f9bcc008000 JavaThread "Thread-4 (HornetQ-scheduled-threads-325215093)" [_thread_blocked, id=7083, stack(0x00007f9b1bde3000,0x00007f9b1bee4000)]
+  0x00007f9b4c1cc000 JavaThread "Thread-0 (HornetQ-server-HornetQServerImpl::serverUUID=29e52306-5eff-11e2-a451-ccaf783e69a6-1757136199)" [_thread_blocked, id=7082, stack(0x00007f9b1bee4000,0x00007f9b1bfe5000)]
+  0x00007f9aac071800 JavaThread "Thread-3 (HornetQ-scheduled-threads-325215093)" [_thread_blocked, id=7081, stack(0x00007f9ba00a2000,0x00007f9ba01a3000)]
+  0x00007f9bcc006800 JavaThread "Thread-2 (HornetQ-scheduled-threads-325215093)" [_thread_blocked, id=7080, stack(0x00007f9ba01a3000,0x00007f9ba02a4000)]
+  0x00007f9b4c1ca000 JavaThread "Thread-0 (HornetQ-Asynchronous-Persistent-Writes1643462517-152222331)" daemon [_thread_blocked, id=7078, stack(0x00007f9ba02a4000,0x00007f9ba03a5000)]
+  0x00007f9b4c1c5000 JavaThread "Thread-0 (HornetQ-AIO-poller-pool1643462517-1630607540)" daemon [_thread_blocked, id=7077, stack(0x00007f9ba03a5000,0x00007f9ba04a6000)]
+  0x00007f9b4c1bc000 JavaThread "Thread-1 (HornetQ-scheduled-threads-325215093)" [_thread_blocked, id=7076, stack(0x00007f9ba04a6000,0x00007f9ba05a7000)]
+  0x00007f9bd4645800 JavaThread "DeploymentScanner-threads - 2" [_thread_blocked, id=7075, stack(0x00007f9ba05a7000,0x00007f9ba06a8000)]
+  0x00007f9b6811c000 JavaThread "Thread-91" [_thread_in_native, id=7074, stack(0x00007f9ba06a8000,0x00007f9ba07a9000)]
+  0x00007f9b680bd000 JavaThread "server-timer1" daemon [_thread_blocked, id=7073, stack(0x00007f9ba085e000,0x00007f9ba095f000)]
+  0x00007f9b680c1800 JavaThread "server-timer" daemon [_thread_blocked, id=7072, stack(0x00007f9ba095f000,0x00007f9ba0a60000)]
+  0x00007f9b6c02f800 JavaThread "DeploymentScanner-threads - 1" [_thread_blocked, id=7071, stack(0x00007f9ba0a60000,0x00007f9ba0b61000)]
+  0x00007f9b4c089800 JavaThread "Thread-0 (HornetQ-scheduled-threads-325215093)" [_thread_blocked, id=7070, stack(0x00007f9ba0b61000,0x00007f9ba0c62000)]
+  0x00007f9b4c087800 JavaThread "hornetq-expiry-reaper-thread" [_thread_blocked, id=7069, stack(0x00007f9ba0c62000,0x00007f9ba0d63000)]
+  0x00007f9b4c083000 JavaThread "hornetq-buffer-timeout" [_thread_blocked, id=7068, stack(0x00007f9ba0d63000,0x00007f9ba0e64000)]
+  0x00007f9b5c185000 JavaThread "RequestController-3" daemon [_thread_blocked, id=7065, stack(0x00007f9ba0e64000,0x00007f9ba0f65000)]
+  0x00007f9b5c172000 JavaThread "AOMRemoval" daemon [_thread_blocked, id=7064, stack(0x00007f9ba0f65000,0x00007f9ba1066000)]
+  0x00007f9b64012800 JavaThread "RequestController-2" daemon [_thread_blocked, id=7062, stack(0x00007f9ba1066000,0x00007f9ba1167000)]
+  0x00007f9b64012000 JavaThread "AOMRemoval" daemon [_thread_blocked, id=7061, stack(0x00007f9ba1167000,0x00007f9ba1268000)]
+  0x00007f9b3405c000 JavaThread "ServerSocketListener" daemon [_thread_in_native, id=7059, stack(0x00007f9ba1268000,0x00007f9ba1369000)]
+  0x00007f9b58051000 JavaThread "Transaction Reaper Worker 0" daemon [_thread_blocked, id=7058, stack(0x00007f9ba1369000,0x00007f9ba146a000)]
+  0x00007f9b58050800 JavaThread "Transaction Reaper" daemon [_thread_blocked, id=7057, stack(0x00007f9ba146a000,0x00007f9ba156b000)]
+  0x00007f9b34082800 JavaThread "RequestController-1" daemon [_thread_blocked, id=7056, stack(0x00007f9ba156b000,0x00007f9ba166c000)]
+  0x00007f9b3407d000 JavaThread "AOMRemoval" daemon [_thread_blocked, id=7055, stack(0x00007f9ba166c000,0x00007f9ba176d000)]
+  0x00007f9b4004b800 JavaThread "Periodic Recovery" [_thread_blocked, id=7054, stack(0x00007f9ba176d000,0x00007f9ba186e000)]
+  0x00007f9b3c0f6000 JavaThread "ORB Run Thread" [_thread_blocked, id=7053, stack(0x00007f9ba186e000,0x00007f9ba196f000)]
+  0x00007f9b5c170000 JavaThread "pool-8-thread-1" [_thread_in_native, id=7052, stack(0x00007f9ba196f000,0x00007f9ba1a70000)]
+  0x00007f9b4803d800 JavaThread "Timer-0" [_thread_blocked, id=7051, stack(0x00007f9ba1a70000,0x00007f9ba1b71000)]
+  0x00007f9b4003f800 JavaThread "Transaction Expired Entry Monitor" daemon [_thread_blocked, id=7050, stack(0x00007f9ba1b8b000,0x00007f9ba1c8c000)]
+  0x00007f9b4405c000 JavaThread "ajp-localhost-127.0.0.1-8009-Acceptor-0" daemon [_thread_in_native, id=7049, stack(0x00007f9ba25c7000,0x00007f9ba26c8000)]
+  0x00007f9b4405b000 JavaThread "ajp-localhost-127.0.0.1-8009-Poller" daemon [_thread_blocked, id=7048, stack(0x00007f9ba26c8000,0x00007f9ba27c9000)]
+  0x00007f9b4000d000 JavaThread "http-localhost-127.0.0.1-8080-Acceptor-0" daemon [_thread_in_native, id=7047, stack(0x00007f9ba27c9000,0x00007f9ba28ca000)]
+  0x00007f9b4000b800 JavaThread "http-localhost-127.0.0.1-8080-Poller" daemon [_thread_blocked, id=7046, stack(0x00007f9ba28ca000,0x00007f9ba29cb000)]
+  0x00007f9b70032000 JavaThread "ContainerBackgroundProcessor[StandardEngine[jboss.web]]" daemon [_thread_blocked, id=7045, stack(0x00007f9ba300a000,0x00007f9ba310b000)]
+  0x00007f9b54008000 JavaThread "ConnectionValidator" daemon [_thread_blocked, id=7044, stack(0x00007f9ba31ed000,0x00007f9ba32ee000)]
+  0x00007f9b70001800 JavaThread "IdleRemover" daemon [_thread_blocked, id=7043, stack(0x00007f9ba32ee000,0x00007f9ba33ef000)]
+  0x00007f9b5801c800 JavaThread "Remoting "nb2" write-1" [_thread_in_native, id=7042, stack(0x00007f9ba33f4000,0x00007f9ba34f5000)]
+  0x00007f9b5801b000 JavaThread "Remoting "nb2" read-1" [_thread_in_native, id=7041, stack(0x00007f9ba34f5000,0x00007f9ba35f6000)]
+  0x00007f9b3c05c800 JavaThread "Remoting "nb2:MANAGEMENT" write-1" [_thread_in_native, id=7015, stack(0x00007f9bc8f27000,0x00007f9bc9028000)]
+  0x00007f9b3c05b000 JavaThread "Remoting "nb2:MANAGEMENT" read-1" [_thread_in_native, id=7014, stack(0x00007f9bc9028000,0x00007f9bc9129000)]
+  0x00007f9bd4008000 JavaThread "DestroyJavaVM" [_thread_blocked, id=6936, stack(0x00007f9bdce4c000,0x00007f9bdcf4d000)]
+  0x00007f9b6805e800 JavaThread "MSC service thread 1-16" [_thread_blocked, id=6974, stack(0x00007f9bcb7f8000,0x00007f9bcb8f9000)]
+  0x00007f9b6805d000 JavaThread "MSC service thread 1-15" [_thread_blocked, id=6973, stack(0x00007f9bcb4e6000,0x00007f9bcb5e7000)]
+  0x00007f9b68037000 JavaThread "MSC service thread 1-14" [_thread_blocked, id=6972, stack(0x00007f9bcb5e7000,0x00007f9bcb6e8000)]
+  0x00007f9b68035000 JavaThread "MSC service thread 1-13" [_thread_blocked, id=6971, stack(0x00007f9bcb6e8000,0x00007f9bcb7e9000)]
+  0x00007f9b68033000 JavaThread "MSC service thread 1-12" [_thread_blocked, id=6970, stack(0x00007f9bcb8f9000,0x00007f9bcb9fa000)]
+  0x00007f9b68030800 JavaThread "MSC service thread 1-11" [_thread_blocked, id=6969, stack(0x00007f9bcb9fa000,0x00007f9bcbafb000)]
+  0x00007f9b6802e800 JavaThread "MSC service thread 1-10" [_thread_blocked, id=6968, stack(0x00007f9bcbafb000,0x00007f9bcbbfc000)]
+  0x00007f9b6802c000 JavaThread "MSC service thread 1-9" [_thread_blocked, id=6967, stack(0x00007f9bcbbfc000,0x00007f9bcbcfd000)]
+  0x00007f9b6802a000 JavaThread "MSC service thread 1-8" [_thread_blocked, id=6966, stack(0x00007f9bcbcfd000,0x00007f9bcbdfe000)]
+  0x00007f9b68027800 JavaThread "MSC service thread 1-7" [_thread_blocked, id=6965, stack(0x00007f9bcbdfe000,0x00007f9bcbeff000)]
+  0x00007f9b68025000 JavaThread "MSC service thread 1-6" [_thread_blocked, id=6964, stack(0x00007f9bcbeff000,0x00007f9bcc000000)]
+  0x00007f9b68023000 JavaThread "MSC service thread 1-5" [_thread_blocked, id=6963, stack(0x00007f9bd00e0000,0x00007f9bd01e1000)]
+  0x00007f9bd4644800 JavaThread "MSC service thread 1-4" [_thread_blocked, id=6962, stack(0x00007f9bd01e1000,0x00007f9bd02e2000)]
+  0x00007f9bd4640800 JavaThread "MSC service thread 1-3" [_thread_blocked, id=6961, stack(0x00007f9bd02e2000,0x00007f9bd03e3000)]
+  0x00007f9b6c002000 JavaThread "MSC service thread 1-2" [_thread_blocked, id=6960, stack(0x00007f9bd03e3000,0x00007f9bd04e4000)]
+  0x00007f9bd463e000 JavaThread "MSC service thread 1-1" [_thread_blocked, id=6959, stack(0x00007f9bd04e4000,0x00007f9bd05e5000)]
+  0x00007f9bd4185800 JavaThread "Reference Reaper" daemon [_thread_blocked, id=6958, stack(0x00007f9bd0cfd000,0x00007f9bd0dfe000)]
+  0x00007f9bd40f1000 JavaThread "Service Thread" daemon [_thread_blocked, id=6956, stack(0x00007f9bd0eff000,0x00007f9bd1000000)]
+=>0x00007f9bd40ee800 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=6955, stack(0x00007f9bd800a000,0x00007f9bd810b000)]
+  0x00007f9bd40eb800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=6954, stack(0x00007f9bd810b000,0x00007f9bd820c000)]
+  0x00007f9bd40e9800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6953, stack(0x00007f9bd820c000,0x00007f9bd830d000)]
+  0x00007f9bd409e000 JavaThread "Finalizer" daemon [_thread_blocked, id=6952, stack(0x00007f9bd89f0000,0x00007f9bd8af1000)]
+  0x00007f9bd409b800 JavaThread "Reference Handler" daemon [_thread_blocked, id=6951, stack(0x00007f9bd8af1000,0x00007f9bd8bf2000)]
+
+Other Threads:
+  0x00007f9bd4094000 VMThread [stack: 0x00007f9bd8bf2000,0x00007f9bd8cf3000] [id=6950]
+  0x00007f9bd40fb800 WatcherThread [stack: 0x00007f9bd0dfe000,0x00007f9bd0eff000] [id=6957]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 120768K, used 57298K [0x00000000f5560000, 0x00000000ffda0000, 0x0000000100000000)
+  eden space 72832K, 54% used [0x00000000f5560000,0x00000000f7bc8e40,0x00000000f9c80000)
+  from space 47936K, 37% used [0x00000000f9c80000,0x00000000fae0bc78,0x00000000fcb50000)
+  to   space 45248K, 0% used [0x00000000fd170000,0x00000000fd170000,0x00000000ffda0000)
+ PSOldGen        total 127552K, used 70518K [0x00000000e0000000, 0x00000000e7c90000, 0x00000000f5560000)
+  object space 127552K, 55% used [0x00000000e0000000,0x00000000e44ddbc8,0x00000000e7c90000)
+ PSPermGen       total 125440K, used 90761K [0x00000000d0000000, 0x00000000d7a80000, 0x00000000e0000000)
+  object space 125440K, 72% used [0x00000000d0000000,0x00000000d58a2550,0x00000000d7a80000)
+
+Code Cache  [0x00007f9bd1000000, 0x00007f9bd1620000, 0x00007f9bd4000000)
+ total_blobs=2761 nmethods=1924 adapters=788 free_code_cache=42984Kb largest_free_block=43931200
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:05 2760679                            /usr/lib/jvm/jdk1.7.0/bin/java
+00600000-00601000 rw-p 00000000 08:05 2760679                            /usr/lib/jvm/jdk1.7.0/bin/java
+01f3d000-01f5e000 rw-p 00000000 00:00 0                                  [heap]
+d0000000-d7a80000 rw-p 00000000 00:00 0 
+d7a80000-e0000000 rw-p 00000000 00:00 0 
+e0000000-e7c90000 rw-p 00000000 00:00 0 
+e7c90000-f5560000 rw-p 00000000 00:00 0 
+f5560000-ffda0000 rw-p 00000000 00:00 0 
+ffda0000-100000000 ---p 00000000 00:00 0 
+7f9aa4000000-7f9aa4021000 rw-p 00000000 00:00 0 
+7f9aa4021000-7f9aa8000000 ---p 00000000 00:00 0 
+7f9aa8000000-7f9aa8021000 rw-p 00000000 00:00 0 
+7f9aa8021000-7f9aac000000 ---p 00000000 00:00 0 
+7f9aac000000-7f9aac075000 rw-p 00000000 00:00 0 
+7f9aac075000-7f9ab0000000 ---p 00000000 00:00 0 
+7f9ab0000000-7f9ab005a000 rw-p 00000000 00:00 0 
+7f9ab005a000-7f9ab4000000 ---p 00000000 00:00 0 
+7f9ab4000000-7f9ab4021000 rw-p 00000000 00:00 0 
+7f9ab4021000-7f9ab8000000 ---p 00000000 00:00 0 
+7f9abbffc000-7f9abc000000 r--s 0001f000 08:06 3016143                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/remote-naming/main/jboss-remote-naming-1.0.2.Final.jar
+7f9abc000000-7f9abc073000 rw-p 00000000 00:00 0 
+7f9abc073000-7f9ac0000000 ---p 00000000 00:00 0 
+7f9ac0000000-7f9ac003d000 rw-p 00000000 00:00 0 
+7f9ac003d000-7f9ac4000000 ---p 00000000 00:00 0 
+7f9ac4000000-7f9ac4043000 rw-p 00000000 00:00 0 
+7f9ac4043000-7f9ac8000000 ---p 00000000 00:00 0 
+7f9acbefe000-7f9acbeff000 r--s 00000000 08:06 3016048                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/api/main/ironjacamar-common-spi-1.0.9.Final.jar
+7f9acbeff000-7f9acbf02000 ---p 00000000 00:00 0 
+7f9acbf02000-7f9acc000000 rw-p 00000000 00:00 0 
+7f9acc000000-7f9acc09a000 rw-p 00000000 00:00 0 
+7f9acc09a000-7f9ad0000000 ---p 00000000 00:00 0 
+7f9ad3efc000-7f9ad3eff000 ---p 00000000 00:00 0 
+7f9ad3eff000-7f9ad3ffd000 rw-p 00000000 00:00 0 
+7f9ad3ffd000-7f9ad4000000 r--s 00006000 08:06 3016050                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/api/main/ironjacamar-core-api-1.0.9.Final.jar
+7f9ad4000000-7f9ad408b000 rw-p 00000000 00:00 0 
+7f9ad408b000-7f9ad8000000 ---p 00000000 00:00 0 
+7f9adbeff000-7f9adbf02000 ---p 00000000 00:00 0 
+7f9adbf02000-7f9adc000000 rw-p 00000000 00:00 0 
+7f9adc000000-7f9adc037000 rw-p 00000000 00:00 0 
+7f9adc037000-7f9ae0000000 ---p 00000000 00:00 0 
+7f9ae3ffb000-7f9ae4000000 r--s 00026000 08:06 3016046                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/api/main/ironjacamar-common-api-1.0.9.Final.jar
+7f9ae4000000-7f9ae402b000 rw-p 00000000 00:00 0 
+7f9ae402b000-7f9ae8000000 ---p 00000000 00:00 0 
+7f9aebefc000-7f9aebeff000 r--s 0000a000 08:06 3015879                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jaxr/main/jboss-as-jaxr-7.1.1.Final.jar
+7f9aebeff000-7f9aebf02000 ---p 00000000 00:00 0 
+7f9aebf02000-7f9aec000000 rw-p 00000000 00:00 0 
+7f9aec000000-7f9aec040000 rw-p 00000000 00:00 0 
+7f9aec040000-7f9af0000000 ---p 00000000 00:00 0 
+7f9af3f85000-7f9af3ff8000 r--s 004ee000 08:06 3015779                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jacorb/main/jacorb-2.3.1.jbossorg-1.jar
+7f9af3ff8000-7f9af3ffb000 r--s 00005000 08:06 3015560                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/xml/registry/api/main/jboss-jaxr-api_1.0_spec-1.0.1.Final.jar
+7f9af3ffb000-7f9af4000000 r--s 00049000 08:06 3015876                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jacorb/main/jboss-as-jacorb-7.1.1.Final.jar
+7f9af4000000-7f9af4045000 rw-p 00000000 00:00 0 
+7f9af4045000-7f9af8000000 ---p 00000000 00:00 0 
+7f9afbefd000-7f9afbf00000 ---p 00000000 00:00 0 
+7f9afbf00000-7f9afbffe000 rw-p 00000000 00:00 0 
+7f9afbffe000-7f9afc000000 r--s 0000f000 08:06 3015476                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/activation/api/main/activation-1.1.1.jar
+7f9afc000000-7f9afc057000 rw-p 00000000 00:00 0 
+7f9afc057000-7f9b00000000 ---p 00000000 00:00 0 
+7f9b03ee6000-7f9b03ee9000 ---p 00000000 00:00 0 
+7f9b03ee9000-7f9b03fe7000 rw-p 00000000 00:00 0 
+7f9b03fe7000-7f9b04000000 r--s 0011c000 08:06 3015867                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/ejb3/main/jboss-as-ejb3-7.1.1.Final.jar
+7f9b04000000-7f9b04066000 rw-p 00000000 00:00 0 
+7f9b04066000-7f9b08000000 ---p 00000000 00:00 0 
+7f9b0beff000-7f9b0bf02000 ---p 00000000 00:00 0 
+7f9b0bf02000-7f9b0c000000 rw-p 00000000 00:00 0 
+7f9b0c000000-7f9b0c021000 rw-p 00000000 00:00 0 
+7f9b0c021000-7f9b10000000 ---p 00000000 00:00 0 
+7f9b10000000-7f9b1004a000 rw-p 00000000 00:00 0 
+7f9b1004a000-7f9b14000000 ---p 00000000 00:00 0 
+7f9b14000000-7f9b14021000 rw-p 00000000 00:00 0 
+7f9b14021000-7f9b18000000 ---p 00000000 00:00 0 
+7f9b1874a000-7f9b1874d000 ---p 00000000 00:00 0 
+7f9b1874d000-7f9b1884b000 rw-p 00000000 00:00 0 
+7f9b1884b000-7f9b1884e000 ---p 00000000 00:00 0 
+7f9b1884e000-7f9b1894c000 rw-p 00000000 00:00 0 
+7f9b1894c000-7f9b1894f000 ---p 00000000 00:00 0 
+7f9b1894f000-7f9b18a4d000 rw-p 00000000 00:00 0 
+7f9b18a4d000-7f9b18a50000 ---p 00000000 00:00 0 
+7f9b18a50000-7f9b18b4e000 rw-p 00000000 00:00 0 
+7f9b18b4e000-7f9b18b51000 ---p 00000000 00:00 0 
+7f9b18b51000-7f9b18c4f000 rw-p 00000000 00:00 0 
+7f9b18c4f000-7f9b18c52000 ---p 00000000 00:00 0 
+7f9b18c52000-7f9b18d50000 rw-p 00000000 00:00 0 
+7f9b18d50000-7f9b18d53000 ---p 00000000 00:00 0 
+7f9b18d53000-7f9b18e51000 rw-p 00000000 00:00 0 
+7f9b18e51000-7f9b18e83000 r-xp 00000000 08:05 2760892                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libsunec.so
+7f9b18e83000-7f9b19082000 ---p 00032000 08:05 2760892                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libsunec.so
+7f9b19082000-7f9b19088000 rw-p 00031000 08:05 2760892                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libsunec.so
+7f9b19088000-7f9b19098000 rw-p 00000000 00:00 0 
+7f9b19098000-7f9b1909b000 ---p 00000000 00:00 0 
+7f9b1909b000-7f9b19199000 rw-p 00000000 00:00 0 
+7f9b19199000-7f9b1919c000 ---p 00000000 00:00 0 
+7f9b1919c000-7f9b1929a000 rw-p 00000000 00:00 0 
+7f9b1929a000-7f9b1929d000 ---p 00000000 00:00 0 
+7f9b1929d000-7f9b1939b000 rw-p 00000000 00:00 0 
+7f9b1939b000-7f9b1939e000 ---p 00000000 00:00 0 
+7f9b1939e000-7f9b1949c000 rw-p 00000000 00:00 0 
+7f9b1949c000-7f9b1949f000 ---p 00000000 00:00 0 
+7f9b1949f000-7f9b1959d000 rw-p 00000000 00:00 0 
+7f9b1959d000-7f9b195a0000 ---p 00000000 00:00 0 
+7f9b195a0000-7f9b1969e000 rw-p 00000000 00:00 0 
+7f9b1969e000-7f9b196a1000 ---p 00000000 00:00 0 
+7f9b196a1000-7f9b1979f000 rw-p 00000000 00:00 0 
+7f9b1979f000-7f9b197a2000 ---p 00000000 00:00 0 
+7f9b197a2000-7f9b198a0000 rw-p 00000000 00:00 0 
+7f9b198a0000-7f9b198a3000 ---p 00000000 00:00 0 
+7f9b198a3000-7f9b199a1000 rw-p 00000000 00:00 0 
+7f9b199a1000-7f9b199a4000 ---p 00000000 00:00 0 
+7f9b199a4000-7f9b19aa2000 rw-p 00000000 00:00 0 
+7f9b19aa2000-7f9b19aa5000 ---p 00000000 00:00 0 
+7f9b19aa5000-7f9b19ba3000 rw-p 00000000 00:00 0 
+7f9b19ba3000-7f9b19ba6000 ---p 00000000 00:00 0 
+7f9b19ba6000-7f9b19ca4000 rw-p 00000000 00:00 0 
+7f9b19ca4000-7f9b19ca7000 ---p 00000000 00:00 0 
+7f9b19ca7000-7f9b19da5000 rw-p 00000000 00:00 0 
+7f9b19da5000-7f9b19da8000 ---p 00000000 00:00 0 
+7f9b19da8000-7f9b19ea6000 rw-p 00000000 00:00 0 
+7f9b19ea6000-7f9b19ea9000 ---p 00000000 00:00 0 
+7f9b19ea9000-7f9b19fa7000 rw-p 00000000 00:00 0 
+7f9b19fa7000-7f9b19faa000 ---p 00000000 00:00 0 
+7f9b19faa000-7f9b1a0a8000 rw-p 00000000 00:00 0 
+7f9b1a0a8000-7f9b1a0ab000 ---p 00000000 00:00 0 
+7f9b1a0ab000-7f9b1a1a9000 rw-p 00000000 00:00 0 
+7f9b1a1a9000-7f9b1a1ac000 ---p 00000000 00:00 0 
+7f9b1a1ac000-7f9b1a2aa000 rw-p 00000000 00:00 0 
+7f9b1a2aa000-7f9b1a2ad000 ---p 00000000 00:00 0 
+7f9b1a2ad000-7f9b1a3ab000 rw-p 00000000 00:00 0 
+7f9b1a3ab000-7f9b1a3ae000 ---p 00000000 00:00 0 
+7f9b1a3ae000-7f9b1a4ac000 rw-p 00000000 00:00 0 
+7f9b1a4ac000-7f9b1a4af000 ---p 00000000 00:00 0 
+7f9b1a4af000-7f9b1a5ad000 rw-p 00000000 00:00 0 
+7f9b1a5ad000-7f9b1a5b0000 ---p 00000000 00:00 0 
+7f9b1a5b0000-7f9b1a6ae000 rw-p 00000000 00:00 0 
+7f9b1a6ae000-7f9b1a6b1000 ---p 00000000 00:00 0 
+7f9b1a6b1000-7f9b1a7af000 rw-p 00000000 00:00 0 
+7f9b1a7af000-7f9b1a7b2000 ---p 00000000 00:00 0 
+7f9b1a7b2000-7f9b1a8b0000 rw-p 00000000 00:00 0 
+7f9b1a8b0000-7f9b1a8b3000 ---p 00000000 00:00 0 
+7f9b1a8b3000-7f9b1a9b1000 rw-p 00000000 00:00 0 
+7f9b1a9b1000-7f9b1a9b4000 ---p 00000000 00:00 0 
+7f9b1a9b4000-7f9b1aab2000 rw-p 00000000 00:00 0 
+7f9b1aab2000-7f9b1aab5000 ---p 00000000 00:00 0 
+7f9b1aab5000-7f9b1abb3000 rw-p 00000000 00:00 0 
+7f9b1abb3000-7f9b1abb6000 ---p 00000000 00:00 0 
+7f9b1abb6000-7f9b1acb4000 rw-p 00000000 00:00 0 
+7f9b1acb4000-7f9b1acb7000 ---p 00000000 00:00 0 
+7f9b1acb7000-7f9b1adb5000 rw-p 00000000 00:00 0 
+7f9b1adb5000-7f9b1adb8000 ---p 00000000 00:00 0 
+7f9b1adb8000-7f9b1aeb6000 rw-p 00000000 00:00 0 
+7f9b1aeb6000-7f9b1aeb9000 ---p 00000000 00:00 0 
+7f9b1aeb9000-7f9b1afb7000 rw-p 00000000 00:00 0 
+7f9b1afb7000-7f9b1afba000 ---p 00000000 00:00 0 
+7f9b1afba000-7f9b1b0b8000 rw-p 00000000 00:00 0 
+7f9b1b0b8000-7f9b1b0bb000 ---p 00000000 00:00 0 
+7f9b1b0bb000-7f9b1b1b9000 rw-p 00000000 00:00 0 
+7f9b1b1b9000-7f9b1b1bc000 ---p 00000000 00:00 0 
+7f9b1b1bc000-7f9b1b2ba000 rw-p 00000000 00:00 0 
+7f9b1b2ba000-7f9b1b2bd000 ---p 00000000 00:00 0 
+7f9b1b2bd000-7f9b1b3bb000 rw-p 00000000 00:00 0 
+7f9b1b3bb000-7f9b1b3be000 ---p 00000000 00:00 0 
+7f9b1b3be000-7f9b1b4bc000 rw-p 00000000 00:00 0 
+7f9b1b4bc000-7f9b1b4bf000 ---p 00000000 00:00 0 
+7f9b1b4bf000-7f9b1b5bd000 rw-p 00000000 00:00 0 
+7f9b1b5bd000-7f9b1b5c0000 ---p 00000000 00:00 0 
+7f9b1b5c0000-7f9b1b6be000 rw-p 00000000 00:00 0 
+7f9b1b6be000-7f9b1b6c1000 ---p 00000000 00:00 0 
+7f9b1b6c1000-7f9b1b7bf000 rw-p 00000000 00:00 0 
+7f9b1b7bf000-7f9b1b7c2000 ---p 00000000 00:00 0 
+7f9b1b7c2000-7f9b1b8c0000 rw-p 00000000 00:00 0 
+7f9b1b8c0000-7f9b1b8c3000 ---p 00000000 00:00 0 
+7f9b1b8c3000-7f9b1b9c1000 rw-p 00000000 00:00 0 
+7f9b1b9c1000-7f9b1b9d0000 r--s 00076000 08:06 3016302                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/joda/time/main/joda-time-1.6.2.jar
+7f9b1b9d0000-7f9b1b9de000 r--s 000ad000 08:06 3015725                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/codehaus/jackson/jackson-mapper-asl/main/jackson-mapper-asl-1.9.2.jar
+7f9b1b9de000-7f9b1b9e2000 r--s 00034000 08:06 3015719                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/codehaus/jackson/jackson-core-asl/main/jackson-core-asl-1.9.2.jar
+7f9b1ba1d000-7f9b1ba96000 r--s 00574000 08:06 3277813                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/google/gwt/main/gwt-servlet.jar
+7f9b1bae0000-7f9b1bae3000 ---p 00000000 00:00 0 
+7f9b1bae3000-7f9b1bbe1000 rw-p 00000000 00:00 0 
+7f9b1bbe1000-7f9b1bbe4000 ---p 00000000 00:00 0 
+7f9b1bbe4000-7f9b1bce2000 rw-p 00000000 00:00 0 
+7f9b1bce2000-7f9b1bce5000 ---p 00000000 00:00 0 
+7f9b1bce5000-7f9b1bde3000 rw-p 00000000 00:00 0 
+7f9b1bde3000-7f9b1bde6000 ---p 00000000 00:00 0 
+7f9b1bde6000-7f9b1bee4000 rw-p 00000000 00:00 0 
+7f9b1bee4000-7f9b1bee7000 ---p 00000000 00:00 0 
+7f9b1bee7000-7f9b1bfe5000 rw-p 00000000 00:00 0 
+7f9b1bfe5000-7f9b1bfe8000 r--s 00009000 08:06 3015548                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/validation/api/main/validation-api-1.0.0.GA.jar
+7f9b1bfe8000-7f9b1bfea000 r--s 00004000 08:06 3016071                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/jboss-transaction-spi/main/jboss-transaction-spi-7.0.0.Final.jar
+7f9b1bfea000-7f9b1bffd000 r--s 0019e000 08:06 3016299                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jgroups/main/jgroups-3.0.6.Final.jar
+7f9b1bffd000-7f9b1c000000 r--s 00005000 08:06 3015563                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/xml/rpc/api/main/jboss-jaxrpc-api_1.1_spec-1.0.0.Final.jar
+7f9b1c000000-7f9b1c04e000 rw-p 00000000 00:00 0 
+7f9b1c04e000-7f9b20000000 ---p 00000000 00:00 0 
+7f9b20000000-7f9b20054000 rw-p 00000000 00:00 0 
+7f9b20054000-7f9b24000000 ---p 00000000 00:00 0 
+7f9b24000000-7f9b24053000 rw-p 00000000 00:00 0 
+7f9b24053000-7f9b28000000 ---p 00000000 00:00 0 
+7f9b28000000-7f9b2802e000 rw-p 00000000 00:00 0 
+7f9b2802e000-7f9b2c000000 ---p 00000000 00:00 0 
+7f9b2c000000-7f9b2d1c6000 rw-p 00000000 00:00 0 
+7f9b2d1c6000-7f9b30000000 ---p 00000000 00:00 0 
+7f9b30000000-7f9b30023000 rw-p 00000000 00:00 0 
+7f9b30023000-7f9b34000000 ---p 00000000 00:00 0 
+7f9b34000000-7f9b34091000 rw-p 00000000 00:00 0 
+7f9b34091000-7f9b38000000 ---p 00000000 00:00 0 
+7f9b38000000-7f9b3804c000 rw-p 00000000 00:00 0 
+7f9b3804c000-7f9b3c000000 ---p 00000000 00:00 0 
+7f9b3c000000-7f9b3c172000 rw-p 00000000 00:00 0 
+7f9b3c172000-7f9b40000000 ---p 00000000 00:00 0 
+7f9b40000000-7f9b400ab000 rw-p 00000000 00:00 0 
+7f9b400ab000-7f9b44000000 ---p 00000000 00:00 0 
+7f9b44000000-7f9b44121000 rw-p 00000000 00:00 0 
+7f9b44121000-7f9b48000000 ---p 00000000 00:00 0 
+7f9b48000000-7f9b4810d000 rw-p 00000000 00:00 0 
+7f9b4810d000-7f9b4c000000 ---p 00000000 00:00 0 
+7f9b4c000000-7f9b4c33a000 rw-p 00000000 00:00 0 
+7f9b4c33a000-7f9b50000000 ---p 00000000 00:00 0 
+7f9b50000000-7f9b50114000 rw-p 00000000 00:00 0 
+7f9b50114000-7f9b54000000 ---p 00000000 00:00 0 
+7f9b54000000-7f9b54062000 rw-p 00000000 00:00 0 
+7f9b54062000-7f9b58000000 ---p 00000000 00:00 0 
+7f9b58000000-7f9b580f6000 rw-p 00000000 00:00 0 
+7f9b580f6000-7f9b5c000000 ---p 00000000 00:00 0 
+7f9b5c000000-7f9b5c20b000 rw-p 00000000 00:00 0 
+7f9b5c20b000-7f9b60000000 ---p 00000000 00:00 0 
+7f9b60000000-7f9b60366000 rw-p 00000000 00:00 0 
+7f9b60366000-7f9b64000000 ---p 00000000 00:00 0 
+7f9b64000000-7f9b64044000 rw-p 00000000 00:00 0 
+7f9b64044000-7f9b68000000 ---p 00000000 00:00 0 
+7f9b68000000-7f9b6816a000 rw-p 00000000 00:00 0 
+7f9b6816a000-7f9b6c000000 ---p 00000000 00:00 0 
+7f9b6c000000-7f9b6c30f000 rw-p 00000000 00:00 0 
+7f9b6c30f000-7f9b70000000 ---p 00000000 00:00 0 
+7f9b70000000-7f9b7006d000 rw-p 00000000 00:00 0 
+7f9b7006d000-7f9b74000000 ---p 00000000 00:00 0 
+7f9b74000000-7f9b74021000 rw-p 00000000 00:00 0 
+7f9b74021000-7f9b78000000 ---p 00000000 00:00 0 
+7f9b78000000-7f9b78021000 rw-p 00000000 00:00 0 
+7f9b78021000-7f9b7c000000 ---p 00000000 00:00 0 
+7f9b7c000000-7f9b7d0b8000 rw-p 00000000 00:00 0 
+7f9b7d0b8000-7f9b80000000 ---p 00000000 00:00 0 
+7f9b80000000-7f9b80021000 rw-p 00000000 00:00 0 
+7f9b80021000-7f9b84000000 ---p 00000000 00:00 0 
+7f9b84000000-7f9b84021000 rw-p 00000000 00:00 0 
+7f9b84021000-7f9b88000000 ---p 00000000 00:00 0 
+7f9b88000000-7f9b89373000 rw-p 00000000 00:00 0 
+7f9b89373000-7f9b8c000000 ---p 00000000 00:00 0 
+7f9b8c000000-7f9b8c021000 rw-p 00000000 00:00 0 
+7f9b8c021000-7f9b90000000 ---p 00000000 00:00 0 
+7f9b90000000-7f9b90021000 rw-p 00000000 00:00 0 
+7f9b90021000-7f9b94000000 ---p 00000000 00:00 0 
+7f9b94000000-7f9b94029000 rw-p 00000000 00:00 0 
+7f9b94029000-7f9b98000000 ---p 00000000 00:00 0 
+7f9b98000000-7f9b980f2000 rw-p 00000000 00:00 0 
+7f9b980f2000-7f9b9c000000 ---p 00000000 00:00 0 
+7f9b9c000000-7f9b9c021000 rw-p 00000000 00:00 0 
+7f9b9c021000-7f9ba0000000 ---p 00000000 00:00 0 
+7f9ba0003000-7f9ba0007000 r--s 0002d000 08:05 2761057                    /usr/lib/jvm/jdk1.7.0/jre/lib/ext/sunjce_provider.jar
+7f9ba0007000-7f9ba0008000 r--s 00003000 08:05 2761053                    /usr/lib/jvm/jdk1.7.0/jre/lib/ext/sunec.jar
+7f9ba0008000-7f9ba000b000 r--s 00018000 08:05 2762211                    /usr/lib/jvm/jdk1.7.0/jre/lib/jce.jar
+7f9ba000b000-7f9ba0011000 r--s 00031000 08:06 3015785                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jaxen/main/jaxen-1.1.3.jar
+7f9ba003e000-7f9ba0040000 r--s 00019000 08:06 4195279                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-98f2b62d5c2f8b80/MicrobankDto.jar
+7f9ba0040000-7f9ba0042000 r--s 00000000 08:06 4195276                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankReportIntf.jar-ee229d9f6ff9ad0f/MicrobankReportIntf.jar
+7f9ba0042000-7f9ba0043000 r--s 00007000 08:06 4195273                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-635a042ecd1e8759/GlDto.jar
+7f9ba0043000-7f9ba0044000 r--s 00001000 08:06 4195270                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsBpIntf.jar-23905d82b62131a2/BprsBpIntf.jar
+7f9ba0044000-7f9ba0045000 r--s 00004000 08:06 4195267                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-436e6d4be070c236/SystemDto.jar
+7f9ba0045000-7f9ba0047000 r--s 00019000 08:06 4195264                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-757a6d49d81ce3/MicrobankDto.jar
+7f9ba0047000-7f9ba0048000 r--s 00007000 08:06 4195261                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-4a4c20b3dc60f188/GlDto.jar
+7f9ba0048000-7f9ba0049000 r--s 00001000 08:06 4195258                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsBpIntf.jar-4246e916f6a1bf3e/BprsBpIntf.jar
+7f9ba0049000-7f9ba004a000 r--s 00004000 08:06 4195255                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-a92dcde4c938f6d6/SystemDto.jar
+7f9ba004b000-7f9ba004d000 r--s 00011000 08:06 4195177                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/KembangModule.jar-a2906336f175f83a/KembangModule.jar
+7f9ba004d000-7f9ba004e000 r--s 00000000 08:06 4195248                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemBpIntf.jar-be17848e27aef304/SystemBpIntf.jar
+7f9ba004e000-7f9ba0050000 r--s 00019000 08:06 4195245                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-1ed9fcec294b7c9e/MicrobankDto.jar
+7f9ba0050000-7f9ba0051000 r--s 00004000 08:06 4195243                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-56e734ce34e7f97f/SystemDto.jar
+7f9ba0051000-7f9ba0052000 r--s 00001000 08:06 4195240                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsBpIntf.jar-4961d140e046d7b9/BprsBpIntf.jar
+7f9ba0052000-7f9ba0053000 r--s 00004000 08:06 4195237                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-181ff08db1155ac6/SystemDto.jar
+7f9ba0053000-7f9ba0055000 r--s 00011000 08:06 4195234                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/KembangModule.jar-57346782f1251316/KembangModule.jar
+7f9ba0055000-7f9ba0056000 r--s 00000000 08:06 4195231                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-2fa7e532445ac6e2/SystemIntf.jar
+7f9ba0056000-7f9ba0057000 r--s 00000000 08:06 4195230                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-702a87aa5ebd9147/SystemIntf.jar
+7f9ba0057000-7f9ba0058000 r--s 00001000 08:06 4195224                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlIntf.jar-418e9957b733c109/GlIntf.jar
+7f9ba0058000-7f9ba005a000 r--s 00019000 08:06 4195221                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-20d5ca1086d09aa1/MicrobankDto.jar
+7f9ba005a000-7f9ba005c000 r--s 00002000 08:06 4195219                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankIntf.jar-a0460ff9ccf12158/MicrobankIntf.jar
+7f9ba005c000-7f9ba005d000 r--s 00007000 08:06 4195215                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-ff8cc3c116128199/GlDto.jar
+7f9ba005d000-7f9ba005e000 r--s 00004000 08:06 4195212                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankReportDto.jar-799e45ff6f25795d/MicrobankReportDto.jar
+7f9ba005e000-7f9ba005f000 r--s 00001000 08:06 4195206                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsBpIntf.jar-fa4682578e422992/BprsBpIntf.jar
+7f9ba005f000-7f9ba0061000 r--s 00000000 08:06 4195204                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/Utils.jar-39ccfd17a9f77ab1/Utils.jar
+7f9ba0062000-7f9ba0067000 r--s 00039000 08:06 4195150                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsCommon.jar-c09ed2f0f7b463d5/BprsCommon.jar
+7f9ba0067000-7f9ba0068000 r--s 00000000 08:06 4195196                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemBpIntf.jar-8af7fa6bac9bd30c/SystemBpIntf.jar
+7f9ba0068000-7f9ba0069000 r--s 00007000 08:06 4195193                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-df891b11dce67449/GlDto.jar
+7f9ba0069000-7f9ba006a000 r--s 00004000 08:06 4195190                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-e1e3f5b7c0b639f3/SystemDto.jar
+7f9ba006a000-7f9ba006c000 r--s 00011000 08:06 4195187                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/KembangModule.jar-95946fc9124029bd/KembangModule.jar
+7f9ba006c000-7f9ba006d000 r--s 00000000 08:06 4195184                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-cab451a803278894/SystemIntf.jar
+7f9ba006d000-7f9ba006e000 r--s 00001000 08:06 4195181                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlIntf.jar-db12fc02fb081db6/GlIntf.jar
+7f9ba006e000-7f9ba006f000 r--s 00007000 08:06 4195179                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-910a2f9c0d226fa5/GlDto.jar
+7f9ba006f000-7f9ba0070000 r--s 00000000 08:06 4195173                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-68331eb7c860c77e/SystemIntf.jar
+7f9ba0070000-7f9ba0071000 r--s 00004000 08:06 4195171                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-2f7a0b99f481ed19/SystemDto.jar
+7f9ba0071000-7f9ba0072000 r--s 00001000 08:06 4195167                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlBpIntf.jar-b2903231ea205674/GlBpIntf.jar
+7f9ba0072000-7f9ba0073000 r--s 00000000 08:06 4195166                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-40200902c7c2be5/SystemIntf.jar
+7f9ba0073000-7f9ba0074000 r--s 00001000 08:06 4195160                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlIntf.jar-6fa98ad694182978/GlIntf.jar
+7f9ba0074000-7f9ba0075000 r--s 00004000 08:06 4195158                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-7f57c657a1fb8834/SystemDto.jar
+7f9ba0075000-7f9ba0076000 r--s 00001000 08:06 4195154                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlBpIntf.jar-3e799fdef5fddaf0/GlBpIntf.jar
+7f9ba0076000-7f9ba0077000 r--s 00000000 08:06 4195152                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-71468af1f9bc5614/SystemIntf.jar
+7f9ba0077000-7f9ba0078000 r--s 00001000 08:06 4195147                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlIntf.jar-25696052eeb0b6ce/GlIntf.jar
+7f9ba0078000-7f9ba0079000 r--s 00001000 08:06 4195111                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlBpIntf.jar-dd05a7776ae7fe86/GlBpIntf.jar
+7f9ba0080000-7f9ba0085000 r--s 00039000 08:06 4195114                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsCommon.jar-ce24ff509f9fd081/BprsCommon.jar
+7f9ba0085000-7f9ba0086000 r--s 00004000 08:06 4195132                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-e0eafdcb91a8c5a2/SystemDto.jar
+7f9ba0086000-7f9ba0087000 r--s 00007000 08:06 4195128                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-11126e526f09ce30/GlDto.jar
+7f9ba008c000-7f9ba008e000 r--s 00013000 08:06 4195108                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/KembangHost.jar-802fd88ec0a1c709/KembangHost.jar
+7f9ba0090000-7f9ba0092000 r--s 00019000 08:06 4195104                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-dcaf9ffd5ed41de/MicrobankDto.jar
+7f9ba0092000-7f9ba0093000 r--s 00004000 08:06 4195102                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-41b3b354e69356ee/SystemDto.jar
+7f9ba0093000-7f9ba0095000 r--s 00002000 08:06 4195098                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankIntf.jar-cf563faa034d7a46/MicrobankIntf.jar
+7f9ba0095000-7f9ba0096000 r--s 00000000 08:06 4195094                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-a053d1d9fe413b7f/SystemIntf.jar
+7f9ba0097000-7f9ba0098000 r--s 00001000 08:06 4195090                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlIntf.jar-ee6cbbdd68a10f6e/GlIntf.jar
+7f9ba0098000-7f9ba009a000 r--s 00002000 08:06 4195086                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankIntf.jar-65194e9339eaf4b5/MicrobankIntf.jar
+7f9ba009a000-7f9ba00a2000 rw-p 00000000 00:00 0 
+7f9ba00a2000-7f9ba00a5000 ---p 00000000 00:00 0 
+7f9ba00a5000-7f9ba01a3000 rw-p 00000000 00:00 0 
+7f9ba01a3000-7f9ba01a6000 ---p 00000000 00:00 0 
+7f9ba01a6000-7f9ba02a4000 rw-p 00000000 00:00 0 
+7f9ba02a4000-7f9ba02a7000 ---p 00000000 00:00 0 
+7f9ba02a7000-7f9ba03a5000 rw-p 00000000 00:00 0 
+7f9ba03a5000-7f9ba03a8000 ---p 00000000 00:00 0 
+7f9ba03a8000-7f9ba04a6000 rw-p 00000000 00:00 0 
+7f9ba04a6000-7f9ba04a9000 ---p 00000000 00:00 0 
+7f9ba04a9000-7f9ba05a7000 rw-p 00000000 00:00 0 
+7f9ba05a7000-7f9ba05aa000 ---p 00000000 00:00 0 
+7f9ba05aa000-7f9ba06a8000 rw-p 00000000 00:00 0 
+7f9ba06a8000-7f9ba06ab000 ---p 00000000 00:00 0 
+7f9ba06ab000-7f9ba07a9000 rw-p 00000000 00:00 0 
+7f9ba07a9000-7f9ba07ab000 r--s 0002b000 08:06 3015853                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/domain-http-error-context/main/jboss-as-domain-http-error-context-7.1.1.Final.jar
+7f9ba07ab000-7f9ba07b9000 r--s 000c9000 08:06 4195073                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/temp7d78bfb646464b80/content-2cb770be1b77d85a/content
+7f9ba07b9000-7f9ba085e000 r--s 02aef000 08:06 3015837                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/console/main/jboss-as-console-1.1.0.FINAL-resources.jar
+7f9ba085e000-7f9ba0861000 ---p 00000000 00:00 0 
+7f9ba0861000-7f9ba095f000 rw-p 00000000 00:00 0 
+7f9ba095f000-7f9ba0962000 ---p 00000000 00:00 0 
+7f9ba0962000-7f9ba0a60000 rw-p 00000000 00:00 0 
+7f9ba0a60000-7f9ba0a63000 ---p 00000000 00:00 0 
+7f9ba0a63000-7f9ba0b61000 rw-p 00000000 00:00 0 
+7f9ba0b61000-7f9ba0b64000 ---p 00000000 00:00 0 
+7f9ba0b64000-7f9ba0c62000 rw-p 00000000 00:00 0 
+7f9ba0c62000-7f9ba0c65000 ---p 00000000 00:00 0 
+7f9ba0c65000-7f9ba0d63000 rw-p 00000000 00:00 0 
+7f9ba0d63000-7f9ba0d66000 ---p 00000000 00:00 0 
+7f9ba0d66000-7f9ba0e64000 rw-p 00000000 00:00 0 
+7f9ba0e64000-7f9ba0e67000 ---p 00000000 00:00 0 
+7f9ba0e67000-7f9ba0f65000 rw-p 00000000 00:00 0 
+7f9ba0f65000-7f9ba0f68000 ---p 00000000 00:00 0 
+7f9ba0f68000-7f9ba1066000 rw-p 00000000 00:00 0 
+7f9ba1066000-7f9ba1069000 ---p 00000000 00:00 0 
+7f9ba1069000-7f9ba1167000 rw-p 00000000 00:00 0 
+7f9ba1167000-7f9ba116a000 ---p 00000000 00:00 0 
+7f9ba116a000-7f9ba1268000 rw-p 00000000 00:00 0 
+7f9ba1268000-7f9ba126b000 ---p 00000000 00:00 0 
+7f9ba126b000-7f9ba1369000 rw-p 00000000 00:00 0 
+7f9ba1369000-7f9ba136c000 ---p 00000000 00:00 0 
+7f9ba136c000-7f9ba146a000 rw-p 00000000 00:00 0 
+7f9ba146a000-7f9ba146d000 ---p 00000000 00:00 0 
+7f9ba146d000-7f9ba156b000 rw-p 00000000 00:00 0 
+7f9ba156b000-7f9ba156e000 ---p 00000000 00:00 0 
+7f9ba156e000-7f9ba166c000 rw-p 00000000 00:00 0 
+7f9ba166c000-7f9ba166f000 ---p 00000000 00:00 0 
+7f9ba166f000-7f9ba176d000 rw-p 00000000 00:00 0 
+7f9ba176d000-7f9ba1770000 ---p 00000000 00:00 0 
+7f9ba1770000-7f9ba186e000 rw-p 00000000 00:00 0 
+7f9ba186e000-7f9ba1871000 ---p 00000000 00:00 0 
+7f9ba1871000-7f9ba196f000 rw-p 00000000 00:00 0 
+7f9ba196f000-7f9ba1972000 ---p 00000000 00:00 0 
+7f9ba1972000-7f9ba1a70000 rw-p 00000000 00:00 0 
+7f9ba1a70000-7f9ba1a73000 ---p 00000000 00:00 0 
+7f9ba1a73000-7f9ba1b71000 rw-p 00000000 00:00 0 
+7f9ba1b71000-7f9ba1b8b000 r--s 00188000 08:06 3016264                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/native/jbossws-native-core/main/jbossws-native-core-4.0.2.GA.jar
+7f9ba1b8b000-7f9ba1b8e000 ---p 00000000 00:00 0 
+7f9ba1b8e000-7f9ba1c8c000 rw-p 00000000 00:00 0 
+7f9ba1c8c000-7f9ba1ca1000 r-xp 00000000 08:05 3935796                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f9ba1ca1000-7f9ba1ea0000 ---p 00015000 08:05 3935796                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f9ba1ea0000-7f9ba1ea1000 r--p 00014000 08:05 3935796                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f9ba1ea1000-7f9ba1ea2000 rw-p 00015000 08:05 3935796                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f9ba1ea2000-7f9ba1f84000 r-xp 00000000 08:05 2760367                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f9ba1f84000-7f9ba2183000 ---p 000e2000 08:05 2760367                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f9ba2183000-7f9ba218b000 r--p 000e1000 08:05 2760367                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f9ba218b000-7f9ba218d000 rw-p 000e9000 08:05 2760367                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f9ba218d000-7f9ba21a2000 rw-p 00000000 00:00 0 
+7f9ba21a2000-7f9ba21a3000 r-xp 00000000 08:05 3943480                    /lib/x86_64-linux-gnu/libaio.so.1.0.1
+7f9ba21a3000-7f9ba23a2000 ---p 00001000 08:05 3943480                    /lib/x86_64-linux-gnu/libaio.so.1.0.1
+7f9ba23a2000-7f9ba23a3000 r--p 00000000 08:05 3943480                    /lib/x86_64-linux-gnu/libaio.so.1.0.1
+7f9ba23a3000-7f9ba23a4000 rw-p 00001000 08:05 3943480                    /lib/x86_64-linux-gnu/libaio.so.1.0.1
+7f9ba23a4000-7f9ba23a5000 r--s 00000000 08:06 4195088                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-5925e566a2d83a90/SystemIntf.jar
+7f9ba23a5000-7f9ba23a6000 r--s 00001000 08:06 4195080                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlBpIntf.jar-b6797fb54c0768af/GlBpIntf.jar
+7f9ba23a6000-7f9ba23a7000 r--s 00000000 08:06 3016080                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/logging/jul-to-slf4j-stub/main/jul-to-slf4j-stub-1.0.0.Final.jar
+7f9ba23a7000-7f9ba23a8000 r--s 00000000 08:06 4195079                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-a3c3660c81bcab57/SystemIntf.jar
+7f9ba23a8000-7f9ba23b3000 r--s 00084000 08:06 3016281                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/xb/main/jbossxb-2.0.3.GA.jar
+7f9ba23b3000-7f9ba23b5000 r--s 00011000 08:06 3015731                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/codehaus/jettison/main/jettison-1.3.1.jar
+7f9ba23b5000-7f9ba23b9000 r--s 00020000 08:06 3016217                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/shrinkwrap/core/main/shrinkwrap-impl-base-1.0.0-cr-1.jar
+7f9ba23b9000-7f9ba23bc000 r--s 0000d000 08:06 3016215                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/shrinkwrap/core/main/shrinkwrap-api-1.0.0-cr-1.jar
+7f9ba23bc000-7f9ba23c6000 r-xp 00000000 08:06 3015762                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/main/lib/linux-x86_64/libHornetQAIO64.so
+7f9ba23c6000-7f9ba25c5000 ---p 0000a000 08:06 3015762                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/main/lib/linux-x86_64/libHornetQAIO64.so
+7f9ba25c5000-7f9ba25c6000 r--p 00009000 08:06 3015762                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/main/lib/linux-x86_64/libHornetQAIO64.so
+7f9ba25c6000-7f9ba25c7000 rw-p 0000a000 08:06 3015762                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/main/lib/linux-x86_64/libHornetQAIO64.so
+7f9ba25c7000-7f9ba25ca000 ---p 00000000 00:00 0 
+7f9ba25ca000-7f9ba26c8000 rw-p 00000000 00:00 0 
+7f9ba26c8000-7f9ba26cb000 ---p 00000000 00:00 0 
+7f9ba26cb000-7f9ba27c9000 rw-p 00000000 00:00 0 
+7f9ba27c9000-7f9ba27cc000 ---p 00000000 00:00 0 
+7f9ba27cc000-7f9ba28ca000 rw-p 00000000 00:00 0 
+7f9ba28ca000-7f9ba28cd000 ---p 00000000 00:00 0 
+7f9ba28cd000-7f9ba29cb000 rw-p 00000000 00:00 0 
+7f9ba29cb000-7f9ba29e3000 r-xp 00000000 08:05 3948209                    /lib/x86_64-linux-gnu/libresolv-2.15.so
+7f9ba29e3000-7f9ba2be3000 ---p 00018000 08:05 3948209                    /lib/x86_64-linux-gnu/libresolv-2.15.so
+7f9ba2be3000-7f9ba2be4000 r--p 00018000 08:05 3948209                    /lib/x86_64-linux-gnu/libresolv-2.15.so
+7f9ba2be4000-7f9ba2be5000 rw-p 00019000 08:05 3948209                    /lib/x86_64-linux-gnu/libresolv-2.15.so
+7f9ba2be5000-7f9ba2be7000 rw-p 00000000 00:00 0 
+7f9ba2be7000-7f9ba2bee000 r-xp 00000000 08:05 3948221                    /lib/x86_64-linux-gnu/libnss_dns-2.15.so
+7f9ba2bee000-7f9ba2ded000 ---p 00007000 08:05 3948221                    /lib/x86_64-linux-gnu/libnss_dns-2.15.so
+7f9ba2ded000-7f9ba2dee000 r--p 00006000 08:05 3948221                    /lib/x86_64-linux-gnu/libnss_dns-2.15.so
+7f9ba2dee000-7f9ba2def000 rw-p 00007000 08:05 3948221                    /lib/x86_64-linux-gnu/libnss_dns-2.15.so
+7f9ba2def000-7f9ba2df1000 r-xp 00000000 08:05 3932214                    /lib/libnss_mdns4_minimal.so.2
+7f9ba2df1000-7f9ba2ff0000 ---p 00002000 08:05 3932214                    /lib/libnss_mdns4_minimal.so.2
+7f9ba2ff0000-7f9ba2ff1000 r--p 00001000 08:05 3932214                    /lib/libnss_mdns4_minimal.so.2
+7f9ba2ff1000-7f9ba2ff2000 rw-p 00002000 08:05 3932214                    /lib/libnss_mdns4_minimal.so.2
+7f9ba2ff2000-7f9ba2ff3000 r--s 00000000 08:06 3016270                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/native/jbossws-native-services/main/jbossws-native-services-4.0.2.GA.jar
+7f9ba2ff3000-7f9ba2ff4000 r--s 00000000 08:06 3016219                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/shrinkwrap/core/main/shrinkwrap-spi-1.0.0-cr-1.jar
+7f9ba2ff4000-7f9ba2ff5000 r--s 00000000 08:06 3016267                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/native/jbossws-native-factories/main/jbossws-native-factories-4.0.2.GA.jar
+7f9ba2ff5000-7f9ba2ffa000 r--s 00023000 08:06 3015706                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/ws/xmlschema/main/xmlschema-core-2.0.jar
+7f9ba2ffa000-7f9ba2ffc000 r--s 00013000 08:06 3015717                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/xml-resolver/main/xml-resolver-1.2.jar
+7f9ba2ffc000-7f9ba3004000 r--s 0005f000 08:06 3015700                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/velocity/main/velocity-1.6.3.jar
+7f9ba3004000-7f9ba3007000 r--s 0000f000 08:06 3015694                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/neethi/main/neethi-3.0.1.jar
+7f9ba3007000-7f9ba3009000 r--s 0000f000 08:06 3015804                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/impl/main/jboss-as-clustering-impl-7.1.1.Final.jar
+7f9ba3009000-7f9ba300a000 r--s 00002000 08:06 3016333                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/slf4j/impl/main/slf4j-jboss-logmanager-1.0.0.GA.jar
+7f9ba300a000-7f9ba300d000 ---p 00000000 00:00 0 
+7f9ba300d000-7f9ba310b000 rw-p 00000000 00:00 0 
+7f9ba310b000-7f9ba310d000 r--s 00004000 08:06 3015492                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/enterprise/deploy/api/main/jboss-jad-api_1.2_spec-1.0.0.Final.jar
+7f9ba310d000-7f9ba311a000 r--s 00088000 08:06 3015697                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/santuario/xmlsec/main/xmlsec-1.5.1.jar
+7f9ba311a000-7f9ba3120000 r--s 0005f000 08:06 3015703                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/ws/security/main/wss4j-1.6.5.jar
+7f9ba3120000-7f9ba3125000 r--s 00042000 08:06 3015471                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/sun/xml/messaging/saaj/main/saaj-impl-1.3.16-jbossorg-1.jar
+7f9ba3125000-7f9ba3126000 r--s 00002000 08:06 3015668                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-xjc-ts-2.4.0.jar
+7f9ba3126000-7f9ba3127000 r--s 00003000 08:06 3015666                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-xjc-dv-2.4.0.jar
+7f9ba3127000-7f9ba3128000 r--s 00002000 08:06 3015664                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-xjc-boolean-2.4.0.jar
+7f9ba3128000-7f9ba312c000 r--s 00024000 08:06 3015662                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-tools-wsdlto-frontend-jaxws-2.4.6.jar
+7f9ba312c000-7f9ba312e000 r--s 00008000 08:06 3015660                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-tools-wsdlto-databinding-jaxb-2.4.6.jar
+7f9ba312e000-7f9ba3130000 r--s 0000b000 08:06 3015658                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-tools-wsdlto-core-2.4.6.jar
+7f9ba3130000-7f9ba3132000 r--s 0000f000 08:06 3015656                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-tools-validator-2.4.6.jar
+7f9ba3132000-7f9ba3135000 r--s 0001a000 08:06 3015654                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-tools-java2ws-2.4.6.jar
+7f9ba3135000-7f9ba3139000 r--s 00024000 08:06 3015652                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-tools-common-2.4.6.jar
+7f9ba3139000-7f9ba3143000 r--s 0007a000 08:06 3015650                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-ws-security-2.4.6.jar
+7f9ba3143000-7f9ba3148000 r--s 0002e000 08:06 3015648                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-ws-rm-2.4.6.jar
+7f9ba3148000-7f9ba314c000 r--s 00024000 08:06 3015646                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-ws-policy-2.4.6.jar
+7f9ba314c000-7f9ba314f000 r--s 00013000 08:06 3015644                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-ws-addr-2.4.6.jar
+7f9ba314f000-7f9ba3150000 r--s 00005000 08:06 3015642                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-transports-local-2.4.6.jar
+7f9ba3150000-7f9ba3153000 r--s 0001f000 08:06 3015640                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-transports-jms-2.4.6.jar
+7f9ba3153000-7f9ba3157000 r--s 0002f000 08:06 3015638                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-transports-http-2.4.6.jar
+7f9ba3157000-7f9ba3159000 r--s 00003000 08:06 3015636                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-transports-common-2.4.6.jar
+7f9ba3159000-7f9ba315c000 r--s 0000e000 08:06 3015634                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-management-2.4.6.jar
+7f9ba315c000-7f9ba315e000 r--s 00017000 08:06 3015632                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-frontend-simple-2.4.6.jar
+7f9ba315e000-7f9ba3164000 r--s 00051000 08:06 3015630                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-frontend-jaxws-2.4.6.jar
+7f9ba3164000-7f9ba3166000 r--s 00017000 08:06 3015628                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-databinding-jaxb-2.4.6.jar
+7f9ba3166000-7f9ba316a000 r--s 00036000 08:06 3015626                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-databinding-aegis-2.4.6.jar
+7f9ba316a000-7f9ba3174000 r--s 00076000 08:06 3015624                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-core-2.4.6.jar
+7f9ba3174000-7f9ba3176000 r--s 00008000 08:06 3015622                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-bindings-xml-2.4.6.jar
+7f9ba3176000-7f9ba317a000 r--s 00027000 08:06 3015620                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-bindings-soap-2.4.6.jar
+7f9ba317a000-7f9ba317c000 r--s 00005000 08:06 3015618                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-bindings-object-2.4.6.jar
+7f9ba317c000-7f9ba317e000 r--s 0000a000 08:06 3015616                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-bindings-http-2.4.6.jar
+7f9ba317e000-7f9ba3180000 r--s 00007000 08:06 3015614                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-rt-bindings-coloc-2.4.6.jar
+7f9ba3180000-7f9ba3186000 r--s 0004e000 08:06 3015612                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-common-utilities-2.4.6.jar
+7f9ba3186000-7f9ba3190000 r--s 0004f000 08:06 3015610                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/cxf/main/cxf-api-2.4.6.jar
+7f9ba3190000-7f9ba3193000 r--s 00019000 08:06 3016252                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/cxf/jbossws-cxf-server/main/jbossws-cxf-server-4.0.2.GA.jar
+7f9ba3193000-7f9ba3196000 r--s 00010000 08:06 3016258                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/jaxws-client/main/jbossws-cxf-client-4.0.2.GA.jar
+7f9ba3196000-7f9ba31d1000 r--s 002cc000 08:06 3015467                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/sun/xml/bind/main/jaxb-xjc-2.2.4.jar
+7f9ba31d1000-7f9ba31e3000 r--s 000c9000 08:06 3015465                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/sun/xml/bind/main/jaxb-impl-2.2.4.jar
+7f9ba31e3000-7f9ba31ed000 r--s 0012a000 08:06 3015457                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/h2database/h2/main/h2-1.3.161.jar
+7f9ba31ed000-7f9ba31f0000 ---p 00000000 00:00 0 
+7f9ba31f0000-7f9ba32ee000 rw-p 00000000 00:00 0 
+7f9ba32ee000-7f9ba32f1000 ---p 00000000 00:00 0 
+7f9ba32f1000-7f9ba33ef000 rw-p 00000000 00:00 0 
+7f9ba33ef000-7f9ba33f4000 r--s 00020000 08:06 3015554                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/wsdl4j/api/main/wsdl4j-1.6.2.jar
+7f9ba33f4000-7f9ba33f7000 ---p 00000000 00:00 0 
+7f9ba33f7000-7f9ba34f5000 rw-p 00000000 00:00 0 
+7f9ba34f5000-7f9ba34f8000 ---p 00000000 00:00 0 
+7f9ba34f8000-7f9ba35f6000 rw-p 00000000 00:00 0 
+7f9ba36f7000-7f9ba36fa000 ---p 00000000 00:00 0 
+7f9ba36fa000-7f9ba37f8000 rw-p 00000000 00:00 0 
+7f9ba3cfd000-7f9ba3d00000 ---p 00000000 00:00 0 
+7f9ba3d00000-7f9ba3dfe000 rw-p 00000000 00:00 0 
+7f9ba4000000-7f9ba4021000 rw-p 00000000 00:00 0 
+7f9ba4021000-7f9ba8000000 ---p 00000000 00:00 0 
+7f9ba8000000-7f9ba813d000 rw-p 00000000 00:00 0 
+7f9ba813d000-7f9bac000000 ---p 00000000 00:00 0 
+7f9bac000000-7f9bac02a000 rw-p 00000000 00:00 0 
+7f9bac02a000-7f9bb0000000 ---p 00000000 00:00 0 
+7f9bb0000000-7f9bb0062000 rw-p 00000000 00:00 0 
+7f9bb0062000-7f9bb4000000 ---p 00000000 00:00 0 
+7f9bb4000000-7f9bb4028000 rw-p 00000000 00:00 0 
+7f9bb4028000-7f9bb8000000 ---p 00000000 00:00 0 
+7f9bb8000000-7f9bb806d000 rw-p 00000000 00:00 0 
+7f9bb806d000-7f9bbc000000 ---p 00000000 00:00 0 
+7f9bbc000000-7f9bbc021000 rw-p 00000000 00:00 0 
+7f9bbc021000-7f9bc0000000 ---p 00000000 00:00 0 
+7f9bc0000000-7f9bc0021000 rw-p 00000000 00:00 0 
+7f9bc0021000-7f9bc4000000 ---p 00000000 00:00 0 
+7f9bc4000000-7f9bc4021000 rw-p 00000000 00:00 0 
+7f9bc4021000-7f9bc8000000 ---p 00000000 00:00 0 
+7f9bc8000000-7f9bc8002000 r--s 00002000 08:06 3016255                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/cxf/jbossws-cxf-transports-httpserver/main/jbossws-cxf-transports-httpserver-4.0.2.GA.jar
+7f9bc8002000-7f9bc8004000 r--s 00006000 08:06 3016068                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/jaxbintros/main/jboss-jaxb-intros-1.0.2.GA.jar
+7f9bc8004000-7f9bc8006000 r--s 00003000 08:06 3016327                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/scannotation/scannotation/main/scannotation-1.0.2.jar
+7f9bc8006000-7f9bc8007000 r--s 00000000 08:06 3016249                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/cxf/jbossws-cxf-factories/main/jbossws-cxf-factories-4.0.2.GA.jar
+7f9bc8007000-7f9bc8009000 r--s 00005000 08:06 3015675                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/httpcomponents/main/httpmime-4.1.2.jar
+7f9bc8009000-7f9bc800e000 r--s 00028000 08:06 3015673                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/httpcomponents/main/httpcore-4.1.4.jar
+7f9bc800e000-7f9bc8016000 r--s 0004e000 08:06 3015671                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/httpcomponents/main/httpclient-4.1.2.jar
+7f9bc8016000-7f9bc8018000 r--s 0000d000 08:06 3015593                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/commons/codec/main/commons-codec-1.4.jar
+7f9bc809d000-7f9bc8104000 r-xp 00000000 08:05 2760912                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libt2k.so
+7f9bc8104000-7f9bc8304000 ---p 00067000 08:05 2760912                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libt2k.so
+7f9bc8304000-7f9bc830a000 rw-p 00067000 08:05 2760912                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libt2k.so
+7f9bc830a000-7f9bc831b000 rw-p 00000000 00:00 0 
+7f9bc831b000-7f9bc831e000 ---p 00000000 00:00 0 
+7f9bc831e000-7f9bc841c000 rw-p 00000000 00:00 0 
+7f9bc841c000-7f9bc841f000 ---p 00000000 00:00 0 
+7f9bc841f000-7f9bc851d000 rw-p 00000000 00:00 0 
+7f9bc86c4000-7f9bc8708000 r-xp 00000000 08:05 2760870                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libfontmanager.so
+7f9bc8708000-7f9bc8908000 ---p 00044000 08:05 2760870                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libfontmanager.so
+7f9bc8908000-7f9bc890c000 rw-p 00044000 08:05 2760870                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libfontmanager.so
+7f9bc890c000-7f9bc891c000 rw-p 00000000 00:00 0 
+7f9bc891c000-7f9bc8922000 r-xp 00000000 08:05 2760887                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/headless/libmawt.so
+7f9bc8922000-7f9bc8b22000 ---p 00006000 08:05 2760887                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/headless/libmawt.so
+7f9bc8b22000-7f9bc8b23000 rw-p 00006000 08:05 2760887                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/headless/libmawt.so
+7f9bc8b23000-7f9bc8b26000 ---p 00000000 00:00 0 
+7f9bc8b26000-7f9bc8c24000 rw-p 00000000 00:00 0 
+7f9bc8e26000-7f9bc8e29000 ---p 00000000 00:00 0 
+7f9bc8e29000-7f9bc8f27000 rw-p 00000000 00:00 0 
+7f9bc8f27000-7f9bc8f2a000 ---p 00000000 00:00 0 
+7f9bc8f2a000-7f9bc9028000 rw-p 00000000 00:00 0 
+7f9bc9028000-7f9bc902b000 ---p 00000000 00:00 0 
+7f9bc902b000-7f9bc9129000 rw-p 00000000 00:00 0 
+7f9bc9129000-7f9bc912c000 ---p 00000000 00:00 0 
+7f9bc912c000-7f9bc922a000 rw-p 00000000 00:00 0 
+7f9bc92ea000-7f9bc92eb000 r--s 00000000 08:05 2492785                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7f9bc92eb000-7f9bc92f4000 r--s 00000000 08:05 2490455                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7f9bc92f4000-7f9bc92f6000 r--s 00000000 08:05 2492670                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7f9bc92f6000-7f9bc92fe000 r--s 00000000 08:05 2497456                    /var/cache/fontconfig/a6d8cf8e4ec09cdbc8633c31745a07dd-le64.cache-3
+7f9bc92fe000-7f9bc9302000 r--s 00000000 08:05 2492666                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-3
+7f9bc9302000-7f9bc9303000 r--s 00000000 08:05 2492144                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7f9bc9303000-7f9bc9304000 r--s 00000000 08:05 2492138                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7f9bc9304000-7f9bc930a000 r--s 00000000 08:05 2492136                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7f9bc930a000-7f9bc930e000 r--s 00000000 08:05 2492135                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7f9bc930e000-7f9bc931e000 r--s 00000000 08:05 2492133                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3
+7f9bc931e000-7f9bc9321000 r--s 00000000 08:05 2492132                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-3
+7f9bc9321000-7f9bc9322000 r--s 00000000 08:05 2494478                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7f9bc9322000-7f9bc9325000 r--s 00000000 08:05 2490434                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-3
+7f9bc9325000-7f9bc9353000 r--s 00000000 08:05 2491771                    /var/cache/fontconfig/365b55f210c0a22e9a19e35191240f32-le64.cache-3
+7f9bc9353000-7f9bc9358000 r--s 00000000 08:05 2492125                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-3
+7f9bc9358000-7f9bc9359000 r--s 00000000 08:05 2492124                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-3
+7f9bc9359000-7f9bc935a000 r--s 00000000 08:05 2492123                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-3
+7f9bc935a000-7f9bc935f000 r--s 00000000 08:05 2492087                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-3
+7f9bc935f000-7f9bc9367000 r--s 00000000 08:05 2497454                    /var/cache/fontconfig/52f7bdb7ce746bfd7eaa1985bd9cfa93-le64.cache-3
+7f9bc9367000-7f9bc9377000 r--s 00000000 08:05 2492077                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7f9bc9377000-7f9bc937d000 r--s 00000000 08:05 2497451                    /var/cache/fontconfig/3f7329c5293ffd510edef78f73874cfd-le64.cache-3
+7f9bc937d000-7f9bc9380000 r--s 00000000 08:05 2490452                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7f9bc9380000-7f9bc9384000 r--s 00000000 08:05 2490988                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7f9bc9384000-7f9bc9426000 r-xp 00000000 08:05 2760879                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libawt.so
+7f9bc9426000-7f9bc9626000 ---p 000a2000 08:05 2760879                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libawt.so
+7f9bc9626000-7f9bc9632000 rw-p 000a2000 08:05 2760879                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libawt.so
+7f9bc9632000-7f9bc9656000 rw-p 00000000 00:00 0 
+7f9bc9656000-7f9bc9661000 r--s 00370000 08:05 2760832                    /usr/lib/jvm/jdk1.7.0/jre/lib/charsets.jar
+7f9bc9661000-7f9bc966c000 r--s 00370000 08:05 2760832                    /usr/lib/jvm/jdk1.7.0/jre/lib/charsets.jar
+7f9bc966c000-7f9bc966e000 r--s 00019000 08:06 4195129                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-a2956acad4b0faba/MicrobankDto.jar
+7f9bc966e000-7f9bc9670000 r--s 00000000 08:06 4195119                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankReportIntf.jar-565f8322de03622e/MicrobankReportIntf.jar
+7f9bc9670000-7f9bc9672000 r--s 00002000 08:06 4195109                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankIntf.jar-ffdf25ddfc605133/MicrobankIntf.jar
+7f9bc9672000-7f9bc9673000 r--s 00004000 08:06 4195093                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankReportDto.jar-ccb3f19ff8339597/MicrobankReportDto.jar
+7f9bc9673000-7f9bc96ae000 r--s 002dc000 08:06 4195312                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/groovy-2.0.0.jar-202b75539862875d/groovy-2.0.0.jar
+7f9bc96ae000-7f9bc96bc000 r--s 0007f000 08:06 4195309                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/commons-collections-3.2.1.jar-ab215262cd6180f0/commons-collections-3.2.1.jar
+7f9bc96bc000-7f9bc96c2000 r--s 0002b000 08:06 4195306                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/commons-digester-2.1.jar-a0bd45ba0683fe05/commons-digester-2.1.jar
+7f9bc96c2000-7f9bc96c7000 r--s 00034000 08:06 4195303                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/commons-beanutils-1.8.3.jar-c8c4a46824e19b84/commons-beanutils-1.8.3.jar
+7f9bc96c7000-7f9bc96d3000 r--s 00108000 08:06 4195300                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/itext-2.1.7.jar-7e0a2bb58aca2513/itext-2.1.7.jar
+7f9bc96d3000-7f9bc96d5000 r--s 0000a000 08:06 4195297                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/asm-4.0.jar-b1e2d60514da751d/asm-4.0.jar
+7f9bc96d5000-7f9bc971f000 r--s 003bc000 08:06 4195294                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/jasperreports-5.0.0.jar-a1904d75e453a65/jasperreports-5.0.0.jar
+7f9bc971f000-7f9bc9721000 r--s 00019000 08:06 4195291                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankDto.jar-fba48dd3414d4a85/MicrobankDto.jar
+7f9bc9721000-7f9bc9723000 r--s 00000000 08:06 4195288                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankReportIntf.jar-ffc1639ddf3412ed/MicrobankReportIntf.jar
+7f9bc9723000-7f9bc9724000 r--s 00000000 08:06 4195285                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemBpIntf.jar-9b3e7cde1aa48a3c/SystemBpIntf.jar
+7f9bc9724000-7f9bc9725000 r--s 00007000 08:06 4195281                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlDto.jar-6c4192cbbee9ca08/GlDto.jar
+7f9bc9725000-7f9bc9726000 r--s 00001000 08:06 4195213                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/BprsBpIntf.jar-c3dc260fc965c575/BprsBpIntf.jar
+7f9bc9726000-7f9bc9727000 r--s 00004000 08:06 4195200                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemDto.jar-361c3beb82df7321/SystemDto.jar
+7f9bc9727000-7f9bc9729000 r--s 00011000 08:06 4195144                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/KembangModule.jar-8c5c46d9ac04c956/KembangModule.jar
+7f9bc9729000-7f9bc972a000 r--s 00000000 08:06 4195140                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/SystemIntf.jar-2075fd2308322986/SystemIntf.jar
+7f9bc972a000-7f9bc972b000 r--s 00001000 08:06 4195137                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlIntf.jar-fe934d23e9b1dc70/GlIntf.jar
+7f9bc972b000-7f9bc972c000 r--s 00001000 08:06 4195133                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/GlBpIntf.jar-787e7a36ddc01a89/GlBpIntf.jar
+7f9bc972c000-7f9bc972d000 r--s 00004000 08:06 4195121                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/MicrobankReportDto.jar-1e99867771955c7c/MicrobankReportDto.jar
+7f9bc972d000-7f9bc972f000 r--s 00000000 08:06 4195082                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/tmp/vfs/deployment269847cb4f044e77/Utils.jar-160fb4dcff6565da/Utils.jar
+7f9bc972f000-7f9bc9732000 r--s 00017000 08:06 3016017                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/com/sun/httpserver/main/httpserver-1.0.0.Final.jar
+7f9bc9732000-7f9bc9734000 r--s 00012000 08:06 3016288                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/xnio/nio/main/xnio-nio-3.0.3.GA.jar
+7f9bc9734000-7f9bc9737000 ---p 00000000 00:00 0 
+7f9bc9737000-7f9bc9835000 rw-p 00000000 00:00 0 
+7f9bc9835000-7f9bc9838000 ---p 00000000 00:00 0 
+7f9bc9838000-7f9bc9936000 rw-p 00000000 00:00 0 
+7f9bc9936000-7f9bc993f000 r--s 00057000 08:06 3015742                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hibernate/envers/main/hibernate-envers-4.0.1.Final.jar
+7f9bc993f000-7f9bc9943000 r--s 00017000 08:06 3015896                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jpa/hibernate/4/jboss-as-jpa-hibernate4-7.1.1.Final.jar
+7f9bc9943000-7f9bc9948000 r--s 00068000 08:06 3015585                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/antlr/main/antlr-2.7.7.jar
+7f9bc9948000-7f9bc9949000 r--s 0000a000 08:06 3015448                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/asm/asm/main/asm-3.3.1.jar
+7f9bc9949000-7f9bc994b000 r--s 00003000 08:06 3016335                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/slf4j/jcl-over-slf4j/main/jcl-over-slf4j-1.6.1.jar
+7f9bc994b000-7f9bc994e000 ---p 00000000 00:00 0 
+7f9bc994e000-7f9bc9a4c000 rw-p 00000000 00:00 0 
+7f9bc9a4c000-7f9bc9a4f000 ---p 00000000 00:00 0 
+7f9bc9a4f000-7f9bc9b4d000 rw-p 00000000 00:00 0 
+7f9bc9b4d000-7f9bc9b50000 ---p 00000000 00:00 0 
+7f9bc9b50000-7f9bc9c4e000 rw-p 00000000 00:00 0 
+7f9bc9c4e000-7f9bc9c51000 ---p 00000000 00:00 0 
+7f9bc9c51000-7f9bc9d4f000 rw-p 00000000 00:00 0 
+7f9bc9d4f000-7f9bc9d51000 r--s 00009000 08:06 3016330                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/slf4j/ext/main/slf4j-ext-1.6.1.jar
+7f9bc9d51000-7f9bc9d53000 r--s 00005000 08:06 3016339                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/slf4j/main/slf4j-api-1.6.1.jar
+7f9bc9d53000-7f9bc9d62000 r--s 000b2000 08:06 3016237                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/weld/core/main/weld-core-1.1.5.AS71.Final.jar
+7f9bc9d62000-7f9bc9d63000 r--s 00002000 08:06 3016132                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/repository/main/jbosgi-repository-core-1.0.5.jar
+7f9bc9d63000-7f9bc9d66000 r--s 0000e000 08:06 3016130                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/repository/main/jbosgi-repository-api-1.0.5.jar
+7f9bc9d66000-7f9bc9d67000 r--s 00003000 08:06 3016140                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/vfs/main/jbosgi-vfs30-1.0.7.Final.jar
+7f9bc9d67000-7f9bc9d68000 r--s 00001000 08:06 3016138                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/vfs/main/jbosgi-vfs-1.0.7.Final.jar
+7f9bc9d68000-7f9bc9d6a000 r--s 00001000 08:06 3016032                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/iiop-client/main/jboss-iiop-client-1.0.0.Final.jar
+7f9bc9d6a000-7f9bc9d6c000 r--s 00004000 08:06 3016234                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/weld/api/main/weld-api-1.1.Final.jar
+7f9bc9d6c000-7f9bc9d6d000 r--s 00001000 08:06 3016040                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/interceptor/spi/main/jboss-interceptor-spi-2.0.0.Final.jar
+7f9bc9d6d000-7f9bc9d72000 r--s 00038000 08:06 3016307                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/osgi/core/main/org.osgi.core-4.2.0.jar
+7f9bc9d72000-7f9bc9d77000 r--s 00019000 08:06 3016274                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/spi/main/jbossws-spi-2.0.3.GA.jar
+7f9bc9d77000-7f9bc9d79000 r--s 0000a000 08:06 3016127                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/metadata/main/jbosgi-metadata-2.0.3.Final.jar
+7f9bc9d79000-7f9bc9d7c000 r--s 0000c000 08:06 3016037                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/interceptor/main/jboss-interceptor-core-2.0.0.Final.jar
+7f9bc9d7c000-7f9bc9d8b000 r--s 000b3000 08:06 3016114                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/netty/main/netty-3.2.6.Final.jar
+7f9bc9d8b000-7f9bc9d8d000 r--s 00005000 08:06 3015825                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/web/spi/main/jboss-as-clustering-web-spi-7.1.1.Final.jar
+7f9bc9d8d000-7f9bc9d90000 r--s 00017000 08:06 3016014                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/classfilewriter/main/jboss-classfilewriter-1.0.1.Final.jar
+7f9bc9d90000-7f9bc9d92000 r--s 00004000 08:06 3015527                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/security/auth/message/api/main/jboss-jaspi-api_1.0_spec-1.0.0.Final.jar
+7f9bc9d92000-7f9bc9d94000 r--s 00003000 08:06 3015813                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/registry/main/jboss-as-clustering-registry-7.1.1.Final.jar
+7f9bc9d94000-7f9bc9d96000 r--s 0001a000 08:06 3015765                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/ra/main/hornetq-ra-2.2.13.Final.jar
+7f9bc9d96000-7f9bc9d9c000 r--s 00034000 08:06 3016245                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/common/main/jbossws-common-2.0.2.GA.jar
+7f9bc9d9c000-7f9bc9da5000 r--s 00096000 08:06 3015782                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/javassist/main/javassist-3.15.0-GA.jar
+7f9bc9da5000-7f9bc9da6000 r--s 00006000 08:06 3015801                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/ejb3/infinispan/main/jboss-as-clustering-ejb3-infinispan-7.1.1.Final.jar
+7f9bc9da6000-7f9bc9da9000 r--s 0000c000 08:06 3015795                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/api/main/jboss-as-clustering-api-7.1.1.Final.jar
+7f9bc9da9000-7f9bc9dac000 r--s 0001b000 08:06 3016122                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/framework/main/jbosgi-resolver-felix-1.0.13.Final.jar
+7f9bc9dac000-7f9bc9db1000 r--s 00034000 08:06 3015759                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/main/hornetq-jms-2.2.13.Final.jar
+7f9bc9db1000-7f9bc9db4000 r--s 0000e000 08:06 3015751                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hibernate/main/hibernate-infinispan-4.0.1.Final.jar
+7f9bc9db4000-7f9bc9db8000 r--s 0000a000 08:06 3016240                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/weld/spi/main/weld-spi-1.1.Final.jar
+7f9bc9db8000-7f9bc9dbb000 r--s 0000a000 08:06 3016242                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ws/api/main/jbossws-api-1.0.0.GA.jar
+7f9bc9dbb000-7f9bc9dc5000 r--s 0006b000 08:06 3015749                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hibernate/main/hibernate-entitymanager-4.0.1.Final.jar
+7f9bc9dc5000-7f9bc9dc7000 r--s 00003000 08:06 3016158                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/resteasy/resteasy-cdi/main/resteasy-cdi-2.3.2.Final.jar
+7f9bc9dc7000-7f9bc9dca000 r--s 00011000 08:06 3015745                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hibernate/main/hibernate-commons-annotations-4.0.1.Final.jar
+7f9bc9dca000-7f9bc9dcc000 r--s 00007000 08:06 3016124                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/framework/main/jbosgi-resolver-spi-1.0.13.Final.jar
+7f9bc9dcc000-7f9bc9dcd000 r--s 00000000 08:06 3015907                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jpa/util/main/jboss-as-jpa-util-7.1.1.Final.jar
+7f9bc9dcd000-7f9bc9de5000 r--s 001c6000 08:06 3015462                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/sun/jsf-impl/main/jsf-impl-2.1.7-jbossorg-2.jar
+7f9bc9de5000-7f9bc9de7000 r--s 00002000 08:06 3016120                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/framework/main/jbosgi-resolver-api-1.0.13.Final.jar
+7f9bc9de7000-7f9bc9e30000 r--s 003c6000 08:06 3015747                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hibernate/main/hibernate-core-4.0.1.Final.jar
+7f9bc9e30000-7f9bc9e39000 r--s 00065000 08:06 3015540                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/servlet/jstl/api/main/jboss-jstl-api_1.2_spec-1.0.2.Final.jar
+7f9bc9e39000-7f9bc9e3a000 r--s 00005000 08:06 3015904                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jpa/spi/main/jboss-as-jpa-spi-7.1.1.Final.jar
+7f9bc9e3a000-7f9bc9e3b000 r--s 00001000 08:06 3016029                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.0.0.jar
+7f9bc9e3b000-7f9bc9e41000 r--s 00039000 08:06 3016026                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ejb-client/main/jboss-ejb-client-1.0.5.Final.jar
+7f9bc9e41000-7f9bc9e4f000 r--s 0007f000 08:06 3015596                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/commons/collections/main/commons-collections-3.2.1.jar
+7f9bc9e4f000-7f9bc9e51000 r--s 00005000 08:06 3015506                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/jms/api/main/jboss-jms-api_1.1_spec-1.0.0.Final.jar
+7f9bc9e51000-7f9bc9e56000 r--s 00015000 08:06 3015518                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/persistence/api/main/hibernate-jpa-2.0-api-1.0.1.Final.jar
+7f9bc9e56000-7f9bc9e58000 r--s 00002000 08:06 3015515                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/management/j2ee/api/main/jboss-j2eemgmt-api_1.1_spec-1.0.0.Final.jar
+7f9bc9e58000-7f9bc9e5e000 r--s 0004d000 08:06 3016118                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/framework/main/jbosgi-framework-core-1.1.8.Final.jar
+7f9bc9e5e000-7f9bc9e60000 r--s 0000a000 08:06 3015537                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/servlet/jsp/api/main/jboss-jsp-api_2.2_spec-1.0.0.Final.jar
+7f9bc9e60000-7f9bc9e6c000 r--s 0009f000 08:06 3015497                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/faces/api/main/jboss-jsf-api_2.1_spec-2.0.1.Final.jar
+7f9bc9e6c000-7f9bc9e6d000 r--s 00001000 08:06 3015509                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/jws/api/main/jsr181-api-1.0-MR1.jar
+7f9bc9e6d000-7f9bc9e6f000 r--s 0000a000 08:06 3016074                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/jts/integration/main/jbossjts-integration-4.16.2.Final.jar
+7f9bc9e6f000-7f9bc9e74000 r--s 00041000 08:06 3015604                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/commons/lang/main/commons-lang-2.6.jar
+7f9bc9e74000-7f9bc9e8c000 r--s 0014d000 08:06 3015757                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hornetq/main/hornetq-core-2.2.13.Final.jar
+7f9bc9e8c000-7f9bc9e8e000 r--s 00004000 08:06 3016116                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/framework/main/jbosgi-deployment-1.0.12.Final.jar
+7f9bc9e8e000-7f9bc9eaf000 r--s 00172000 08:06 3015454                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/com/google/guava/main/guava-11.0.2.jar
+7f9bc9eaf000-7f9bc9eb1000 r--s 00006000 08:06 3015451                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/ch/qos/cal10n/main/cal10n-api-0.7.3.jar
+7f9bc9eb1000-7f9bc9eb3000 r--s 00000000 08:06 3016003                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/webservices/main/jbossws-cxf-resources-4.0.2.GA-jboss711.jar
+7f9bc9eb3000-7f9bc9eba000 r--s 00042000 08:06 3016001                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/webservices/main/jboss-as-webservices-server-integration-7.1.1.Final.jar
+7f9bc9eba000-7f9bc9ed8000 r--s 0020a000 08:06 3015980                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/web/main/jbossweb-7.0.13.Final.jar
+7f9bc9ed8000-7f9bc9ee5000 r--s 00167000 08:06 3015976                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/web/main/jasper-jdt-7.0.3.Final.jar
+7f9bc9ee5000-7f9bc9ee7000 r--s 00002000 08:06 3015929                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/modcluster/main/mod_cluster-container-jbossweb-1.2.0.Final.jar
+7f9bc9ee7000-7f9bc9ee9000 r--s 00007000 08:06 3015927                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/modcluster/main/mod_cluster-container-catalina-1.2.0.Final.jar
+7f9bc9ee9000-7f9bc9eec000 r--s 00017000 08:06 3015933                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/modcluster/main/mod_cluster-core-1.2.0.Final.jar
+7f9bc9eec000-7f9bc9ef2000 r--s 00043000 08:06 3015599                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/commons/configuration/main/commons-configuration-1.6.jar
+7f9bc9ef2000-7f9bc9efe000 r--s 00087000 08:06 3016176                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-jaxrs-2.3.2.Final.jar
+7f9bc9efe000-7f9bc9f05000 r--s 00072000 08:06 3015512                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/mail/api/main/mail-1.4.4.jar
+7f9bc9f05000-7f9bc9f09000 r--s 00026000 08:06 3015942                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/osgi/main/jboss-as-osgi-service-7.1.1.Final.jar
+7f9bc9f09000-7f9bc9f9e000 r--s 0093a000 08:06 3016323                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/python/jython/standalone/main/jython-standalone-2.5.2.jar
+7f9bc9f9e000-7f9bc9f9f000 r--s 00001000 08:06 3016171                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/resteasy/resteasy-jaxrs/main/async-http-servlet-3.0-2.3.2.Final.jar
+7f9bc9f9f000-7f9bc9fa3000 r--s 00024000 08:06 3016008                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/weld/main/jboss-as-weld-7.1.1.Final.jar
+7f9bc9fa3000-7f9bc9fa6000 r--s 0000e000 08:06 3015960                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/sar/main/jboss-as-sar-7.1.1.Final.jar
+7f9bc9fa6000-7f9bc9fa9000 r--s 00018000 08:06 3015925                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/modcluster/main/jboss-as-modcluster-7.1.1.Final.jar
+7f9bc9fa9000-7f9bc9fad000 r--s 0002d000 08:06 3016062                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/jdbcadapters/main/ironjacamar-jdbc-1.0.9.Final.jar
+7f9bc9fad000-7f9bc9fb0000 ---p 00000000 00:00 0 
+7f9bc9fb0000-7f9bca0ae000 rw-p 00000000 00:00 0 
+7f9bca0ae000-7f9bca0b1000 ---p 00000000 00:00 0 
+7f9bca0b1000-7f9bca1af000 rw-p 00000000 00:00 0 
+7f9bca1af000-7f9bca1b6000 r--s 00042000 08:06 3015688                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/juddi/uddi-ws/main/uddi-ws-3.1.3.jar
+7f9bca1b6000-7f9bca1b9000 ---p 00000000 00:00 0 
+7f9bca1b9000-7f9bca2b7000 rw-p 00000000 00:00 0 
+7f9bca2b7000-7f9bca2ba000 ---p 00000000 00:00 0 
+7f9bca2ba000-7f9bca3b8000 rw-p 00000000 00:00 0 
+7f9bca3b8000-7f9bca3bb000 ---p 00000000 00:00 0 
+7f9bca3bb000-7f9bca4b9000 rw-p 00000000 00:00 0 
+7f9bca4b9000-7f9bca4bc000 r--s 00039000 08:06 3015887                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jdr/main/jboss-as-sos-7.1.1.Final.jar
+7f9bca4bc000-7f9bca4c2000 r--s 00043000 08:06 3015685                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/juddi/scout/main/scout-1.2.6.jar
+7f9bca4c2000-7f9bca4c6000 r--s 00026000 08:06 3015899                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jpa/main/jboss-as-jpa-7.1.1.Final.jar
+7f9bca4c6000-7f9bca4c8000 r--s 00008000 08:06 3015885                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jdr/main/jboss-as-jdr-7.1.1.Final.jar
+7f9bca4c8000-7f9bca4cb000 ---p 00000000 00:00 0 
+7f9bca4cb000-7f9bca5c9000 rw-p 00000000 00:00 0 
+7f9bca5c9000-7f9bca5cc000 ---p 00000000 00:00 0 
+7f9bca5cc000-7f9bca6ca000 rw-p 00000000 00:00 0 
+7f9bca6ca000-7f9bca6cc000 r--s 0000b000 08:06 3015882                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jaxrs/main/jboss-as-jaxrs-7.1.1.Final.jar
+7f9bca6cc000-7f9bca6cf000 r--s 00009000 08:06 3015570                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/xml/ws/api/main/jboss-jaxws-api_2.2_spec-2.0.0.Final.jar
+7f9bca6cf000-7f9bca6d2000 ---p 00000000 00:00 0 
+7f9bca6d2000-7f9bca7d0000 rw-p 00000000 00:00 0 
+7f9bca7d0000-7f9bca7d3000 ---p 00000000 00:00 0 
+7f9bca7d3000-7f9bca8d1000 rw-p 00000000 00:00 0 
+7f9bca8d1000-7f9bca8d4000 ---p 00000000 00:00 0 
+7f9bca8d4000-7f9bca9d2000 rw-p 00000000 00:00 0 
+7f9bca9d2000-7f9bca9d5000 ---p 00000000 00:00 0 
+7f9bca9d5000-7f9bcaad3000 rw-p 00000000 00:00 0 
+7f9bcaad3000-7f9bcaad4000 r--s 00005000 08:06 3015566                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/xml/soap/api/main/jboss-saaj-api_1.3_spec-1.0.1.Final.jar
+7f9bcaad4000-7f9bcaadd000 r--s 00051000 08:06 3015754                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/hibernate/validator/main/hibernate-validator-4.2.0.Final.jar
+7f9bcaadd000-7f9bcaae0000 ---p 00000000 00:00 0 
+7f9bcaae0000-7f9bcabde000 rw-p 00000000 00:00 0 
+7f9bcabde000-7f9bcabe1000 ---p 00000000 00:00 0 
+7f9bcabe1000-7f9bcacdf000 rw-p 00000000 00:00 0 
+7f9bcacdf000-7f9bcace2000 ---p 00000000 00:00 0 
+7f9bcace2000-7f9bcade0000 rw-p 00000000 00:00 0 
+7f9bcade0000-7f9bcade3000 ---p 00000000 00:00 0 
+7f9bcade3000-7f9bcaee1000 rw-p 00000000 00:00 0 
+7f9bcaee1000-7f9bcaee4000 ---p 00000000 00:00 0 
+7f9bcaee4000-7f9bcafe2000 rw-p 00000000 00:00 0 
+7f9bcafe2000-7f9bcafe5000 ---p 00000000 00:00 0 
+7f9bcafe5000-7f9bcb0e3000 rw-p 00000000 00:00 0 
+7f9bcb0e3000-7f9bcb0e6000 ---p 00000000 00:00 0 
+7f9bcb0e6000-7f9bcb1e4000 rw-p 00000000 00:00 0 
+7f9bcb1e4000-7f9bcb1e7000 ---p 00000000 00:00 0 
+7f9bcb1e7000-7f9bcb2e5000 rw-p 00000000 00:00 0 
+7f9bcb2e5000-7f9bcb2e8000 ---p 00000000 00:00 0 
+7f9bcb2e8000-7f9bcb4e6000 rw-p 00000000 00:00 0 
+7f9bcb4e6000-7f9bcb4e9000 ---p 00000000 00:00 0 
+7f9bcb4e9000-7f9bcb5e7000 rw-p 00000000 00:00 0 
+7f9bcb5e7000-7f9bcb5ea000 ---p 00000000 00:00 0 
+7f9bcb5ea000-7f9bcb6e8000 rw-p 00000000 00:00 0 
+7f9bcb6e8000-7f9bcb6eb000 ---p 00000000 00:00 0 
+7f9bcb6eb000-7f9bcb7e9000 rw-p 00000000 00:00 0 
+7f9bcb7e9000-7f9bcb7ea000 r--s 00001000 08:06 3016174                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-jaxrs-2.3.2.Final-jandex.jar
+7f9bcb7ea000-7f9bcb7ec000 r--s 0001a000 08:06 3015681                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/juddi/juddi-client/main/juddi-client-3.1.3.jar
+7f9bcb7ec000-7f9bcb7ee000 r--s 00009000 08:06 3015590                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/commons/cli/main/commons-cli-1.2.jar
+7f9bcb7ee000-7f9bcb7f0000 r--s 00008000 08:06 3015916                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/mail/main/jboss-as-mail-7.1.1.Final.jar
+7f9bcb7f0000-7f9bcb7f5000 r--s 00036000 08:06 3015913                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/logging/main/jboss-as-logging-7.1.1.Final.jar
+7f9bcb7f5000-7f9bcb7f8000 r--s 0001c000 08:06 3015948                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/pojo/main/jboss-as-pojo-7.1.1.Final.jar
+7f9bcb7f8000-7f9bcb7fb000 ---p 00000000 00:00 0 
+7f9bcb7fb000-7f9bcb8f9000 rw-p 00000000 00:00 0 
+7f9bcb8f9000-7f9bcb8fc000 ---p 00000000 00:00 0 
+7f9bcb8fc000-7f9bcb9fa000 rw-p 00000000 00:00 0 
+7f9bcb9fa000-7f9bcb9fd000 ---p 00000000 00:00 0 
+7f9bcb9fd000-7f9bcbafb000 rw-p 00000000 00:00 0 
+7f9bcbafb000-7f9bcbafe000 ---p 00000000 00:00 0 
+7f9bcbafe000-7f9bcbbfc000 rw-p 00000000 00:00 0 
+7f9bcbbfc000-7f9bcbbff000 ---p 00000000 00:00 0 
+7f9bcbbff000-7f9bcbcfd000 rw-p 00000000 00:00 0 
+7f9bcbcfd000-7f9bcbd00000 ---p 00000000 00:00 0 
+7f9bcbd00000-7f9bcbdfe000 rw-p 00000000 00:00 0 
+7f9bcbdfe000-7f9bcbe01000 ---p 00000000 00:00 0 
+7f9bcbe01000-7f9bcbeff000 rw-p 00000000 00:00 0 
+7f9bcbeff000-7f9bcbf02000 ---p 00000000 00:00 0 
+7f9bcbf02000-7f9bcc000000 rw-p 00000000 00:00 0 
+7f9bcc000000-7f9bcc021000 rw-p 00000000 00:00 0 
+7f9bcc021000-7f9bd0000000 ---p 00000000 00:00 0 
+7f9bd0000000-7f9bd0007000 r--s 0006b000 08:06 3015978                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/web/main/jboss-as-web-7.1.1.Final.jar
+7f9bd0007000-7f9bd0010000 r--s 0006f000 08:06 3015922                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/messaging/main/jboss-as-messaging-7.1.1.Final.jar
+7f9bd0010000-7f9bd0013000 r--s 00009000 08:06 3015550                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/ws/rs/api/main/jboss-jaxrs-api_1.1_spec-1.0.0.Final.jar
+7f9bd0013000-7f9bd0015000 r--s 0000c000 08:06 3016059                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/impl/main/ironjacamar-validator-1.0.9.Final.jar
+7f9bd0015000-7f9bd0030000 r--s 00154000 08:06 3016077                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/jts/main/jbossjts-4.16.2.Final.jar
+7f9bd0030000-7f9bd0032000 r--s 0000c000 08:06 3016057                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/impl/main/ironjacamar-deployers-common-1.0.9.Final.jar
+7f9bd0032000-7f9bd0037000 r--s 0003a000 08:06 3016055                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/impl/main/ironjacamar-core-impl-1.0.9.Final.jar
+7f9bd0037000-7f9bd003a000 r--s 00035000 08:06 3016053                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/ironjacamar/impl/main/ironjacamar-common-impl-1.0.9.Final.jar
+7f9bd003a000-7f9bd003c000 r--s 00007000 08:06 3015486                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/el/api/main/jboss-el-api_2.2_spec-1.0.0.Final.jar
+7f9bd003c000-7f9bd003f000 r--s 00014000 08:06 3015556                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/xml/bind/api/main/jboss-jaxb-api_2.2_spec-1.0.3.Final.jar
+7f9bd003f000-7f9bd0042000 r--s 0000a000 08:06 3015489                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/enterprise/api/main/cdi-api-1.0-SP4.jar
+7f9bd0042000-7f9bd0044000 r--s 0000e000 08:06 3015910                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jsr77/main/jboss-as-jsr77-7.1.1.Final.jar
+7f9bd0044000-7f9bd0059000 r--s 000e6000 08:06 3015524                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/rmi/api/main/jboss-rmi-api_1.0_spec-1.0.4.Final.jar
+7f9bd0059000-7f9bd005b000 r--s 00001000 08:06 3015503                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/interceptor/api/main/jboss-interceptors-api_1.1_spec-1.0.0.Final.jar
+7f9bd005b000-7f9bd005e000 r--s 00015000 08:06 3015849                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/deployment-scanner/main/jboss-as-deployment-scanner-7.1.1.Final.jar
+7f9bd005e000-7f9bd0061000 r--s 0000c000 08:06 3015521                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/resource/api/main/jboss-connector-api_1.6_spec-1.0.0.Final.jar
+7f9bd0061000-7f9bd0064000 r--s 0001b000 08:06 3015970                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/threads/main/jboss-as-threads-7.1.1.Final.jar
+7f9bd0064000-7f9bd0067000 r--s 00009000 08:06 3015483                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/ejb/api/main/jboss-ejb-api_3.1_spec-1.0.1.Final.jar
+7f9bd0067000-7f9bd0068000 r--s 00009000 08:06 3015771                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/infinispan/cachestore/remote/main/infinispan-cachestore-remote-5.1.2.FINAL.jar
+7f9bd0068000-7f9bd006a000 r--s 00001000 08:06 3015479                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/annotation/api/main/jboss-annotations-api_1.1_spec-1.0.0.Final.jar
+7f9bd006a000-7f9bd006c000 r--s 00006000 08:06 3015798                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/common/main/jboss-as-clustering-common-7.1.1.Final.jar
+7f9bd006c000-7f9bd006e000 r--s 00009000 08:06 3016135                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/osgi/spi/main/jbosgi-spi-3.0.1.Final.jar
+7f9bd006e000-7f9bd0079000 r--s 0007c000 08:06 3015834                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/connector/main/jboss-as-connector-7.1.1.Final.jar
+7f9bd0079000-7f9bd007d000 r--s 0001a000 08:06 3015810                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/jgroups/main/jboss-as-clustering-jgroups-7.1.1.Final.jar
+7f9bd007d000-7f9bd008c000 r--s 000e4000 08:06 3015828                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/cmp/main/jboss-as-cmp-7.1.1.Final.jar
+7f9bd008c000-7f9bd008f000 r--s 00009000 08:06 3015831                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/configadmin/main/jboss-as-configadmin-7.1.1.Final.jar
+7f9bd008f000-7f9bd0091000 r--s 00005000 08:06 3016209                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/security/negotiation/main/jboss-negotiation-spnego-2.2.0.SP1.jar
+7f9bd0091000-7f9bd0093000 r--s 00002000 08:06 3016207                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/security/negotiation/main/jboss-negotiation-ntlm-2.2.0.SP1.jar
+7f9bd0093000-7f9bd0095000 r--s 00003000 08:06 3016205                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/security/negotiation/main/jboss-negotiation-net-2.2.0.SP1.jar
+7f9bd0095000-7f9bd0097000 r--s 00003000 08:06 3016203                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/security/negotiation/main/jboss-negotiation-extras-2.2.0.SP1.jar
+7f9bd0097000-7f9bd0099000 r--s 00007000 08:06 3016201                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/security/negotiation/main/jboss-negotiation-common-2.2.0.SP1.jar
+7f9bd0099000-7f9bd009c000 r--s 0000e000 08:06 3016102                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/metadata/main/jboss-metadata-ear-7.0.1.Final.jar
+7f9bd009c000-7f9bd00a3000 r--s 0005c000 08:06 3016106                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/metadata/main/jboss-metadata-web-7.0.1.Final.jar
+7f9bd00a3000-7f9bd00ac000 r--s 0008f000 08:06 3016104                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/metadata/main/jboss-metadata-ejb-7.0.1.Final.jar
+7f9bd00ac000-7f9bd00ae000 r--s 00004000 08:06 3016098                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/metadata/main/jboss-metadata-appclient-7.0.1.Final.jar
+7f9bd00ae000-7f9bd00b7000 r--s 00057000 08:06 3016100                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/metadata/main/jboss-metadata-common-7.0.1.Final.jar
+7f9bd00b7000-7f9bd00b9000 r--s 00010000 08:06 3015973                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/transactions/main/jboss-as-transactions-7.1.1.Final.jar
+7f9bd00b9000-7f9bd00be000 r--s 00029000 08:06 3015936                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/naming/main/jboss-as-naming-7.1.1.Final.jar
+7f9bd00be000-7f9bd00e0000 r--s 001c3000 08:06 3015776                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/infinispan/main/infinispan-core-5.1.2.FINAL.jar
+7f9bd00e0000-7f9bd00e3000 ---p 00000000 00:00 0 
+7f9bd00e3000-7f9bd01e1000 rw-p 00000000 00:00 0 
+7f9bd01e1000-7f9bd01e4000 ---p 00000000 00:00 0 
+7f9bd01e4000-7f9bd02e2000 rw-p 00000000 00:00 0 
+7f9bd02e2000-7f9bd02e5000 ---p 00000000 00:00 0 
+7f9bd02e5000-7f9bd03e3000 rw-p 00000000 00:00 0 
+7f9bd03e3000-7f9bd03e6000 ---p 00000000 00:00 0 
+7f9bd03e6000-7f9bd04e4000 rw-p 00000000 00:00 0 
+7f9bd04e4000-7f9bd04e7000 ---p 00000000 00:00 0 
+7f9bd04e7000-7f9bd05e5000 rw-p 00000000 00:00 0 
+7f9bd05e5000-7f9bd05fa000 r-xp 00000000 08:05 2760890                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnet.so
+7f9bd05fa000-7f9bd07fa000 ---p 00015000 08:05 2760890                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnet.so
+7f9bd07fa000-7f9bd07fb000 rw-p 00015000 08:05 2760890                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnet.so
+7f9bd07fb000-7f9bd080b000 r-xp 00000000 08:05 2760882                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnio.so
+7f9bd080b000-7f9bd0a0b000 ---p 00010000 08:05 2760882                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnio.so
+7f9bd0a0b000-7f9bd0a0c000 rw-p 00010000 08:05 2760882                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnio.so
+7f9bd0a0c000-7f9bd0a0e000 r--s 00016000 08:06 3015768                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/infinispan/cachestore/jdbc/main/infinispan-cachestore-jdbc-5.1.2.FINAL.jar
+7f9bd0a0e000-7f9bd0a16000 r--s 00056000 08:06 3015864                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/ee/main/jboss-as-ee-7.1.1.Final.jar
+7f9bd0a16000-7f9bd0a1c000 r--s 0003b000 08:06 3015807                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/clustering/infinispan/main/jboss-as-clustering-infinispan-7.1.1.Final.jar
+7f9bd0a1c000-7f9bd0a1d000 r--s 00002000 08:06 3015544                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/transaction/api/main/jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+7f9bd0a1d000-7f9bd0a20000 r--s 0000f000 08:06 3015534                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/servlet/api/main/jboss-servlet-api_3.0_spec-1.0.0.Final.jar
+7f9bd0a20000-7f9bd0a22000 r--s 00005000 08:06 3015530                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/security/jacc/api/main/jboss-jacc-api_1.4_spec-1.0.1.Final.jar
+7f9bd0a22000-7f9bd0a26000 r--s 00088000 08:05 2761739                    /usr/lib/jvm/jdk1.7.0/jre/lib/jsse.jar
+7f9bd0a26000-7f9bd0a27000 r--s 00000000 08:06 3015500                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/javax/inject/api/main/javax.inject-1.jar
+7f9bd0a27000-7f9bd0a33000 r--s 0007a000 08:06 3016020                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/common-core/main/jboss-common-core-2.2.17.GA.jar
+7f9bd0a33000-7f9bd0a38000 r--s 00048000 08:06 3015739                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/dom4j/main/dom4j-1.6.1.jar
+7f9bd0a38000-7f9bd0a41000 r--s 0006d000 08:06 3015690                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/log4j/main/log4j-1.2.16.jar
+7f9bd0a41000-7f9bd0a43000 r--s 00004000 08:06 3016312                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/picketbox/main/picketbox-commons-1.0.0.final.jar
+7f9bd0a43000-7f9bd0a45000 r--s 00004000 08:06 3016314                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/picketbox/main/picketbox-infinispan-4.0.7.Final.jar
+7f9bd0a45000-7f9bd0a57000 r--s 000b9000 08:06 3016310                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/picketbox/main/picketbox-4.0.7.Final.jar
+7f9bd0a57000-7f9bd0a5b000 r--s 0002e000 08:06 3015963                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/security/main/jboss-as-security-7.1.1.Final.jar
+7f9bd0a5b000-7f9bd0a5e000 r--s 00013000 08:06 3015954                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/protocol/main/jboss-as-protocol-7.1.1.Final.jar
+7f9bd0a5e000-7f9bd0a62000 r--s 0001f000 08:06 3015951                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/process-controller/main/jboss-as-process-controller-7.1.1.Final.jar
+7f9bd0a62000-7f9bd0a65000 r--s 0001b000 08:06 3015945                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/platform-mbean/main/jboss-as-platform-mbean-7.1.1.Final.jar
+7f9bd0a65000-7f9bd0a67000 r--s 00008000 08:06 3015870                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/embedded/main/jboss-as-embedded-7.1.1.Final.jar
+7f9bd0a67000-7f9bd0a6b000 r--s 00021000 08:06 3015859                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/domain-management/main/jboss-as-domain-management-7.1.1.Final.jar
+7f9bd0a6b000-7f9bd0a6e000 r--s 00011000 08:06 3015856                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/domain-http-interface/main/jboss-as-domain-http-interface-7.1.1.Final.jar
+7f9bd0a6e000-7f9bd0a70000 r--s 00005000 08:06 3015846                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/deployment-repository/main/jboss-as-deployment-repository-7.1.1.Final.jar
+7f9bd0a70000-7f9bd0a73000 r--s 00018000 08:06 3016230                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/vfs/main/jboss-vfs-3.1.0.Final.jar
+7f9bd0a73000-7f9bd0a77000 r--s 0001a000 08:06 3016227                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/threads/main/jboss-threads-2.0.0.GA.jar
+7f9bd0a77000-7f9bd0a79000 r--s 00003000 08:06 3016224                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/stdio/main/jboss-stdio-1.0.1.GA.jar
+7f9bd0a79000-7f9bd0a7b000 r--s 00014000 08:06 3016198                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/sasl/main/jboss-sasl-1.0.0.Final.jar
+7f9bd0a7b000-7f9bd0a7d000 r--s 00003000 08:06 3016086                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/logmanager/log4j/main/jboss-logmanager-log4j-1.0.0.GA.jar
+7f9bd0a7d000-7f9bd0a80000 r--s 00012000 08:06 3016095                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/marshalling/river/main/jboss-marshalling-river-1.3.11.GA.jar
+7f9bd0a80000-7f9bd0a82000 r--s 00010000 08:06 3016065                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/jandex/main/jandex-1.0.3.Final.jar
+7f9bd0a82000-7f9bd0a85000 r--s 0000e000 08:06 3016043                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/invocation/main/jboss-invocation-1.1.1.Final.jar
+7f9bd0a85000-7f9bd0a87000 r--s 0000d000 08:06 3016083                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/logging/main/jboss-logging-3.1.0.GA.jar
+7f9bd0a87000-7f9bd0a8c000 r--s 00021000 08:06 3016150                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/remoting3/remoting-jmx/main/remoting-jmx-1.0.2.Final.jar
+7f9bd0a8c000-7f9bd0a91000 r--s 00036000 08:06 3016285                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/xnio/main/xnio-api-3.0.3.GA.jar
+7f9bd0a91000-7f9bd0a97000 r--s 00032000 08:06 3016092                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/marshalling/main/jboss-marshalling-1.3.11.GA.jar
+7f9bd0a97000-7f9bd0a9d000 r--s 00033000 08:06 3016146                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/remoting3/main/jboss-remoting-3.2.3.GA.jar
+7f9bd0a9d000-7f9bd0aa0000 r--s 00021000 08:06 3015957                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/remoting/main/jboss-as-remoting-7.1.1.Final.jar
+7f9bd0aa0000-7f9bd0aa2000 r--s 00008000 08:06 3015939                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/network/main/jboss-as-network-7.1.1.Final.jar
+7f9bd0aa2000-7f9bd0aa4000 r--s 00014000 08:06 3016023                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/dmr/main/jboss-dmr-1.1.1.Final.jar
+7f9bd0aa4000-7f9bd0aa9000 r--s 00022000 08:06 3015843                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/controller-client/main/jboss-as-controller-client-7.1.1.Final.jar
+7f9bd0aa9000-7f9bd0ab9000 r--s 000ae000 08:06 3015840                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/controller/main/jboss-as-controller-7.1.1.Final.jar
+7f9bd0ab9000-7f9bd0abb000 r--s 00007000 08:06 3016222                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/staxmapper/main/staxmapper-1.1.0.Final.jar
+7f9bd0abb000-7f9bd0abe000 r--s 000f7000 08:05 2761056                    /usr/lib/jvm/jdk1.7.0/jre/lib/ext/localedata.jar
+7f9bd0abe000-7f9bd0ac2000 r--s 00030000 08:06 3016110                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/msc/main/jboss-msc-1.0.2.GA.jar
+7f9bd0ac2000-7f9bd0acd000 r--s 00085000 08:06 3015966                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/server/main/jboss-as-server-7.1.1.Final.jar
+7f9bd0acd000-7f9bd0ad0000 r--s 00018000 08:06 3015890                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/jmx/main/jboss-as-jmx-7.1.1.Final.jar
+7f9bd0ad0000-7f9bd0af5000 r--s 002ef000 08:06 3015711                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/xalan/main/xalan-2.7.1.jbossorg-1.jar
+7f9bd0af5000-7f9bd0afd000 r-xp 00000000 08:05 2760901                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libmanagement.so
+7f9bd0afd000-7f9bd0cfc000 ---p 00008000 08:05 2760901                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libmanagement.so
+7f9bd0cfc000-7f9bd0cfd000 rw-p 00007000 08:05 2760901                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libmanagement.so
+7f9bd0cfd000-7f9bd0d00000 ---p 00000000 00:00 0 
+7f9bd0d00000-7f9bd0dfe000 rw-p 00000000 00:00 0 
+7f9bd0dfe000-7f9bd0dff000 ---p 00000000 00:00 0 
+7f9bd0dff000-7f9bd0eff000 rw-p 00000000 00:00 0 
+7f9bd0eff000-7f9bd0f02000 ---p 00000000 00:00 0 
+7f9bd0f02000-7f9bd1000000 rw-p 00000000 00:00 0 
+7f9bd1000000-7f9bd1620000 rwxp 00000000 00:00 0 
+7f9bd1620000-7f9bd4651000 rw-p 00000000 00:00 0 
+7f9bd4651000-7f9bd8000000 ---p 00000000 00:00 0 
+7f9bd8000000-7f9bd8001000 r--s 00001000 08:06 3015931                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/as/modcluster/main/mod_cluster-container-spi-1.2.0.Final.jar
+7f9bd8001000-7f9bd8006000 r--s 00029000 08:06 3016089                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/jboss/logmanager/main/jboss-logmanager-1.2.2.GA.jar
+7f9bd8006000-7f9bd800a000 r--s 00029000 08:06 3015735                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/codehaus/woodstox/main/stax2-api-3.1.1.jar
+7f9bd800a000-7f9bd800d000 ---p 00000000 00:00 0 
+7f9bd800d000-7f9bd810b000 rw-p 00000000 00:00 0 
+7f9bd810b000-7f9bd810e000 ---p 00000000 00:00 0 
+7f9bd810e000-7f9bd820c000 rw-p 00000000 00:00 0 
+7f9bd820c000-7f9bd820f000 ---p 00000000 00:00 0 
+7f9bd820f000-7f9bd830d000 rw-p 00000000 00:00 0 
+7f9bd830d000-7f9bd89f0000 r--p 00000000 08:05 2759212                    /usr/lib/locale/locale-archive
+7f9bd89f0000-7f9bd89f3000 ---p 00000000 00:00 0 
+7f9bd89f3000-7f9bd8af1000 rw-p 00000000 00:00 0 
+7f9bd8af1000-7f9bd8af4000 ---p 00000000 00:00 0 
+7f9bd8af4000-7f9bd8bf2000 rw-p 00000000 00:00 0 
+7f9bd8bf2000-7f9bd8bf3000 ---p 00000000 00:00 0 
+7f9bd8bf3000-7f9bd966c000 rw-p 00000000 00:00 0 
+7f9bd966c000-7f9bd982b000 r--s 03a09000 08:05 2762216                    /usr/lib/jvm/jdk1.7.0/jre/lib/rt.jar
+7f9bd982b000-7f9bd9853000 rw-p 00000000 00:00 0 
+7f9bd9853000-7f9bd9854000 ---p 00000000 00:00 0 
+7f9bd9854000-7f9bd9954000 rw-p 00000000 00:00 0 
+7f9bd9954000-7f9bd9955000 ---p 00000000 00:00 0 
+7f9bd9955000-7f9bd9a55000 rw-p 00000000 00:00 0 
+7f9bd9a55000-7f9bd9a56000 ---p 00000000 00:00 0 
+7f9bd9a56000-7f9bd9b56000 rw-p 00000000 00:00 0 
+7f9bd9b56000-7f9bd9b57000 ---p 00000000 00:00 0 
+7f9bd9b57000-7f9bd9c57000 rw-p 00000000 00:00 0 
+7f9bd9c57000-7f9bd9c58000 ---p 00000000 00:00 0 
+7f9bd9c58000-7f9bd9d58000 rw-p 00000000 00:00 0 
+7f9bd9d58000-7f9bd9d59000 ---p 00000000 00:00 0 
+7f9bd9d59000-7f9bd9e59000 rw-p 00000000 00:00 0 
+7f9bd9e59000-7f9bd9e5a000 ---p 00000000 00:00 0 
+7f9bd9e5a000-7f9bd9f5a000 rw-p 00000000 00:00 0 
+7f9bd9f5a000-7f9bd9f5b000 ---p 00000000 00:00 0 
+7f9bd9f5b000-7f9bda099000 rw-p 00000000 00:00 0 
+7f9bda099000-7f9bda0db000 rw-p 00000000 00:00 0 
+7f9bda0db000-7f9bda11a000 rw-p 00000000 00:00 0 
+7f9bda11a000-7f9bda186000 rw-p 00000000 00:00 0 
+7f9bda186000-7f9bda1c4000 rw-p 00000000 00:00 0 
+7f9bda1c4000-7f9bda206000 rw-p 00000000 00:00 0 
+7f9bda206000-7f9bda245000 rw-p 00000000 00:00 0 
+7f9bda245000-7f9bda2b0000 rw-p 00000000 00:00 0 
+7f9bda2b0000-7f9bda305000 rw-p 00000000 00:00 0 
+7f9bda305000-7f9bda306000 ---p 00000000 00:00 0 
+7f9bda306000-7f9bda307000 rw-p 00000000 00:00 0 
+7f9bda307000-7f9bda321000 r-xp 00000000 08:05 2760881                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libzip.so
+7f9bda321000-7f9bda521000 ---p 0001a000 08:05 2760881                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libzip.so
+7f9bda521000-7f9bda522000 rw-p 0001a000 08:05 2760881                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libzip.so
+7f9bda522000-7f9bda52e000 r-xp 00000000 08:05 3948214                    /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7f9bda52e000-7f9bda72d000 ---p 0000c000 08:05 3948214                    /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7f9bda72d000-7f9bda72e000 r--p 0000b000 08:05 3948214                    /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7f9bda72e000-7f9bda72f000 rw-p 0000c000 08:05 3948214                    /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7f9bda72f000-7f9bda739000 r-xp 00000000 08:05 3948210                    /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7f9bda739000-7f9bda939000 ---p 0000a000 08:05 3948210                    /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7f9bda939000-7f9bda93a000 r--p 0000a000 08:05 3948210                    /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7f9bda93a000-7f9bda93b000 rw-p 0000b000 08:05 3948210                    /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7f9bda93b000-7f9bda952000 r-xp 00000000 08:05 3948223                    /lib/x86_64-linux-gnu/libnsl-2.15.so
+7f9bda952000-7f9bdab51000 ---p 00017000 08:05 3948223                    /lib/x86_64-linux-gnu/libnsl-2.15.so
+7f9bdab51000-7f9bdab52000 r--p 00016000 08:05 3948223                    /lib/x86_64-linux-gnu/libnsl-2.15.so
+7f9bdab52000-7f9bdab53000 rw-p 00017000 08:05 3948223                    /lib/x86_64-linux-gnu/libnsl-2.15.so
+7f9bdab53000-7f9bdab55000 rw-p 00000000 00:00 0 
+7f9bdab55000-7f9bdab5d000 r-xp 00000000 08:05 3948215                    /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7f9bdab5d000-7f9bdad5c000 ---p 00008000 08:05 3948215                    /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7f9bdad5c000-7f9bdad5d000 r--p 00007000 08:05 3948215                    /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7f9bdad5d000-7f9bdad5e000 rw-p 00008000 08:05 3948215                    /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7f9bdad5e000-7f9bdad87000 r-xp 00000000 08:05 2760907                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libjava.so
+7f9bdad87000-7f9bdaf87000 ---p 00029000 08:05 2760907                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libjava.so
+7f9bdaf87000-7f9bdaf89000 rw-p 00029000 08:05 2760907                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libjava.so
+7f9bdaf89000-7f9bdaf98000 r-xp 00000000 08:05 2760902                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libverify.so
+7f9bdaf98000-7f9bdb197000 ---p 0000f000 08:05 2760902                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libverify.so
+7f9bdb197000-7f9bdb199000 rw-p 0000e000 08:05 2760902                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libverify.so
+7f9bdb199000-7f9bdb1a0000 r-xp 00000000 08:05 3948208                    /lib/x86_64-linux-gnu/librt-2.15.so
+7f9bdb1a0000-7f9bdb39f000 ---p 00007000 08:05 3948208                    /lib/x86_64-linux-gnu/librt-2.15.so
+7f9bdb39f000-7f9bdb3a0000 r--p 00006000 08:05 3948208                    /lib/x86_64-linux-gnu/librt-2.15.so
+7f9bdb3a0000-7f9bdb3a1000 rw-p 00007000 08:05 3948208                    /lib/x86_64-linux-gnu/librt-2.15.so
+7f9bdb3a1000-7f9bdb49c000 r-xp 00000000 08:05 3948212                    /lib/x86_64-linux-gnu/libm-2.15.so
+7f9bdb49c000-7f9bdb69b000 ---p 000fb000 08:05 3948212                    /lib/x86_64-linux-gnu/libm-2.15.so
+7f9bdb69b000-7f9bdb69c000 r--p 000fa000 08:05 3948212                    /lib/x86_64-linux-gnu/libm-2.15.so
+7f9bdb69c000-7f9bdb69d000 rw-p 000fb000 08:05 3948212                    /lib/x86_64-linux-gnu/libm-2.15.so
+7f9bdb69d000-7f9bdc07d000 r-xp 00000000 08:05 2760866                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/server/libjvm.so
+7f9bdc07d000-7f9bdc27d000 ---p 009e0000 08:05 2760866                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/server/libjvm.so
+7f9bdc27d000-7f9bdc31a000 rw-p 009e0000 08:05 2760866                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/server/libjvm.so
+7f9bdc31a000-7f9bdc353000 rw-p 00000000 00:00 0 
+7f9bdc353000-7f9bdc508000 r-xp 00000000 08:05 3948204                    /lib/x86_64-linux-gnu/libc-2.15.so
+7f9bdc508000-7f9bdc707000 ---p 001b5000 08:05 3948204                    /lib/x86_64-linux-gnu/libc-2.15.so
+7f9bdc707000-7f9bdc70b000 r--p 001b4000 08:05 3948204                    /lib/x86_64-linux-gnu/libc-2.15.so
+7f9bdc70b000-7f9bdc70d000 rw-p 001b8000 08:05 3948204                    /lib/x86_64-linux-gnu/libc-2.15.so
+7f9bdc70d000-7f9bdc712000 rw-p 00000000 00:00 0 
+7f9bdc712000-7f9bdc714000 r-xp 00000000 08:05 3948203                    /lib/x86_64-linux-gnu/libdl-2.15.so
+7f9bdc714000-7f9bdc914000 ---p 00002000 08:05 3948203                    /lib/x86_64-linux-gnu/libdl-2.15.so
+7f9bdc914000-7f9bdc915000 r--p 00002000 08:05 3948203                    /lib/x86_64-linux-gnu/libdl-2.15.so
+7f9bdc915000-7f9bdc916000 rw-p 00003000 08:05 3948203                    /lib/x86_64-linux-gnu/libdl-2.15.so
+7f9bdc916000-7f9bdc92c000 r-xp 00000000 08:05 2760895                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/jli/libjli.so
+7f9bdc92c000-7f9bdcb2b000 ---p 00016000 08:05 2760895                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/jli/libjli.so
+7f9bdcb2b000-7f9bdcb2c000 rw-p 00015000 08:05 2760895                    /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/jli/libjli.so
+7f9bdcb2c000-7f9bdcb44000 r-xp 00000000 08:05 3948206                    /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f9bdcb44000-7f9bdcd43000 ---p 00018000 08:05 3948206                    /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f9bdcd43000-7f9bdcd44000 r--p 00017000 08:05 3948206                    /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f9bdcd44000-7f9bdcd45000 rw-p 00018000 08:05 3948206                    /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f9bdcd45000-7f9bdcd49000 rw-p 00000000 00:00 0 
+7f9bdcd49000-7f9bdcd6b000 r-xp 00000000 08:05 3948218                    /lib/x86_64-linux-gnu/ld-2.15.so
+7f9bdcd6b000-7f9bdcd6c000 r--s 00000000 08:06 3015576                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/net/jcip/main/jcip-annotations-1.0.jar
+7f9bdcd6c000-7f9bdcd71000 r--s 00070000 08:06 3015737                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/codehaus/woodstox/main/woodstox-core-asl-4.1.1.jar
+7f9bdcd71000-7f9bdcd88000 r--s 0018c000 08:06 3015714                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/xerces/main/xercesImpl-2.9.1-jbossas-1.jar
+7f9bdcd88000-7f9bdcd8c000 r--s 00042000 08:06 3015709                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules/org/apache/xalan/main/serializer-2.7.1.jbossorg-1.jar
+7f9bdcd8c000-7f9bdcda5000 rw-p 00000000 00:00 0 
+7f9bdcda5000-7f9bdce4c000 rw-p 00000000 00:00 0 
+7f9bdce4c000-7f9bdce4f000 ---p 00000000 00:00 0 
+7f9bdce4f000-7f9bdcf51000 rw-p 00000000 00:00 0 
+7f9bdcf51000-7f9bdcf5a000 r--s 00254000 08:05 2760834                    /usr/lib/jvm/jdk1.7.0/jre/lib/resources.jar
+7f9bdcf5a000-7f9bdcf5f000 r--s 0003d000 08:06 3015446                    /home/javadev/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/jboss-modules.jar
+7f9bdcf5f000-7f9bdcf67000 rw-s 00000000 08:05 3670670                    /tmp/hsperfdata_iwanaf/6934
+7f9bdcf67000-7f9bdcf68000 rw-p 00000000 00:00 0 
+7f9bdcf68000-7f9bdcf69000 r--p 00000000 00:00 0 
+7f9bdcf69000-7f9bdcf6b000 rw-p 00000000 00:00 0 
+7f9bdcf6b000-7f9bdcf6c000 r--p 00022000 08:05 3948218                    /lib/x86_64-linux-gnu/ld-2.15.so
+7f9bdcf6c000-7f9bdcf6e000 rw-p 00023000 08:05 3948218                    /lib/x86_64-linux-gnu/ld-2.15.so
+7fffb6898000-7fffb68b9000 rw-p 00000000 00:00 0                          [stack]
+7fffb69d5000-7fffb69d6000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final -Dfile.encoding=UTF-8 
+java_command: org.jboss.modules.Main -mp /home/iwanaf/Development/SIMbiosis/lib/jboss-as-7.1.1.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=native:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x856f20], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x856f20], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x6fd190], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x6fd190], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x6fd190], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x6fd190], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x6fcb00], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x6fee70], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x6fee70], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x6fee70], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x6fee70], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:wheezy/sid
+
+uname:Linux 3.2.0-37-generic #58-Ubuntu SMP Thu Jan 24 15:28:10 UTC 2013 x86_64
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 63339, NOFILE 4096, AS infinity
+load average:0.96 0.71 0.88
+
+/proc/meminfo:
+MemTotal:        8125000 kB
+MemFree:         3376060 kB
+Buffers:          116768 kB
+Cached:          1704800 kB
+SwapCached:            0 kB
+Active:          3347924 kB
+Inactive:         893988 kB
+Active(anon):    2421336 kB
+Inactive(anon):    24140 kB
+Active(file):     926588 kB
+Inactive(file):   869848 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+SwapTotal:      15624188 kB
+SwapFree:       15624188 kB
+Dirty:             31932 kB
+Writeback:             0 kB
+AnonPages:       2420652 kB
+Mapped:           365028 kB
+Shmem:             25144 kB
+Slab:             122092 kB
+SReclaimable:      80340 kB
+SUnreclaim:        41752 kB
+KernelStack:        5744 kB
+PageTables:        38880 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    19686688 kB
+Committed_AS:    5250980 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      585732 kB
+VmallocChunk:   34359149468 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      161792 kB
+DirectMap2M:     8175616 kB
+
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.97
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.82
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 2201.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.83
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.83
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 1900.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.82
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.83
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 2201.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.83
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2720QM CPU @ 2.20GHz
+stepping	: 7
+microcode	: 0x15
+cpu MHz		: 800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4389.84
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 8125000k(3376060k free), swap 15624188k(15624188k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (22.1-b02) for linux-amd64 JRE (1.7.0_03-b04), built on Jan 20 2012 11:58:56 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Tue Feb  5 15:48:16 2013
+elapsed time: 40 seconds
+

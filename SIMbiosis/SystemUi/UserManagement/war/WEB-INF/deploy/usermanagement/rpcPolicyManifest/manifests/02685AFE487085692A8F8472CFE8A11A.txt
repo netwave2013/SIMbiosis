@@ -1,0 +1,2 @@
+serviceClass: org.kembang.module.client.rpc.SystemService
+path: B518A819D29B95DBD288EFF3ACBD4A70.gwt.rpc

@@ -1,0 +1,8 @@
+BprsReportingViewer/.gwt
+BprsReportingViewer/gwt-unitCache
+BprsReportingViewer/test-classes
+BprsReportingViewer/war/bprsreportingviewer
+BprsReportingViewer/war/WEB-INF/classes
+BprsReportingViewer/war/WEB-INF/deploy
+BprsReportingService/build
+

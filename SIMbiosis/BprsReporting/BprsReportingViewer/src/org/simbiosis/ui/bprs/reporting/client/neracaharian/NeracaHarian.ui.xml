@@ -1,0 +1,33 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.searchBox {
+			padding-bottom: 5px;
+		}
+	</ui:style>
+	<g:DockLayoutPanel unit="PX">
+		<g:north size="40">
+			<g:HorizontalPanel height="100%" width="100%"
+				styleName="{style.searchBox}">
+				<g:HorizontalPanel height="90%" width="100%"
+					styleName="formBox">
+					<g:HorizontalPanel height="90%"
+						verticalAlignment="ALIGN_MIDDLE">
+						<g:Label styleName="formLabel" text="Neraca :" />
+						<g:HTMLPanel>&nbsp;</g:HTMLPanel>
+						<g:ListBox styleName="formCombobox" ui:field="branch" />
+						<g:HTMLPanel>&nbsp;</g:HTMLPanel>
+						<g:Label styleName="formLabel" text="Periode :" />
+						<g:HTMLPanel>&nbsp;</g:HTMLPanel>
+						<p1:DateBox styleName="formDatebox" width="75px" ui:field="date" />
+					</g:HorizontalPanel>
+				</g:HorizontalPanel>
+			</g:HorizontalPanel>
+		</g:north>
+		<g:center>
+			<g:DockLayoutPanel ui:field="reportFrame" height="100%"
+				width="100%" />
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

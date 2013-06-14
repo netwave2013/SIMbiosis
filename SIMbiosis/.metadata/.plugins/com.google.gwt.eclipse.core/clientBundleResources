@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+<deps cu="=BprsReportingViewer/src&lt;org.simbiosis.ui.bprs.reporting.client{Resources.java">
+<res path="BprsReporting.css"/>
+<res path="org/simbiosis/ui/bprs/reporting/client/BprsReporting.css"/>
+</deps>
+<deps cu="=BprsHost/src&lt;org.simbiosis.ui.bprs.host.client{Resources.java">
+<res path="org/simbiosis/ui/bprs/host/client/BprsHost.css"/>
+<res path="BprsHost.css"/>
+</deps>
+</index>

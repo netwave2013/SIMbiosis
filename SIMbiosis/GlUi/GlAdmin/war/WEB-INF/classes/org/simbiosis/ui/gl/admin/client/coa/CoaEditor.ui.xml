@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent"> -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:v="urn:import:org.simbiosis.ui.gl.admin.client.editor">
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<td>
+					<b>Kode COA</b>
+				</td>
+				<td>
+					<g:TextBox ui:field="code" styleName="formText"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Prefix</b>
+				</td>
+				<td>
+					<g:TextBox ui:field="prefix" styleName="formText"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Deskripsi</b>
+				</td>
+				<td>
+					<g:TextBox ui:field="description" styleName="formText"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Induk</b>
+				</td>
+				<td>
+					<v:CoaListEditor ui:field="parent" styleName="formCombobox"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Cabang</b>
+				</td>
+				<td>
+					<v:BranchListEditor ui:field="branch" styleName="formCombobox"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Kecuali cabang</b>
+				</td>
+				<td>
+					<v:BranchListEditor ui:field="excBranch" styleName="formCombobox"/>
+				</td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

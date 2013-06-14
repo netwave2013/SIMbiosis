@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.simbiosis.ui.bprshost&apos; to &apos;org.simbiosis.ui.bprs.host&apos;&#x0A;- Original project: &apos;BprsHost&apos;&#x0A;- Original element: &apos;BprsHost/src/org.simbiosis.ui.bprshost&apos;&#x0A;- Renamed element: &apos;BprsHost/src/org.simbiosis.ui.bprs.host&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;org.simbiosis.ui.bprshost&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;org.simbiosis.ui.bprshost" name="org.simbiosis.ui.bprs.host" qualified="false" references="true" stamp="1359935109230" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CliLBI&apos; to &apos;CliBIBprs&apos;" description="Rename resource &apos;CliLBI&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/CliLBI" name="CliBIBprs" stamp="1359969859190" updateReferences="true"/>
+</session>

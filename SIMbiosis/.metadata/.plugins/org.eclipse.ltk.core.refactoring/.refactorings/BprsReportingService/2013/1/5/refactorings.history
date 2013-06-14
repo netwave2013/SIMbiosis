@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;report&apos; in &apos;org.simbiosis.microbanking.reporting.NeracaHarian&apos; to &apos;iFinReport&apos;&#x0A;- Original project: &apos;BprsReportingService&apos;&#x0A;- Original element: &apos;org.simbiosis.microbanking.reporting.NeracaHarian.report&apos;&#x0A;- Renamed element: &apos;org.simbiosis.microbanking.reporting.NeracaHarian.iFinReport&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;report&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;org.simbiosis.microbanking.reporting{NeracaHarian.java[NeracaHarian^report" name="iFinReport" references="true" setter="false" stamp="1359278155113" textual="false" version="1.0"/>
+</session>

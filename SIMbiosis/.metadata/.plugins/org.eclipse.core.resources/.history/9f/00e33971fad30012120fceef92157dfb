@@ -1,0 +1,134 @@
+package org.simbiosis.ui.bprs.admin.server;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.ejb.EJB;
+
+import org.simbiosis.bp.gl.IGlBp;
+import org.simbiosis.bp.micbank.IDepositBp;
+import org.simbiosis.bp.micbank.ILoanBp;
+import org.simbiosis.bp.micbank.ISavingBp;
+import org.simbiosis.gl.CoaDto;
+import org.simbiosis.microbank.DepositTransactionDto;
+import org.simbiosis.microbank.LoanTransactionDto;
+import org.simbiosis.microbank.SavingTransactionDto;
+import org.simbiosis.ui.bprs.admin.client.rpc.MicBankService;
+import org.simbiosis.ui.bprs.admin.shared.CoaDv;
+import org.simbiosis.ui.bprs.common.shared.TransactionDv;
+
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+@SuppressWarnings("serial")
+public class MicBankServiceImpl extends RemoteServiceServlet implements
+		MicBankService {
+
+	@EJB(lookup = "java:global/BprsBpEar/BprsBpEjb/DepositBp")
+	IDepositBp depositBp;
+	@EJB(lookup = "java:global/BprsBpEar/BprsBpEjb/LoanBp")
+	ILoanBp loanBp;
+	@EJB(lookup = "java:global/BprsBpEar/BprsBpEjb/SavingBp")
+	ISavingBp savingBp;
+	@EJB(lookup = "java:global/GlBpEar/GlBpEjb/GlBp")
+	IGlBp glBp;
+
+	public MicBankServiceImpl() {
+	}
+
+	private CoaDv createCoaDv(CoaDto coaDto) {
+		CoaDv coaDv = new CoaDv();
+		coaDv.setId(coaDto.getId());
+		coaDv.setCode(coaDto.getCode());
+		coaDv.setDescription(coaDto.getDescription());
+		return coaDv;
+	}
+
+	@Override
+	public List<CoaDv> listCoaForTransaction(String key) {
+		List<CoaDv> returnList = new ArrayList<CoaDv>();
+		List<CoaDto> listCoaDto = glBp.listCoaForTransaction(key);
+		Iterator<CoaDto> iterCoaDto = listCoaDto.iterator();
+		while (iterCoaDto.hasNext()) {
+			CoaDto coaDto = iterCoaDto.next();
+			returnList.add(createCoaDv(coaDto));
+		}
+		return returnList;
+	}
+
+	@Override
+	public TransactionDv saveLoanTrans(String key, TransactionDv dv) {
+		LoanTransactionDto dto = new LoanTransactionDto();
+		dto.setDate(dv.getDate());
+		dto.setLoan(dv.getLoan().getId());
+		dto.setRefCode(dv.getRefCode());
+		if (dv.getLoan().isDropped()) {
+			dto.setType(dv.getType() + 1);
+			dto.setDirection(2);
+			dto.setPrincipal(Double.parseDouble(dv.getStrPrincipal()));
+			dto.setMargin(Double.parseDouble(dv.getStrMargin()));
+			dto.setDiscount(Double.parseDouble(dv.getStrDiscount()));
+		} else {
+			dto.setType(dv.getType());
+			dto.setDirection(1);
+			dto.setPrincipal(Double.parseDouble(dv.getStrValue()));
+			dto.setMargin(Double.parseDouble(dv.getStrMargin()));
+		}
+		dto = loanBp.saveLoanTrans(key, dto, dv.getSaving().getId());
+		dv.setCode(dto.getCode());
+		return dv;
+	}
+
+	@Override
+	public TransactionDv saveDepositTrans(String key, TransactionDv dv) {
+		DepositTransactionDto dto = new DepositTransactionDto();
+		dto.setDate(dv.getDate());
+		dto.setDeposit(dv.getDeposit().getId());
+		dto.setRefCode(dv.getRefCode());
+		dto.setValue(Double.parseDouble(dv.getStrValue()));
+		dto.setDirection(dv.getType());
+		dto = depositBp.saveDepositTrans(key, dto, dv.getSaving().getId());
+		return dv;
+	}
+
+	@Override
+	public TransactionDv saveSavingJournalTrans(String key, TransactionDv dv) {
+		SavingTransactionDto dto = new SavingTransactionDto();
+		dto.setDate(dv.getDate());
+		dto.setSaving(dv.getSaving().getId());
+		dto.setRefCode(dv.getRefCode());
+		dto.setDescription(dv.getDescription());
+		dto.setValue(Double.parseDouble(dv.getStrValue()));
+		dto.setDirection(dv.getType());
+		savingBp.saveSavingJournalTrans(key, dto, dv.getCoa());
+		return dv;
+	}
+
+	@Override
+	public TransactionDv saveTransferSaving(String key, TransactionDv dv) {
+		SavingTransactionDto srcDto = new SavingTransactionDto();
+		srcDto.setDate(dv.getDate());
+		srcDto.setSaving(dv.getSaving().getId());
+		srcDto.setRefCode(dv.getRefCode());
+		srcDto.setDescription(dv.getDescription());
+		srcDto.setValue(Double.parseDouble(dv.getStrValue()));
+		srcDto.setDirection(2);
+		SavingTransactionDto destDto = new SavingTransactionDto();
+		destDto.setDate(dv.getDate());
+		destDto.setSaving(dv.getSavingDest().getId());
+		destDto.setRefCode(dv.getRefCode());
+		destDto.setDescription(dv.getDescription());
+		destDto.setValue(Double.parseDouble(dv.getStrValue()));
+		destDto.setDirection(1);
+		savingBp.saveSavingTrfTrans(key, srcDto, destDto);
+		return dv;
+	}
+
+	@Override
+	public Boolean isWithdrawable(TransactionDv dv) {
+		double value = Double.parseDouble(dv.getStrValue());
+		return savingBp.isWithdrawable(dv.getSaving().getId(), value,
+				dv.getDate());
+	}
+
+}

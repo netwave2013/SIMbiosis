@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CashValidation" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="de5f01b9-1fef-48d6-8bf5-f0778ff8d187">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Cash.company" class="java.lang.String"/>
+	<parameter name="Cash.date" class="java.lang.String"/>
+	<parameter name="Cash.direction" class="java.lang.String"/>
+	<parameter name="Cash.description" class="java.lang.String"/>
+	<parameter name="Cash.code" class="java.lang.String"/>
+	<parameter name="Cash.value" class="java.lang.String"/>
+	<parameter name="Cash.maker" class="java.lang.String"/>
+	<parameter name="Cash.teller" class="java.lang.String"/>
+	<parameter name="Cash.textValue" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="291" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="bbd22fdf-1ea6-4998-b005-1397592556cb" x="317" y="0" width="238" height="26"/>
+				<textElement textAlignment="Right">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bukti setor/tarik kas]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a6eb4c47-ee3b-42ae-9cc5-3dd8c9b6899e" x="271" y="26" width="284" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Cash.company}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="248a2911-8da5-4bf9-91d2-bf6ad9d0fb3e" x="112" y="57" width="128" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a40959af-946f-4114-9624-58fd631302ac" x="0" y="57" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a6370cc8-7546-4ba1-b97b-bff1e9f45fe8" x="0" y="97" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jenis]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1351490e-ac22-4b1e-938a-68f24f091697" x="112" y="97" width="128" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.direction}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3bc2e425-8908-4986-a685-1f4d34c511df" x="0" y="117" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Deskripsi]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="e32ae34f-ef70-4db0-a032-f48987e095e3" x="112" y="117" width="343" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.description}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3706e5b1-77c4-4f90-830d-e48758b68a51" x="0" y="137" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bdcc8dc9-1400-44f8-ab10-1e10828a9588" x="0" y="198" width="112" height="20"/>
+				<textElement/>
+				<text><![CDATA[Penerima/Penyetor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="78280b10-aeda-4f36-9070-5ac7bc4cdbf3" x="240" y="198" width="117" height="20"/>
+				<textElement/>
+				<text><![CDATA[Teller]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="4e93ff40-2f2b-4b74-a0c4-294e30e22596" x="0" y="49" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="f3d5808d-932d-4861-a49a-e521ba45b37a" x="0" y="77" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kode]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="154f8652-a06e-4a7d-96f3-a5a55caa617f" x="112" y="77" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f4fdf3f6-8007-4c0c-b6e9-76ea06f8a917" x="112" y="137" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.value}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="d3315b68-93cc-48a8-8e80-d32fba2d477c" x="0" y="258" width="100" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="0ac94396-6f5d-40fc-ab40-4571e6010bae" x="240" y="257" width="100" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="f060599e-3891-4e55-a62e-03f79a15db09" x="0" y="262" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.maker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f0f17934-e89d-48c5-8602-6e928620968b" x="240" y="262" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.teller}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="32f75cea-ed9e-4c30-b285-40973a89d491" x="112" y="157" width="428" height="41"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{Cash.textValue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<td class="formLabel">Nama role</td>
+				<td>
+					<g:TextBox ui:field="name" styleName="formTextBox" />
+				</td>
+			</tr>
+			<tr>
+				<td class="formLabel">Keterangan</td>
+				<td>
+					<g:TextBox ui:field="description" styleName="formTextBox" />
+				</td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 
